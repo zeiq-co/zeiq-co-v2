@@ -30,6 +30,11 @@ export default {
       title: 'Email',
     },
     {
+      title: 'Features',
+      name: 'features',
+      type: 'settingsFeatures',
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Title',
