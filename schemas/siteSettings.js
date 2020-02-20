@@ -10,6 +10,26 @@ export default {
   ],
   fields: [
     {
+      name: 'homeHeroBackgroundImage',
+      title: 'Home Hero Background Image',
+      type: 'image',
+    },
+    {
+      name: 'homeHeroBannerImage',
+      title: 'Home Hero Banner Image',
+      type: 'image',
+    },
+    {
+      name: 'telephone',
+      type: 'string',
+      title: 'Telephone',
+    },
+    {
+      name: 'email',
+      type: 'string',
+      title: 'Email',
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Title',
@@ -76,16 +96,7 @@ export default {
       type: 'string',
       title: 'Pinterest URL',
     },
-    {
-      name: 'telephone',
-      type: 'string',
-      title: 'Telephone',
-    },
-    {
-      name: 'email',
-      type: 'string',
-      title: 'Email',
-    },
+
     {
       name: 'address',
       type: 'string',
