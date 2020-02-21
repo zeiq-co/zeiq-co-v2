@@ -4,6 +4,11 @@ export default {
   type: 'object',
   fields: [
     {
+      name: 'leftFeatureImage',
+      title: 'Left Feature Image',
+      type: 'boolean',
+    },
+    {
       name: 'featuresBackgroundImage',
       title: 'Features Background Image',
       type: 'image',
