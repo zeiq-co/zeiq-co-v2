@@ -9,16 +9,6 @@ export default {
       type: 'boolean',
     },
     {
-      name: 'featuresBackgroundImage',
-      title: 'Features Background Image',
-      type: 'image',
-    },
-    {
-      name: 'featuresFrameImage',
-      title: 'Features Frame Image',
-      type: 'image',
-    },
-    {
       name: 'title',
       type: 'string',
       title: 'Title',
@@ -28,6 +18,22 @@ export default {
       type: 'text',
       title: 'Description',
       description: 'Describe your Features.',
+    },
+    {
+      name: 'featuresBackgroundImage',
+      title: 'Features Background Image',
+      type: 'image',
+    },
+    {
+      name: 'featuresFrameImage',
+      title: 'Features Frame Image',
+      type: 'image',
+    },
+
+    {
+      name: 'featureButton',
+      type: 'string',
+      title: 'Feature Button',
     },
     {
       title: 'Features',
