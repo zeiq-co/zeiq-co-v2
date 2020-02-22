@@ -35,26 +35,31 @@ export default {
       type: 'settingsFeatures',
     },
     {
-      name: 'title',
+      name: 'hireOptionSmallText',
       type: 'string',
-      title: 'Title',
+      title: 'Hire Option Small Text',
+    },
+
+    {
+      name: 'hireOptionLargeText',
+      type: 'string',
+      title: 'Hire Option Large Text',
     },
     {
-      name: 'description',
+      name: 'hireOptionDescription',
       type: 'text',
-      title: 'Description',
-      description:
-        'Describe your portfolio for search engines and social media.',
+      title: 'Hire Option Description',
+      description: 'Describe your hireOption .',
     },
     {
-      name: 'keywords',
-      type: 'array',
-      title: 'Keywords',
-      description: 'Add keywords that describes your portfolio.',
-      of: [{ type: 'string' }],
-      options: {
-        layout: 'tags',
-      },
+      name: 'hireOptionBackgroundImage',
+      title: 'Hire Option Background Image',
+      type: 'image',
+    },
+    {
+      name: 'hireOptionFrameImage',
+      title: 'Hire Option Frame Image',
+      type: 'image',
     },
     {
       name: 'homeHeroTitle',
@@ -106,6 +111,16 @@ export default {
       name: 'address',
       type: 'string',
       title: 'Address',
+    },
+    {
+      name: 'keywords',
+      type: 'array',
+      title: 'Keywords',
+      description: 'Add keywords that describes your portfolio.',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      },
     },
   ],
 };
