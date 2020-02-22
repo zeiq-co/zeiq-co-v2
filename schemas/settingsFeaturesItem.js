@@ -4,8 +4,8 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'leftFeatureImage',
-      title: 'Left Feature Image',
+      name: 'hasRight',
+      title: 'Has Right',
       type: 'boolean',
     },
     {
@@ -34,11 +34,6 @@ export default {
       name: 'featureButton',
       type: 'string',
       title: 'Feature Button',
-    },
-    {
-      title: 'Features',
-      name: 'features',
-      type: 'settingsFeatures',
     },
   ],
 };
