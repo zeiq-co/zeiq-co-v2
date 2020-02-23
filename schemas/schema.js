@@ -9,6 +9,7 @@ import blockContent from './blockContent';
 import category from './category';
 import post from './post';
 import page from './page';
+import vehicleHirePages from './vehicleHirePages';
 import siteSettings from './siteSettings';
 import settingsFeatures from './settingsFeatures';
 import settingsFeaturesItem from './settingsFeaturesItem';
@@ -24,6 +25,7 @@ export default createSchema({
     // in the studio.
     page,
     post,
+    vehicleHirePages,
     category,
     siteSettings,
     settingsFeatures,
