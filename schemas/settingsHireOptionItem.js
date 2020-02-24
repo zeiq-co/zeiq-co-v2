@@ -15,7 +15,7 @@ export default {
     },
     {
       name: 'hireOptionDescription',
-      title: 'Hire Option  Description',
+      title: 'Hire Option Description',
       type: 'string',
     },
     {
