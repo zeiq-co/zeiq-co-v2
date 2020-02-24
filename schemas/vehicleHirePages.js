@@ -4,9 +4,9 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
+      title: 'Options',
+      name: 'hireOptions',
+      type: 'settingsHireOption',
     },
     {
       name: 'slug',
@@ -15,22 +15,6 @@ export default {
       options: {
         source: 'title',
         maxLength: 96,
-      },
-    },
-    {
-      name: 'description',
-      title: 'Description',
-      type: 'markdown',
-      options: {
-        minRows: 20,
-      },
-    },
-    {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
       },
     },
   ],
