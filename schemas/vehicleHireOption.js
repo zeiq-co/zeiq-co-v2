@@ -1,6 +1,6 @@
 export default {
-  title: 'Settings Hire Option',
-  name: 'settingsHireOption',
+  title: 'Vehicle Hire Option',
+  name: 'vehicleHireOption',
   type: 'object',
   fields: [
     {
@@ -10,7 +10,7 @@ export default {
       of: [
         {
           title: 'Items',
-          type: 'settingsHireOptionItem',
+          type: 'vehicleHireOptionItem',
         },
       ],
     },

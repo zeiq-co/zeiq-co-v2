@@ -4,9 +4,9 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Options',
+      title: 'Hire Options',
       name: 'hireOptions',
-      type: 'settingsHireOption',
+      type: 'vehicleHireOption',
     },
     {
       name: 'slug',

@@ -1,6 +1,6 @@
 export default {
-  title: 'Settings Hire Option Item',
-  name: 'settingsHireOptionItem',
+  title: 'Vehicle Hire Option Item',
+  name: 'vehicleHireOptionItem',
   type: 'object',
   fields: [
     {
