@@ -25,8 +25,8 @@ export default createSchema({
     // in the studio.
     page,
     post,
-    vehicleHirePage,
     category,
+    vehicleHirePage,
     siteSettings,
     settingsFeatures,
     settingsFeaturesItem,
