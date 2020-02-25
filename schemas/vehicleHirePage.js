@@ -1,8 +1,18 @@
 export default {
-  title: 'Vehicle Hire Option Item',
-  name: 'vehicleHireOptionItem',
-  type: 'object',
+  name: 'vehicleHirePage',
+  title: 'Vehicle Hire Page',
+  type: 'document',
   fields: [
+    {
+      name: 'hasRight',
+      title: 'Has Right',
+      type: 'boolean',
+    },
+    {
+      title: 'Order',
+      name: 'order',
+      type: 'number',
+    },
     {
       name: 'hireOptionTitle',
       title: 'Hire Option Title',
@@ -32,6 +42,14 @@ export default {
       name: 'hireOptionColoredImage',
       title: 'Hire Option  Colored  Image',
       type: 'image',
+    },
+    {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+      },
     },
   ],
 };

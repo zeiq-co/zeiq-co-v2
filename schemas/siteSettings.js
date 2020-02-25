@@ -30,8 +30,8 @@ export default {
       title: 'Email',
     },
     {
-      title: 'Features',
-      name: 'features',
+      title: 'Home Features',
+      name: 'homeFeatures',
       type: 'settingsFeatures',
     },
     {
@@ -111,16 +111,6 @@ export default {
       name: 'address',
       type: 'string',
       title: 'Address',
-    },
-    {
-      name: 'keywords',
-      type: 'array',
-      title: 'Keywords',
-      description: 'Add keywords that describes your portfolio.',
-      of: [{ type: 'string' }],
-      options: {
-        layout: 'tags',
-      },
     },
   ],
 };
