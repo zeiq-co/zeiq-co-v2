@@ -4,8 +4,8 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'hasRight',
-      title: 'Has Right',
+      name: 'columnReverse',
+      title: 'Column Reverse',
       type: 'boolean',
     },
     {
@@ -35,7 +35,7 @@ export default {
     },
     {
       name: 'hireOptionBlackImage',
-      title: 'Hire Option Black  Image',
+      title: 'Hire Option Black Image',
       type: 'image',
     },
     {
@@ -50,6 +50,26 @@ export default {
       options: {
         source: 'name',
       },
+    },
+    {
+      name: 'hireHeroBackgroundImage',
+      title: 'Hire Hero Background Image',
+      type: 'image',
+    },
+    {
+      name: 'hireHeroOption',
+      title: 'Hire Hero Option',
+      type: 'string',
+    },
+    {
+      name: 'hireHeroTitle',
+      title: 'Hire Hero Title',
+      type: 'string',
+    },
+    {
+      name: 'hireHeroSubtitle',
+      title: 'Hire Hero Subtitle',
+      type: 'string',
     },
   ],
 };
