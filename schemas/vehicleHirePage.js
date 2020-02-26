@@ -51,6 +51,7 @@ export default {
         source: 'name',
       },
     },
+
     {
       name: 'hireHeroBackgroundImage',
       title: 'Hire Hero Background Image',
@@ -70,6 +71,11 @@ export default {
       name: 'hireHeroSubtitle',
       title: 'Hire Hero Subtitle',
       type: 'string',
+    },
+    {
+      title: 'Options Includes ',
+      name: 'vehicleFeatures',
+      type: 'settingsVehicleFeature',
     },
   ],
 };

@@ -13,6 +13,8 @@ import vehicleHirePage from './vehicleHirePage';
 import siteSettings from './siteSettings';
 import settingsFeatures from './settingsFeatures';
 import settingsFeaturesItem from './settingsFeaturesItem';
+import settingsVehicleFeature from './settingsVehicleFeature';
+import settingsVehicleFeatureItem from './settingsVehicleFeatureItem';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +32,8 @@ export default createSchema({
     siteSettings,
     settingsFeatures,
     settingsFeaturesItem,
+    settingsVehicleFeature,
+    settingsVehicleFeatureItem,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

@@ -1,6 +1,6 @@
 export default {
-  title: 'Settings Features Item',
-  name: 'settingsFeaturesItem',
+  title: 'Settings Vehicle Feature Item',
+  name: 'settingsVehicleFeatureItem',
   type: 'object',
   fields: [
     {
