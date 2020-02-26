@@ -4,30 +4,14 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'hasRight',
-      title: 'Has Right',
+      name: 'sideImage',
+      title: 'Side Image',
       type: 'boolean',
     },
     {
-      name: 'title',
+      name: 'category',
       type: 'string',
-      title: 'Title',
-    },
-    {
-      name: 'description',
-      type: 'text',
-      title: 'Description',
-      description: 'Describe your Features.',
-    },
-    {
-      name: 'featuresBackgroundImage',
-      title: 'Features Background Image',
-      type: 'image',
-    },
-    {
-      name: 'featuresFrameImage',
-      title: 'Features Frame Image',
-      type: 'image',
+      title: 'Category',
     },
   ],
 };
