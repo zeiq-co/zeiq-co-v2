@@ -77,5 +77,30 @@ export default {
       name: 'vehicleFeatures',
       type: 'settingsVehicleFeature',
     },
+    {
+      name: 'hireFormTitle',
+      title: 'Hire Form Title',
+      type: 'string',
+    },
+    {
+      title: 'Hire Option Slider Features ',
+      name: 'hireOptionSliderFeatures',
+      type: 'settingsSlider',
+    },
+    {
+      title: 'Information ',
+      name: 'information',
+      type: 'settingsSlider',
+    },
+    {
+      name: 'hireOptionDiagram',
+      title: 'Hire Option Diagram',
+      type: 'image',
+    },
+    {
+      title: 'Home Features',
+      name: 'homeFeatures',
+      type: 'settingsFeatures',
+    },
   ],
 };
