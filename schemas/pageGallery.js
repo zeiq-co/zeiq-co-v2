@@ -9,8 +9,8 @@ export default {
       type: 'string',
     },
     {
-      title: 'Gallery',
-      name: 'gallery',
+      title: 'Gallery Items',
+      name: 'galleryItems',
       type: 'array',
       of: [
         {

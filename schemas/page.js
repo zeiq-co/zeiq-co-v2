@@ -39,8 +39,8 @@ export default {
       type: 'pageSimpleStage',
     },
     {
-      name: 'detailMainHeading',
-      title: 'Detail Main Heading',
+      name: 'detailsMainHeading',
+      title: 'Details Main Heading',
       type: 'string',
     },
     {
@@ -60,7 +60,6 @@ export default {
       name: 'gallery',
       type: 'pageGallery',
     },
-
     {
       name: 'slug',
       title: 'Slug',
