@@ -4,10 +4,63 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Title',
+      name: 'eventHeroTitle',
+      title: 'Event Hero Title',
       type: 'string',
     },
+    {
+      name: 'eventHeroBackgroundImage',
+      title: 'Event Hero Background image',
+      type: 'image',
+    },
+    {
+      name: 'eventHeroFrameImage',
+      title: 'Event Hero Frame image',
+      type: 'image',
+    },
+    {
+      name: 'pageHeading',
+      title: 'Page Heading',
+      type: 'string',
+    },
+    {
+      title: 'Three Simple Stages',
+      name: 'threeSimpleStages',
+      type: 'pageSimpleStage',
+    },
+    {
+      title: 'Home Features',
+      name: 'homeFeatures',
+      type: 'settingsFeatures',
+    },
+    {
+      title: 'Festival',
+      name: 'festival',
+      type: 'pageSimpleStage',
+    },
+    {
+      name: 'detailMainHeading',
+      title: 'Detail Main Heading',
+      type: 'string',
+    },
+    {
+      name: 'firstCardDescription',
+      type: 'text',
+      title: 'First Card Description',
+      description: 'Describe your Finer Details.',
+    },
+    {
+      name: 'secondCardDescription',
+      type: 'text',
+      title: 'Second Card Description',
+      description: 'Describe your Finer Details.',
+    },
+    {
+      title: 'Gallery',
+      name: 'gallery',
+      type: 'pageGallery',
+    },
+
     {
       name: 'slug',
       title: 'Slug',
@@ -15,22 +68,6 @@ export default {
       options: {
         source: 'title',
         maxLength: 96,
-      },
-    },
-    {
-      name: 'description',
-      title: 'Description',
-      type: 'markdown',
-      options: {
-        minRows: 20,
-      },
-    },
-    {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
       },
     },
   ],
