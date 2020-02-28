@@ -19,6 +19,14 @@ export default {
       type: 'string',
     },
     {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'hireOptionTitle',
+      },
+    },
+    {
       name: 'hireOptionSubtitle',
       title: 'Hire Option Subtitle',
       type: 'string',
@@ -43,15 +51,6 @@ export default {
       title: 'Hire Option  Colored  Image',
       type: 'image',
     },
-    {
-      title: 'Slug',
-      name: 'slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-      },
-    },
-
     {
       name: 'hireHeroBackgroundImage',
       title: 'Hire Hero Background Image',
