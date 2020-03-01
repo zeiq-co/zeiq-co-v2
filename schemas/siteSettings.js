@@ -82,6 +82,11 @@ export default {
       type: 'string',
     },
     {
+      title: 'For Blog',
+      name: 'information',
+      type: 'pageSimpleStage',
+    },
+    {
       name: 'homeAboutUs',
       type: 'text',
       title: 'Home About Us',

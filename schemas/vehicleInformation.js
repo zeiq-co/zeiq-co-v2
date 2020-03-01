@@ -1,13 +1,8 @@
 export default {
-  title: 'Page Simple Stage',
-  name: 'pageSimpleStage',
+  title: 'Vehicle Information',
+  name: 'vehicleInformation',
   type: 'object',
   fields: [
-    {
-      name: 'mainHeading',
-      title: 'Main Heading',
-      type: 'string',
-    },
     {
       title: 'Item',
       name: 'item',
@@ -15,7 +10,7 @@ export default {
       of: [
         {
           title: 'Item',
-          type: 'pageSimpleStageItem',
+          type: 'vehicleInformationItem',
         },
       ],
     },

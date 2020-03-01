@@ -23,6 +23,8 @@ import pageGallery from './pageGallery';
 import pageGalleryItem from './pageGalleryItem';
 import gallery from './gallery';
 import galleryImage from './galleryImage';
+import vehicleInformation from './vehicleInformation';
+import vehicleInformationItem from './vehicleInformationItem';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -50,6 +52,9 @@ export default createSchema({
     pageGalleryItem,
     gallery,
     galleryImage,
+    vehicleInformation,
+    vehicleInformationItem,
+
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

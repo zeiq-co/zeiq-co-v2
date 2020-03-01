@@ -90,7 +90,7 @@ export default {
     {
       title: 'Information ',
       name: 'information',
-      type: 'settingsSlider',
+      type: 'vehicleInformation',
     },
     {
       name: 'hireOptionDiagram',

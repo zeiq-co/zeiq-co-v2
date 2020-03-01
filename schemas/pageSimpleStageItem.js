@@ -4,6 +4,11 @@ export default {
   type: 'object',
   fields: [
     {
+      name: 'isSizeLarge',
+      title: 'Is Size Large',
+      type: 'boolean',
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Title',
