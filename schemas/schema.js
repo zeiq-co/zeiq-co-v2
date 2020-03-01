@@ -25,6 +25,8 @@ import gallery from './gallery';
 import galleryImage from './galleryImage';
 import vehicleInformation from './vehicleInformation';
 import vehicleInformationItem from './vehicleInformationItem';
+import vehicleFeatureItem from './vehicleFeatureItem';
+import vehicleFeature from './vehicleFeature';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -54,6 +56,8 @@ export default createSchema({
     galleryImage,
     vehicleInformation,
     vehicleInformationItem,
+    vehicleFeature,
+    vehicleFeatureItem,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

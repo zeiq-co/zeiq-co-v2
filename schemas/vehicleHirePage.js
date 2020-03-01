@@ -98,9 +98,9 @@ export default {
       type: 'image',
     },
     {
-      title: 'Home Features',
-      name: 'homeFeatures',
-      type: 'settingsFeatures',
+      title: 'Vehicle Features',
+      name: 'vehicleFeature',
+      type: 'vehicleFeature',
     },
   ],
 };
