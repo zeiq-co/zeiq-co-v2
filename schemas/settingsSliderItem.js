@@ -4,8 +4,8 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'sectionBackgroundColor',
-      title: 'Section Background color',
+      name: 'hasTextBlack',
+      title: 'Has Text Black',
       type: 'boolean',
     },
     {

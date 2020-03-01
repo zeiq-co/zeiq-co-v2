@@ -79,11 +79,12 @@ export default {
     {
       name: 'hireFormTitle',
       title: 'Hire Form Title',
-      type: 'string',
+      type: 'text',
+      description: 'Describe Deckerdence .',
     },
     {
-      title: 'Hire Option Slider Features ',
-      name: 'hireOptionSliderFeatures',
+      title: 'Slider Features ',
+      name: 'sliderFeatures',
       type: 'settingsSlider',
     },
     {
