@@ -19,5 +19,10 @@ export default {
         },
       ],
     },
+    {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+    },
   ],
 };
