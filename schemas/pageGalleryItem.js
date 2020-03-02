@@ -13,10 +13,5 @@ export default {
       title: 'Colored Image',
       type: 'image',
     },
-    {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    },
   ],
 };

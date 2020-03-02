@@ -1,37 +1,42 @@
 export default {
-  name: 'page',
-  title: 'Page',
+  name: 'mainPage',
+  title: 'Main Page',
   type: 'document',
   fields: [
     {
-      name: 'eventHeroTitle',
-      title: 'Event Hero Title',
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+    },
+    {
+      name: 'heroTitle',
+      title: 'Hero Title',
       type: 'string',
     },
     {
-      name: 'eventHeroBackgroundImage',
-      title: 'Event Hero Background image',
+      name: 'heroBackgroundImage',
+      title: 'Hero Background image',
       type: 'image',
     },
     {
-      name: 'eventHeroFrameImage',
-      title: 'Event Hero Frame image',
-      type: 'image',
-    },
-    {
-      name: 'pageHeading',
-      title: 'Page Heading',
+      name: 'pageTitle',
+      title: 'Page Title',
       type: 'string',
     },
     {
-      title: 'Three Simple Stages',
-      name: 'threeSimpleStages',
+      name: 'pageSubtitle',
+      title: 'Page Subtitle',
+      type: 'string',
+    },
+    {
+      title: 'Simple Stages',
+      name: 'simpleStages',
       type: 'pageSimpleStage',
     },
     {
-      title: 'Home Features',
-      name: 'homeFeatures',
-      type: 'settingsFeatures',
+      title: 'Features',
+      name: 'feature',
+      type: 'vehicleFeature',
     },
     {
       title: 'Festival',
@@ -59,15 +64,6 @@ export default {
       title: 'Gallery',
       name: 'gallery',
       type: 'pageGallery',
-    },
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
     },
   ],
 };
