@@ -10,6 +10,21 @@ export default {
   ],
   fields: [
     {
+      name: 'homeSeoTitle',
+      title: 'Home Seo Title',
+      type: 'string',
+    },
+    {
+      title: 'Home Seo Keywords',
+      name: 'homeSeoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Home Seo Meta Description',
+      name: 'homeSeoMetaDescription',
+      type: 'text',
+    },
+    {
       name: 'homeHeroBackgroundImage',
       title: 'Home Hero Background Image',
       type: 'image',
@@ -33,6 +48,21 @@ export default {
       title: 'Home Features',
       name: 'homeFeatures',
       type: 'settingsFeatures',
+    },
+    {
+      name: 'hireOptionSeoTitle',
+      title: 'Hire Option Seo Title',
+      type: 'string',
+    },
+    {
+      title: 'Hire Option Seo Keywords',
+      name: 'hireOptionSeoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Hire Option Seo Meta Description',
+      name: 'hireOptionSeoMetaDescription',
+      type: 'text',
     },
     {
       name: 'hireOptionSmallText',
@@ -62,34 +92,9 @@ export default {
       type: 'image',
     },
     {
-      name: 'homeHeroTitle',
-      type: 'text',
-      title: 'Home Hero Title',
-    },
-    {
-      name: 'homeHeroSubTitle',
-      type: 'text',
-      title: 'Home Hero SubTitle',
-    },
-    {
-      name: 'homeHeroImage',
-      title: 'Home Hero Image',
-      type: 'image',
-    },
-    {
-      title: 'Home Hero Link',
-      name: 'homeHeroLink',
-      type: 'string',
-    },
-    {
       title: 'For Blog',
       name: 'information',
       type: 'pageSimpleStage',
-    },
-    {
-      name: 'homeAboutUs',
-      type: 'text',
-      title: 'Home About Us',
     },
   ],
 };
