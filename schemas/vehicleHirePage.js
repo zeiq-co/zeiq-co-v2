@@ -4,6 +4,21 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'seoTitle',
+      title: 'Seo Title',
+      type: 'string',
+    },
+    {
+      title: 'Seo Keywords',
+      name: 'seoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Seo Meta Description',
+      name: 'seoMetaDescription',
+      type: 'text',
+    },
+    {
       name: 'columnReverse',
       title: 'Column Reverse',
       type: 'boolean',

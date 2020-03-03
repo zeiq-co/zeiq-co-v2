@@ -91,31 +91,5 @@ export default {
       type: 'text',
       title: 'Home About Us',
     },
-    {
-      name: 'facebook',
-      type: 'string',
-      title: 'Facebook URL',
-    },
-    {
-      name: 'twitter',
-      type: 'string',
-      title: 'Twitter URL',
-    },
-    {
-      name: 'instagram',
-      type: 'string',
-      title: 'Instagram URL',
-    },
-    {
-      name: 'pinterest',
-      type: 'string',
-      title: 'Pinterest URL',
-    },
-
-    {
-      name: 'address',
-      type: 'string',
-      title: 'Address',
-    },
   ],
 };
