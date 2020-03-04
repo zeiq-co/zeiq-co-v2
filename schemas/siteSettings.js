@@ -92,6 +92,56 @@ export default {
       type: 'image',
     },
     {
+      name: 'towBarSeoTitle',
+      title: 'Tow Bar Seo Title',
+      type: 'string',
+    },
+    {
+      title: 'Tow Bar Seo Keywords',
+      name: 'towBarSeoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Tow Bar Seo Meta Description',
+      name: 'towBarSeoMetaDescription',
+      type: 'text',
+    },
+    {
+      name: 'towBarMainTitle',
+      title: 'Tow Bar Main Title',
+      type: 'string',
+    },
+    {
+      name: 'towBarMainSubtitle',
+      title: 'Tow Bar Main Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'towBarFrameTitle',
+      title: 'Tow Bar Frame Title',
+      type: 'string',
+    },
+    {
+      name: 'towBarFrameSubtitle',
+      title: 'Tow Bar Frame Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'towBarFrameDescription',
+      title: 'Tow Bar Frame Description',
+      type: 'text',
+    },
+    {
+      name: 'towBarBackgroundImage',
+      title: 'Tow Bar Background Image',
+      type: 'image',
+    },
+    {
+      title: 'Tow Bar Gallery',
+      name: 'towBarGallery',
+      type: 'pageGallery',
+    },
+    {
       title: 'For Blog',
       name: 'information',
       type: 'pageSimpleStage',

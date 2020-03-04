@@ -34,11 +34,6 @@ export default {
       type: 'image',
     },
     {
-      name: 'boldTitle',
-      title: 'Title Has Text Bold',
-      type: 'string',
-    },
-    {
       name: 'normalSubtitle',
       title: 'Subtitle Has Text Normal',
       type: 'string',
