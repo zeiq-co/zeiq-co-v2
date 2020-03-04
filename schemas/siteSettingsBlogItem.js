@@ -9,6 +9,11 @@ export default {
       type: 'boolean',
     },
     {
+      name: 'hasTextBlack',
+      title: 'Has Text Black',
+      type: 'boolean',
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
