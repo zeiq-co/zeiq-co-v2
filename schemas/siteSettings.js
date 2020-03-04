@@ -142,9 +142,29 @@ export default {
       type: 'pageGallery',
     },
     {
-      title: 'For Blog',
-      name: 'information',
-      type: 'pageSimpleStage',
+      title: 'Blog Seo Title',
+      name: 'blogSeoTitle',
+      type: 'string',
+    },
+    {
+      title: 'Blog Seo Keywords',
+      name: 'blogSeoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Blog Seo Meta Description',
+      name: 'blogSeoMetaDescription',
+      type: 'text',
+    },
+    {
+      title: 'Blog Main Title',
+      name: 'blogBarMainTitle',
+      type: 'string',
+    },
+    {
+      title: 'Blogs',
+      name: 'blogs',
+      type: 'siteSettingsBlog',
     },
   ],
 };
