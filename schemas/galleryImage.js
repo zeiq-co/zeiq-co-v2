@@ -9,8 +9,8 @@ export default {
       type: 'string',
     },
     {
-      name: 'backgroundImage',
-      title: 'Background Image',
+      name: 'image',
+      title: 'Image',
       type: 'image',
     },
   ],
