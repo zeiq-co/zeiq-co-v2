@@ -158,13 +158,33 @@ export default {
     },
     {
       title: 'Blog Main Title',
-      name: 'blogBarMainTitle',
+      name: 'blogMainTitle',
       type: 'string',
     },
     {
       title: 'Blogs',
       name: 'blogs',
       type: 'siteSettingsBlog',
+    },
+    {
+      title: 'Contact Seo Title',
+      name: 'contactSeoTitle',
+      type: 'string',
+    },
+    {
+      title: 'Contact Seo Keywords',
+      name: 'contactSeoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Contact Seo Meta Description',
+      name: 'contactSeoMetaDescription',
+      type: 'text',
+    },
+    {
+      title: 'Contact Main Title',
+      name: 'contactMainTitle',
+      type: 'string',
     },
   ],
 };
