@@ -186,5 +186,10 @@ export default {
       name: 'contactMainTitle',
       type: 'string',
     },
+    {
+      title: 'Contact Information',
+      name: 'contactInformation',
+      type: 'pageSimpleStage',
+    },
   ],
 };
