@@ -20,9 +20,14 @@ export default {
       description: 'Describe your Slider Features.',
     },
     {
-      name: 'subtitle',
-      title: 'Subtitle',
+      name: 'name',
+      title: 'Name',
       type: 'string',
+    },
+    {
+      title: 'Date',
+      name: 'sliderDate',
+      type: 'date',
     },
   ],
 };

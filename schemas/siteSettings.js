@@ -211,7 +211,6 @@ export default {
       name: 'firstContactUsItemSubtitle',
       type: 'string',
     },
-
     {
       title: 'Second Contact Us Item Title',
       name: 'secondContactUsItemTitle',
