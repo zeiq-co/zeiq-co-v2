@@ -117,5 +117,10 @@ export default {
       name: 'vehicleFeature',
       type: 'vehicleFeature',
     },
+    {
+      title: 'Footer Title',
+      name: 'footerTitle',
+      type: 'string',
+    },
   ],
 };
