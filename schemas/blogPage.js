@@ -41,5 +41,45 @@ export default {
       title: 'Image',
       type: 'image',
     },
+    {
+      name: 'blogArticleTitle',
+      title: 'Blog Article Title',
+      type: 'date',
+    },
+    {
+      name: 'blogArticleMiddleText',
+      title: 'Blog Article MiddleText',
+      type: 'string',
+    },
+    {
+      name: 'blogArticleSubtitle',
+      title: 'Blog Article Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'blogArticleHomeHeroImage',
+      title: 'Blog Article Home Hero Image',
+      type: 'image',
+    },
+    {
+      name: 'blogArticleCategoriesHeading',
+      title: 'Blog Article Categories Heading',
+      type: 'string',
+    },
+    {
+      title: 'Blog Article Categories',
+      name: 'blogArticleCategories',
+      type: 'array',
+      of: [{ type: 'string' }],
+    },
+    {
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'string',
+      },
+    },
   ],
 };
