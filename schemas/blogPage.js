@@ -73,13 +73,15 @@ export default {
       of: [{ type: 'string' }],
     },
     {
-      title: 'Tags',
-      name: 'tags',
+      name: 'blogArticleSliderHeading',
+      title: 'Blog Article Slider Heading',
+      type: 'string',
+    },
+    {
+      title: 'Blog Article Slider Items',
+      name: 'blogArticleSliderItems',
       type: 'array',
-      of: [{ type: 'string' }],
-      options: {
-        layout: 'string',
-      },
+      of: [{ type: 'image' }],
     },
   ],
 };
