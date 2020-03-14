@@ -162,11 +162,6 @@ export default {
       type: 'string',
     },
     {
-      title: 'Blogs',
-      name: 'blogs',
-      type: 'siteSettingsBlog',
-    },
-    {
       title: 'Contact Us Seo Title',
       name: 'contactUsSeoTitle',
       type: 'string',

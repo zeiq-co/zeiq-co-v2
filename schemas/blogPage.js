@@ -1,8 +1,13 @@
 export default {
-  title: 'Site Settings Blog Item',
-  name: 'siteSettingsBlogItem',
-  type: 'object',
+  name: 'blogPage',
+  title: 'Blog Page',
+  type: 'document',
   fields: [
+    {
+      title: 'Order',
+      name: 'order',
+      type: 'number',
+    },
     {
       name: 'isSizeHalf',
       title: 'Is Size Half',
@@ -19,18 +24,17 @@ export default {
       type: 'string',
     },
     {
-      name: 'subtitle',
-      title: 'Subtitle',
-      type: 'string',
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+      },
     },
     {
       title: 'Release date',
       name: 'releaseDate',
       type: 'date',
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-        calendarTodayLabel: 'Today',
-      },
     },
     {
       name: 'image',
