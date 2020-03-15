@@ -42,6 +42,21 @@ export default {
       type: 'image',
     },
     {
+      name: 'blogArticleSeoTitle',
+      title: 'Blog Article Seo Title',
+      type: 'string',
+    },
+    {
+      title: 'Blog Article Seo Keywords',
+      name: 'blogArticleSeoKeywords',
+      type: 'string',
+    },
+    {
+      title: 'Blog Article Seo Meta Description',
+      name: 'blogArticleSeoMetaDescription',
+      type: 'text',
+    },
+    {
       name: 'blogArticleTitle',
       title: 'Blog Article Title',
       type: 'date',
