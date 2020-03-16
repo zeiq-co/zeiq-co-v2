@@ -19,6 +19,11 @@ export default {
       type: 'text',
     },
     {
+      title: 'Order',
+      name: 'order',
+      type: 'number',
+    },
+    {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
@@ -37,6 +42,11 @@ export default {
       title: 'Gallery Images',
       name: 'galleryImages',
       type: 'gallery',
+    },
+    {
+      title: 'Footer Title',
+      name: 'footerTitle',
+      type: 'string',
     },
   ],
 };
