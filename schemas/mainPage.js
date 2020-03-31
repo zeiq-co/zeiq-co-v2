@@ -160,7 +160,6 @@ export default {
       title: 'Third Section Frame Image',
       type: 'image',
     },
-
     {
       title: 'Gallery',
       name: 'gallery',
