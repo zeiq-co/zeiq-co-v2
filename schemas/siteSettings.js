@@ -107,6 +107,11 @@ export default {
       type: 'text',
     },
     {
+      title: 'Tow Bar Slug',
+      name: 'towBarSlug',
+      type: 'slug',
+    },
+    {
       name: 'towBarMainTitle',
       title: 'Tow Bar Main Title',
       type: 'string',
