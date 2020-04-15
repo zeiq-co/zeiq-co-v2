@@ -144,7 +144,8 @@ export default {
     {
       title: 'Tow Bar Gallery',
       name: 'towBarGallery',
-      type: 'pageGallery',
+      type: 'array',
+      of: [{ type: 'mainPageGallery' }],
     },
     {
       title: 'Blog Seo Title',

@@ -18,8 +18,7 @@ import settingsSlider from './settingsSlider';
 import settingsSliderItem from './settingsSliderItem';
 import pageSimpleStage from './pageSimpleStage';
 import pageSimpleStageItem from './pageSimpleStageItem';
-import pageGallery from './pageGallery';
-import pageGalleryItem from './pageGalleryItem';
+import mainPageGallery from './mainPageGallery';
 import gallery from './gallery';
 import galleryImage from './galleryImage';
 import vehicleInformation from './vehicleInformation';
@@ -50,8 +49,7 @@ export default createSchema({
     settingsSliderItem,
     pageSimpleStage,
     pageSimpleStageItem,
-    pageGallery,
-    pageGalleryItem,
+    mainPageGallery,
     gallery,
     galleryImage,
     vehicleInformation,

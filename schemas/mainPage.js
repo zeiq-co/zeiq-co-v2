@@ -160,10 +160,16 @@ export default {
       title: 'Third Section Frame Image',
       type: 'image',
     },
+    // {
+    //   title: 'Gallery',
+    //   name: 'gallery',
+    //   type: 'mainPageGallery',
+    // },
     {
       title: 'Gallery',
       name: 'gallery',
-      type: 'pageGallery',
+      type: 'array',
+      of: [{ type: 'mainPageGallery' }],
     },
   ],
 };
