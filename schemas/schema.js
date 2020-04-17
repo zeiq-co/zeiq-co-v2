@@ -6,6 +6,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schemas
 import blockContent from './blockContent';
+import generalPage from './generalPage';
+import aboutFeature from './aboutFeature';
 import galleryPage from './galleryPage';
 import mainPage from './mainPage';
 import vehicleHirePage from './vehicleHirePage';
@@ -36,6 +38,8 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    generalPage,
+    aboutFeature,
     mainPage,
     galleryPage,
     vehicleHirePage,
