@@ -148,6 +148,11 @@ export default {
       of: [{ type: 'mainPageGallery' }],
     },
     {
+      title: 'Tow Bar Page',
+      name: 'towBarPage',
+      type: 'towBar',
+    },
+    {
       title: 'Blog Seo Title',
       name: 'blogSeoTitle',
       type: 'string',
