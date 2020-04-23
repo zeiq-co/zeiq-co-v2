@@ -9,6 +9,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'alternative',
+      title: 'Alternative',
+      type: 'string',
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',

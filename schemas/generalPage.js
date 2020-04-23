@@ -18,7 +18,6 @@ export default {
       title: 'Seo Meta Description',
       type: 'text',
     },
-
     {
       title: 'Slug',
       name: 'slug',
