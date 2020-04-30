@@ -39,80 +39,6 @@ export default {
       type: 'string',
     },
     {
-      title: 'Simple Stages',
-      name: 'simpleStages',
-      type: 'pageSimpleStage',
-    },
-
-    {
-      name: 'firstSectionHasFrameRight',
-      title: 'First Section Has Frame Right',
-      type: 'boolean',
-    },
-    {
-      name: 'firstSectionHasTextWhite',
-      title: 'First Section Has Text White',
-      type: 'boolean',
-    },
-    {
-      name: 'firstSectionTitle',
-      type: 'string',
-      title: 'First Section Title',
-    },
-    {
-      name: 'firstSectionBackgroundImage',
-      title: 'First Section  Background Image',
-      type: 'image',
-    },
-    {
-      name: 'firstSectionBgImageAlt',
-      title: 'First Section Background Image Alt',
-      type: 'string',
-    },
-    {
-      name: 'firstSectionFrameImage',
-      title: 'First Section Frame Image',
-      type: 'image',
-    },
-
-    {
-      title: 'Festival',
-      name: 'festival',
-      type: 'pageSimpleStage',
-    },
-
-    {
-      name: 'secondSectionHasFrameRight',
-      title: 'Second Section Has Frame Right',
-      type: 'boolean',
-    },
-    {
-      name: 'secondSectionHasTextWhite',
-      title: 'Second Section Has Text White',
-      type: 'boolean',
-    },
-    {
-      name: 'secondSectionTitle',
-      type: 'string',
-      title: 'Second Section Title',
-    },
-    {
-      name: 'secondSectionBackgroundImage',
-      title: 'Second Section  Background Image',
-      type: 'image',
-    },
-    {
-      name: 'secondSectionBgImageAlt',
-      title: 'Second Section Background Image Alt',
-      type: 'string',
-    },
-    {
-      name: 'secondSectionFrameImage',
-      title: 'Second Section Frame Image',
-      type: 'image',
-    },
-
-    {
       name: 'detailsMainHeading',
       title: 'Details Main Heading',
       type: 'string',
@@ -129,36 +55,10 @@ export default {
       title: 'Second Card Description',
       description: 'Describe your Finer Details.',
     },
-
     {
-      name: 'thirdSectionHasFrameRight',
-      title: 'Third Section Has Frame Right',
-      type: 'boolean',
-    },
-    {
-      name: 'thirdSectionHasTextWhite',
-      title: 'Third Section Has Text White',
-      type: 'boolean',
-    },
-    {
-      name: 'thirdSectionTitle',
-      type: 'string',
-      title: 'Third Section Title',
-    },
-    {
-      name: 'thirdSectionBackgroundImage',
-      title: 'Third Section  Background Image',
-      type: 'image',
-    },
-    {
-      name: 'thirdSectionBgImageAlt',
-      title: 'Third Section Background Image Alt',
-      type: 'string',
-    },
-    {
-      name: 'thirdSectionFrameImage',
-      title: 'Third Section Frame Image',
-      type: 'image',
+      title: 'features',
+      name: 'Features',
+      type: 'vehicleFeature',
     },
     {
       title: 'Gallery',
@@ -167,4 +67,11 @@ export default {
       of: [{ type: 'mainPageGallery' }],
     },
   ],
+  preview: {
+    select: {
+      title: 'heroTitle',
+      subtitle: 'slug.current',
+      media: 'heroBackgroundImage',
+    },
+  },
 };

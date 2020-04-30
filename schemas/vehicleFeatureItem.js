@@ -24,11 +24,6 @@ export default {
       type: 'image',
     },
     {
-      name: 'bgImageAlt',
-      title: 'Background Image Alt',
-      type: 'string',
-    },
-    {
       name: 'featuresFrameImage',
       title: 'Features Frame Image',
       type: 'image',

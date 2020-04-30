@@ -50,6 +50,11 @@ export default {
       type: 'settingsFeatures',
     },
     {
+      title: 'Simple Stages',
+      name: 'simpleStages',
+      type: 'pageSimpleStage',
+    },
+    {
       name: 'hireOptionSeoTitle',
       title: 'Hire Option Seo Title',
       type: 'string',
@@ -84,11 +89,6 @@ export default {
     {
       name: 'hireOptionBackgroundImage',
       title: 'Hire Option Background Image',
-      type: 'image',
-    },
-    {
-      name: 'hireOptionFrameImage',
-      title: 'Hire Option Frame Image',
       type: 'image',
     },
     {
@@ -151,6 +151,16 @@ export default {
       title: 'Tow Bar Page',
       name: 'towBarPage',
       type: 'towBar',
+    },
+    {
+      title: 'About Page',
+      name: 'aboutPage',
+      type: 'about',
+    },
+    {
+      title: 'Testimonials Page',
+      name: 'testimonialsPage',
+      type: 'about',
     },
     {
       title: 'Blog Seo Title',

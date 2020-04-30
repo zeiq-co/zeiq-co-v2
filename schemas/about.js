@@ -1,7 +1,7 @@
 export default {
-  name: 'generalPage',
-  title: 'General Page',
-  type: 'document',
+  title: 'About',
+  name: 'about',
+  type: 'object',
   fields: [
     {
       name: 'seoTitle',
@@ -16,7 +16,7 @@ export default {
     {
       name: 'seoMetaDescription',
       title: 'Seo Meta Description',
-      type: 'text',
+      type: 'string',
     },
     {
       title: 'Slug',
@@ -39,11 +39,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'frame',
-      title: 'Frame',
-      type: 'image',
-    },
-    {
       name: 'backgroundImage',
       title: 'Background Image',
       type: 'image',
@@ -52,14 +47,12 @@ export default {
       title: 'Information',
       name: 'information',
       type: 'array',
-      of: [{ type: 'aboutFeature' }],
+      of: [
+        {
+          title: 'Section',
+          type: 'aboutFeature',
+        },
+      ],
     },
   ],
-  preview: {
-    select: {
-      title: 'seoTitle',
-      subtitle: 'slug.current',
-      media: 'backgroundImage',
-    },
-  },
 };

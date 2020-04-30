@@ -92,26 +92,36 @@ export default {
       name: 'hireFormTitle',
       title: 'Hire Form Title',
       type: 'text',
-      description: 'Describe Deckerdence .',
+      description: 'Describe Deckerdence',
     },
-    {
-      title: 'Slider Features ',
-      name: 'sliderFeatures',
-      type: 'settingsSlider',
-    },
+    // {
+    //   title: 'Slider Features ',
+    //   name: 'sliderFeatures',
+    //   type: 'settingsSlider',
+    // },
     {
       title: 'Information ',
       name: 'information',
       type: 'vehicleInformation',
     },
     {
-      name: 'hireOptionDiagram',
-      title: 'Hire Option Diagram',
-      type: 'image',
+      title: 'First Vehicle Feature',
+      name: 'firstVehicleFeature',
+      type: 'vehicleFeature',
     },
     {
-      title: 'Vehicle Features',
-      name: 'vehicleFeature',
+      title: 'Festival',
+      name: 'festival',
+      type: 'pageSimpleStage',
+    },
+    {
+      title: 'Second Vehicle Feature',
+      name: 'secondVehicleFeature',
+      type: 'vehicleFeature',
+    },
+    {
+      title: 'Third Vehicle Feature',
+      name: 'thirdVehicleFeature',
       type: 'vehicleFeature',
     },
     {
@@ -120,4 +130,11 @@ export default {
       type: 'string',
     },
   ],
+  preview: {
+    select: {
+      title: 'hireOptionTitle',
+      subtitle: 'slug.current',
+      media: 'hireOptionBlackImage',
+    },
+  },
 };

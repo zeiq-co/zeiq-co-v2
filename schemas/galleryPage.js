@@ -49,4 +49,10 @@ export default {
       type: 'string',
     },
   ],
+  preview: {
+    select: {
+      title: 'galleryTitle',
+      subtitle: 'slug.current',
+    },
+  },
 };

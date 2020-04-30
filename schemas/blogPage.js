@@ -99,4 +99,11 @@ export default {
       of: [{ type: 'image' }],
     },
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'slug.current',
+      media: 'image',
+    },
+  },
 };
