@@ -39,6 +39,23 @@ export default {
       type: 'string',
     },
     {
+      title: 'Information',
+      name: 'information',
+      type: 'array',
+      of: [
+        {
+          title: 'Section',
+          type: 'aboutFeature',
+        },
+      ],
+    },
+    {
+      title: 'Arcade',
+      name: 'arcade',
+      type: 'array',
+      of: [{ type: 'mainPageArcade' }],
+    },
+    {
       name: 'detailsMainHeading',
       title: 'Details Main Heading',
       type: 'string',
