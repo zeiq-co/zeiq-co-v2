@@ -183,6 +183,17 @@ export default {
       type: 'string',
     },
     {
+      title: 'Blog Catagories Heading ',
+      name: 'blogCatagoriesHeading',
+      type: 'string',
+    },
+    {
+      title: 'Blog Catagories',
+      name: 'Catagories',
+      type: 'array',
+      of: [{ type: 'string' }],
+    },
+    {
       title: 'Contact Us Seo Title',
       name: 'contactUsSeoTitle',
       type: 'string',
