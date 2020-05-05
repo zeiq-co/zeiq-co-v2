@@ -24,6 +24,24 @@ export default {
       type: 'string',
     },
     {
+      title: 'Category Set',
+      name: 'categorySet',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Deckerdence Events', value: 'DECKERDENCE EVENTS' },
+          {
+            title: 'THE Deckerdence Journal',
+            value: 'THE DECKERDENCE JOURNAL',
+          },
+          { title: 'Wedding Advice & Tips', value: 'WEDDING ADVICE & TIPS' },
+          { title: 'Wedding Fairs', value: 'WEDDINGS FAIRS' },
+          { title: 'Wedding Venue', value: 'WEDDINGS VENUE' },
+        ],
+      },
+    },
+    {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
@@ -57,24 +75,10 @@ export default {
       type: 'text',
     },
     {
-      name: 'blogArticleTitle',
-      title: 'Blog Article Title',
-      type: 'date',
-    },
-    {
-      name: 'blogArticleMiddleText',
-      title: 'Blog Article MiddleText',
-      type: 'string',
-    },
-    {
-      name: 'blogArticleSubtitle',
-      title: 'Blog Article Subtitle',
-      type: 'string',
-    },
-    {
-      name: 'blogArticleHomeHeroImage',
-      title: 'Blog Article Home Hero Image',
-      type: 'image',
+      title: 'Content',
+      name: 'content',
+      type: 'array',
+      of: [{ type: 'blogPageContent' }],
     },
     {
       name: 'blogArticleCategoriesHeading',
