@@ -41,6 +41,7 @@ export default {
         ],
       },
     },
+
     {
       title: 'Slug',
       name: 'slug',
