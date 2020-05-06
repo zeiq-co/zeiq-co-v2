@@ -30,14 +30,14 @@ export default {
       of: [{ type: 'string' }],
       options: {
         list: [
-          { title: 'Deckerdence Events', value: 'DECKERDENCE EVENTS' },
+          { title: 'Latest Journal', value: 'LATEST JOURNAL' },
           {
-            title: 'THE Deckerdence Journal',
+            title: 'The Deckerdence Journal',
             value: 'THE DECKERDENCE JOURNAL',
           },
-          { title: 'Wedding Advice & Tips', value: 'WEDDING ADVICE & TIPS' },
-          { title: 'Wedding Fairs', value: 'WEDDINGS FAIRS' },
-          { title: 'Wedding Venue', value: 'WEDDINGS VENUE' },
+          { title: 'All Things Weddings', value: 'ALL THINGS WEDDINGS' },
+          { title: 'Event Planning', value: 'EVENT PLANNING' },
+          { title: 'Supplier Journal', value: 'SUPPLIER JOURNAL' },
         ],
       },
     },
