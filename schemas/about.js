@@ -29,16 +29,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'middleText',
-      title: 'Middle Text ',
-      type: 'string',
-    },
-    {
-      name: 'subtitle',
-      title: 'Subtitle',
-      type: 'string',
-    },
-    {
       name: 'backgroundImage',
       title: 'Background Image',
       type: 'image',
