@@ -28,11 +28,11 @@ import vehicleInformationItem from './vehicleInformationItem';
 import vehicleFeatureItem from './vehicleFeatureItem';
 import vehicleFeature from './vehicleFeature';
 import blogPage from './blogPage';
-import towBar from './towBar';
-import towBarContent from './towBarContent';
 import mainPageArcade from './mainPageArcade';
 import mainPageFinerDetail from './mainPageFinerDetail';
 import blogPageContent from './blogPageContent';
+import siteSettingsExtra from './siteSettingsExtra';
+import siteSettingsExtraItem from './siteSettingsExtraItem';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -54,6 +54,8 @@ export default createSchema({
     settingsFeaturesItem,
     settingsVehicleFeature,
     settingsVehicleFeatureItem,
+    siteSettingsExtra,
+    siteSettingsExtraItem,
     settingsSlider,
     settingsSliderItem,
     pageSimpleStage,
@@ -65,8 +67,6 @@ export default createSchema({
     vehicleInformationItem,
     vehicleFeature,
     vehicleFeatureItem,
-    towBar,
-    towBarContent,
     mainPageArcade,
     mainPageFinerDetail,
     blogPageContent,
