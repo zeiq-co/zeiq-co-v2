@@ -31,6 +31,7 @@ import blogPage from './blogPage';
 import towBar from './towBar';
 import towBarContent from './towBarContent';
 import mainPageArcade from './mainPageArcade';
+import mainPageFinerDetail from './mainPageFinerDetail';
 import blogPageContent from './blogPageContent';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -67,6 +68,7 @@ export default createSchema({
     towBar,
     towBarContent,
     mainPageArcade,
+    mainPageFinerDetail,
     blogPageContent,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

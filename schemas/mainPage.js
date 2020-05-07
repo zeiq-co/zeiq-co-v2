@@ -61,16 +61,10 @@ export default {
       type: 'string',
     },
     {
-      name: 'firstCardDescription',
-      type: 'text',
-      title: 'First Card Description',
-      description: 'Describe your Finer Details.',
-    },
-    {
-      name: 'secondCardDescription',
-      type: 'text',
-      title: 'Second Card Description',
-      description: 'Describe your Finer Details.',
+      title: 'Finer Details',
+      name: 'details',
+      type: 'array',
+      of: [{ type: 'mainPageFinerDetail' }],
     },
     {
       title: 'features',

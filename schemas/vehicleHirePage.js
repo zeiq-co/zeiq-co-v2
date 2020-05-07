@@ -94,11 +94,6 @@ export default {
       type: 'text',
       description: 'Describe Deckerdence',
     },
-    // {
-    //   title: 'Slider Features ',
-    //   name: 'sliderFeatures',
-    //   type: 'settingsSlider',
-    // },
     {
       title: 'Information ',
       name: 'information',
