@@ -127,84 +127,9 @@ export default {
       type: 'string',
     },
     {
-      title: 'Contact Us Seo Title',
-      name: 'contactUsSeoTitle',
-      type: 'string',
-    },
-    {
-      title: 'Contact Us Seo Keywords',
-      name: 'contactUsSeoKeywords',
-      type: 'string',
-    },
-    {
-      title: 'Contact Us Seo Meta Description',
-      name: 'contactUsSeoMetaDescription',
-      type: 'text',
-    },
-    {
-      title: 'Contact Us Main Heading',
-      name: 'contactUsMainHeading',
-      type: 'string',
-    },
-    {
-      title: 'Contact Us Title',
-      name: 'contactUsTitle',
-      type: 'string',
-    },
-    {
-      title: 'Contact Us Subtitle',
-      name: 'contactUsSubtitle',
-      type: 'string',
-    },
-    {
-      title: 'First Contact Us Item Title',
-      name: 'firstContactUsItemTitle',
-      type: 'string',
-    },
-    {
-      title: 'First Contact Us Item Icon',
-      name: 'firstContactUsItemIcon',
-      type: 'image',
-    },
-    {
-      title: 'First Contact Us Item Subtitle',
-      name: 'firstContactUsItemSubtitle',
-      type: 'string',
-    },
-    {
-      title: 'Second Contact Us Item Title',
-      name: 'secondContactUsItemTitle',
-      type: 'string',
-    },
-    {
-      title: 'Second Contact Us Item Icon',
-      name: 'secondContactUsItemIcon',
-      type: 'image',
-    },
-    {
-      title: 'Second Contact Us Item Subtitle',
-      name: 'secondContactUsItemSubtitle',
-      type: 'string',
-    },
-    {
-      title: 'Third Contact Us Item Title',
-      name: 'thirdContactUsItemTitle',
-      type: 'string',
-    },
-    {
-      title: 'Third Contact Us Item Icon',
-      name: 'thirdContactUsItemIcon',
-      type: 'image',
-    },
-    {
-      title: 'Third Contact Us Item Subtitle',
-      name: 'thirdContactUsItemSubtitle',
-      type: 'string',
-    },
-    {
-      title: 'Contact Us Slider ',
-      name: 'contactUsSlider',
-      type: 'settingsSlider',
+      title: 'Contact Us',
+      name: 'contactUs',
+      type: 'settingsContactUs',
     },
   ],
 };

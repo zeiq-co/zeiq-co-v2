@@ -16,8 +16,8 @@ import settingsFeatures from './settingsFeatures';
 import settingsFeaturesItem from './settingsFeaturesItem';
 import settingsVehicleFeature from './settingsVehicleFeature';
 import settingsVehicleFeatureItem from './settingsVehicleFeatureItem';
-import settingsSlider from './settingsSlider';
-import settingsSliderItem from './settingsSliderItem';
+import settingsContactUs from './settingsContactUs';
+import settingsContactUsItem from './settingsContactUsItem';
 import pageSimpleStage from './pageSimpleStage';
 import pageSimpleStageItem from './pageSimpleStageItem';
 import mainPageGallery from './mainPageGallery';
@@ -56,8 +56,8 @@ export default createSchema({
     settingsVehicleFeatureItem,
     siteSettingsExtra,
     siteSettingsExtraItem,
-    settingsSlider,
-    settingsSliderItem,
+    settingsContactUs,
+    settingsContactUsItem,
     pageSimpleStage,
     pageSimpleStageItem,
     mainPageGallery,

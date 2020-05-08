@@ -4,6 +4,11 @@ export default {
   type: 'object',
   fields: [
     {
+      name: 'avatar',
+      title: 'Avatar',
+      type: 'image',
+    },
+    {
       title: 'Item',
       name: 'item',
       type: 'array',
@@ -12,6 +17,9 @@ export default {
           title: 'Item',
           type: 'vehicleInformationItem',
         },
+      ],
+      validation: (Rule) => [
+        Rule.required().max(2).error('only two items required'),
       ],
     },
   ],
