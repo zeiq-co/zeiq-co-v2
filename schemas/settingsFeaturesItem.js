@@ -29,5 +29,10 @@ export default {
       title: 'Features Frame Image',
       type: 'image',
     },
+    {
+      title: 'Button Link',
+      name: 'buttonLink',
+      type: 'slug',
+    },
   ],
 };

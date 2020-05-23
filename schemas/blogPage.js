@@ -4,11 +4,6 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Order',
-      name: 'order',
-      type: 'number',
-    },
-    {
       name: 'isSizeHalf',
       title: 'Is Size Half',
       type: 'boolean',
@@ -90,17 +85,6 @@ export default {
       name: 'blogArticleCategories',
       type: 'array',
       of: [{ type: 'string' }],
-    },
-    {
-      name: 'blogArticleSliderHeading',
-      title: 'Blog Article Slider Heading',
-      type: 'string',
-    },
-    {
-      title: 'Blog Article Slider Items',
-      name: 'blogArticleSliderItems',
-      type: 'array',
-      of: [{ type: 'image' }],
     },
   ],
   preview: {
