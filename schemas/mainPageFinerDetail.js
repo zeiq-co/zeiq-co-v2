@@ -4,20 +4,22 @@ export default {
   type: 'object',
   fields: [
     {
-      title: 'Title',
-      name: 'finerDetailsTitle',
-      type: 'text',
-      description: 'Describe your Finer Details.',
-    },
-    {
       title: 'Image',
       name: 'finerDetailsImage',
       type: 'image',
     },
+    {
+      name: 'body',
+      title: 'Body',
+      type: 'markdown',
+      options: {
+        minRows: 20,
+      },
+    },
   ],
   preview: {
     select: {
-      title: 'finerDetailsTitle',
+      title: 'body',
       media: 'finerDetailsImage',
     },
   },
