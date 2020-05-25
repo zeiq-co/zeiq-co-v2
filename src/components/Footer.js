@@ -6,14 +6,12 @@ const Section = styled.section`
   .columns {
     margin-top: 2rem;
   }
-  li {
+  li,
+  p {
     margin-bottom: 1rem;
   }
   strong {
     margin-left: 0.7em !important;
-  }
-  p {
-    margin-bottom: 1rem;
   }
 `;
 const LinkStyled = styled(Link)``;
