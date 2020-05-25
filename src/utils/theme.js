@@ -4,7 +4,7 @@ import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#634ce9';
 const lightShades = '#acb6bd';
-const darkAccent = '#654ce8';
+const darkAccent = 'rgb(139, 153, 163)';
 const darkShades = '#262a2c';
 
 export const theme = {
@@ -33,17 +33,32 @@ export const theme = {
   fontSizeMedium: 18,
   fontSizeLarge: 22,
   textColor: darkShades, // '#262a2c',
-  textColorLite: 'rgb(139, 153, 163);',
+  textColorLite: darkAccent, // 'rgb(139, 153, 163)',
   textColorInverse: lightShades,
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Open Sans', sans-serif",
-  secondaryFontFamily: "'Open Sans', sans-serif",
+  primaryFontFamily: "'Couture-Bold',sans-serif",
+  secondaryFontFamily: "'saulticons', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
 };
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
-
+@font-face {
+  font-family: 'saulticons';
+  src: url('../fonts/saulticons.ttf') format('truetype'),
+    url('../fonts/saulticons.woff') format('woff'),
+    url('../fonts/saulticons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Couture-Bold';
+  src: url('../fonts/couture-bld.otf') format('truetype'),
+    url('../fonts/couture-bld.otf') format('otf'),
+    url('../fonts/logo-zeiq-with-alphabet.svg?liaese#couture') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
   body {
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.lightShadess};

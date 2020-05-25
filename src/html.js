@@ -17,6 +17,14 @@ export default class HTML extends React.Component {
 
           {/* Add custom css or scripts here */}
           <link
+            href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Rubik:400,700"
+            rel="stylesheet"
+          />
+          <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+          />
+          <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
           />
