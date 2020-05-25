@@ -43,14 +43,14 @@ export const theme = {
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
-@font-face {
+  @font-face {
   font-family: 'saulticons';
-  src: url('../fonts/saulticons.ttf') format('truetype'),
-    url('../fonts/saulticons.woff') format('woff'),
-    url('../fonts/saulticons.svg') format('svg');
+  src: url('../fonts/saulticons.ttf?liaese') format('truetype'),
+    url('../fonts/saulticons.woff?liaese') format('woff'),;
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Couture-Bold';
   src: url('../fonts/couture-bld.otf') format('truetype'),
