@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 
 const Section = styled.section`
   padding: 1rem 1.5rem;
-  font-family: ${props => props.theme.primaryFontFamily};
+  font-family: ${props => props.theme.secondaryFontFamily};
   .navbar {
     background-color: transparent;
   }
@@ -24,8 +24,8 @@ const Section = styled.section`
     }
   }
   .navbar-item {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 15px;
     :hover {
       color: ${props => props.theme.darkAccent};
     }
@@ -68,7 +68,7 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <img src="/images/zeiq-logo.png" alt="site logo" />
               </Link>
               <a
                 href="#"
@@ -89,18 +89,27 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
+              <div className="navbar-end">
                 <Link to="/" className="navbar-item">
-                  Home
+                  Work
                 </Link>
                 <Link to="/about" className="navbar-item">
-                  About
+                  Services
                 </Link>
                 <Link to="/news" className="navbar-item">
+                  About
+                </Link>
+                <Link to="/contact" className="navbar-item">
                   News
                 </Link>
                 <Link to="/contact" className="navbar-item">
                   Contact
+                </Link>
+                <Link to="/contact" className="navbar-item">
+                  Jobs
+                </Link>
+                <Link to="/contact" className="navbar-item">
+                  Open Source
                 </Link>
               </div>
             </div>

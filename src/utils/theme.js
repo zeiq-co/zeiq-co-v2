@@ -36,29 +36,13 @@ export const theme = {
   textColorLite: darkAccent, // 'rgb(139, 153, 163)',
   textColorInverse: lightShades,
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Couture-Bold',sans-serif",
-  secondaryFontFamily: "'saulticons', sans-serif",
+  primaryFontFamily: "'Merriweather',sans-serif",
+  secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
 };
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
-  @font-face {
-  font-family: 'saulticons';
-  src: url('../fonts/saulticons.ttf?liaese') format('truetype'),
-    url('../fonts/saulticons.woff?liaese') format('woff'),;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Couture-Bold';
-  src: url('../fonts/couture-bld.otf') format('truetype'),
-    url('../fonts/couture-bld.otf') format('otf'),
-    url('../fonts/logo-zeiq-with-alphabet.svg?liaese#couture') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
   body {
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.lightShadess};
