@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.section`
-  padding: 1rem 1.5rem;
   font-family: ${props => props.theme.secondaryFontFamily};
   .navbar {
     background-color: transparent;
@@ -13,7 +12,10 @@ const Section = styled.section`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.75rem;
+      max-height: 3rem;
+      @media screen and (max-width: 600px) {
+        max-height: 1.75rem;
+      }
     }
   }
   .navbar-menu {
@@ -24,14 +26,22 @@ const Section = styled.section`
     }
   }
   .navbar-item {
+    font-family: ${props => props.theme.secondaryFontFamily} !important;
+    letter-spacing: 1px;
     font-weight: 400;
-    font-size: 15px;
+    height: 3rem;
+    color: ${props => props.theme.darkShades};
     :hover {
-      color: ${props => props.theme.darkAccent};
+      color: ${props => props.theme.darkShades} !important;
+      background: transparent;
+    }
+    :focus {
+      background: transparent;
+      color: ${props => props.theme.darkShades} !important;
     }
   }
   .navbar-burger {
-    background-color: #1c1323;
+    background-color: ${props => props.theme.mainBrandColor};
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
@@ -93,10 +103,10 @@ export default class Header extends React.Component {
                 <Link to="/" className="navbar-item">
                   Work
                 </Link>
-                <Link to="/about" className="navbar-item">
+                <Link to="/" className="navbar-item">
                   Services
                 </Link>
-                <Link to="/news" className="navbar-item">
+                <Link to="/" className="navbar-item">
                   About
                 </Link>
                 <Link to="/contact" className="navbar-item">
@@ -105,10 +115,10 @@ export default class Header extends React.Component {
                 <Link to="/contact" className="navbar-item">
                   Contact
                 </Link>
-                <Link to="/contact" className="navbar-item">
+                <Link to="/" className="navbar-item">
                   Jobs
                 </Link>
-                <Link to="/contact" className="navbar-item">
+                <Link to="/" className="navbar-item">
                   Open Source
                 </Link>
               </div>

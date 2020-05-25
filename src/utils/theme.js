@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.lightShadess};
     letter-spacing: 0.03rem !important;
-    font-size: 17px;
+    font-size: 16px;
   }
   .title {
     font-family: ${theme.primaryFontFamily};
