@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .subtitle {
-    color: ${lighten(0.06, theme.textColor)} !important;
+    color: ${theme.textColor} !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
