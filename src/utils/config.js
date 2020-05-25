@@ -1,10 +1,10 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
 
-  siteName: 'Kickoff GatsbyJs',
-  author: 'Parminder Klair',
-  description: 'A starting point using ReactJs, bundled with awesome GatsbyJs.',
-  siteUrl: 'http://kickoff-gatsbyjs.netlify.com',
+  siteName: 'Zeiq',
+  author: 'Zeiq.co',
+  description: 'Official Website for Zeiq.co',
+  siteUrl: 'https://www.zeiq.co',
   logo: '/images/logo-1024.png',
 
   telephone: '+1-123-123-123',
@@ -15,7 +15,7 @@ module.exports = {
   fbAppID: '@NAME-HERE',
 
   type: 'website',
-  googleAnalytics: '',
+  googleAnalytics: 'UA-1390187-41',
   backgroundColor: '#e0e0e0',
-  themeColor: '#c62828',
+  themeColor: '#634ce9',
 };

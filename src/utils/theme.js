@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#00D1B2';
-const lightShades = '#F5F5F5';
-const darkAccent = '#3173DC';
-const darkShades = '#0A0A0A';
+const mainBrandColor = '#634ce9';
+const lightShades = '#acb6bd';
+const darkAccent = '#654ce8';
+const darkShades = '#262a2c';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -22,11 +22,9 @@ export const theme = {
   // Use as the text color for dark-on-light designs,
   // or as the background for inverted designs.
   darkShades,
-  dangerColor: '#f44336',
-
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
-  backgroundColor: '#FFFFFF',
+  backgroundColor: '#e0e0e0',
   backgroundInputColor: lightShades,
   backgroundInputColorDark: darkShades,
   fontSize: 16,
@@ -34,13 +32,13 @@ export const theme = {
   fontSizeExtraSmall: 12,
   fontSizeMedium: 18,
   fontSizeLarge: 22,
-  textColor: darkShades, // '#0A0B11',
+  textColor: darkShades, // '#262a2c',
+  textColorLite: 'rgb(139, 153, 163);',
   textColorInverse: lightShades,
-  textColorLite: '#8B8989',
   menuTintColor: darkAccent,
   primaryFontFamily: "'Open Sans', sans-serif",
   secondaryFontFamily: "'Open Sans', sans-serif",
-  boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
+  boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -48,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: ${theme.secondaryFontFamily};
-    color: ${theme.textColor};
+    color: ${theme.lightShadess};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
   }
@@ -64,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
   p, .title, .box {
     color: ${theme.textColor} !important;
   }
+
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;
   }
@@ -83,10 +82,10 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .button.is-link {
-    background-color: ${theme.darkAccent};
+    background-color: ${theme.mainBrandColor};
     transition: background-color 0.2s ease;
     :hover {
-      background-color: ${darken(0.06, theme.darkAccent)};
+      background-color: ${darken(0.06, theme.mainBrandColor)};
     }
   }
   .button, .input, .card {
