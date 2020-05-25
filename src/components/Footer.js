@@ -80,7 +80,7 @@ const Footer = () => (
         </div>
         <div className="column is-hidden-mobile" />
         <div className="column">
-          <ul>
+          <ul className="">
             <li>
               <a href="/">
                 <span className="bd-footer-link-icon has-text-star">
