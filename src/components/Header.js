@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.section`
+  padding: 2rem 1.5rem;
   font-family: ${props => props.theme.secondaryFontFamily};
   .navbar {
     background-color: transparent;
@@ -121,6 +122,11 @@ export default class Header extends React.Component {
                 <Link to="/" className="navbar-item">
                   Open Source
                 </Link>
+                <div className="buttons">
+                  <Link to="/contact" className="button is-primary">
+                    <strong>Contact Us</strong>
+                  </Link>
+                </div>
               </div>
             </div>
           </nav>

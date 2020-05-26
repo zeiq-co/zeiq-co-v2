@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .subtitle {
-    color: ${theme.textColor} !important;
+    color: ${theme.darkAccent} !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
@@ -92,6 +92,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-warning {
     color: ${theme.lightAccent} !important;
+  }
+  .has-text-black {
+    color: ${theme.textColor} !important;
   }
 `;
 

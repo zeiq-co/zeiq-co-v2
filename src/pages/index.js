@@ -1,9 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import OurProcessIndex from '../components/OurProcessIndex';
+import HomeHero from '../components/HomeHero';
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -19,14 +20,8 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <section className="section">
-          <Container className="container">
-            <h1 className="title">Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-            <OurProcessIndex />
-          </Container>
-        </section>
+        <HomeHero />
+        <OurProcessIndex />
       </Layout>
     );
   }
