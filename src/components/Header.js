@@ -122,6 +122,11 @@ export default class Header extends React.Component {
                 <Link to="/" className="navbar-item">
                   Open Source
                 </Link>
+                <div className="buttons">
+                  <Link to="/contact" className="button is-primary">
+                    <strong>Contact Us</strong>
+                  </Link>
+                </div>
               </div>
             </div>
           </nav>
