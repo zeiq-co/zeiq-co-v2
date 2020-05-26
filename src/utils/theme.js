@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .subtitle {
-    color: ${theme.textColor} !important;
+    color: ${theme.darkAccent} !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
