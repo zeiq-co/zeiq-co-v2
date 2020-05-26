@@ -3,8 +3,17 @@ import Slider from 'react-slick';
 import styled from 'styled-components';
 
 const Section = styled.div`
+  padding-right: 0rem !important;
+  .box {
+    box-shadow: none !important;
+    padding: 0rem !important;
+  }
+  img {
+    width: 100%;
+    height: 30rem;
+  }
   .slick-slider {
-    max-width: 1152px;
+    width: 100%;
 
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 18px;
@@ -25,19 +34,17 @@ export default class Work extends React.Component {
     };
     return (
       <Section className="section">
-        <div className="container">
-          <Slider {...settings}>
-            <div>
-              <img src="/images/work.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work.png" alt="" />
-            </div>
-          </Slider>
-        </div>
+        <Slider {...settings}>
+          <div className="box">
+            <img src="/images/work.png" alt="" />
+          </div>
+          <div className="box">
+            <img src="/images/ecommerce-app.png" alt="" />
+          </div>
+          <div className="box">
+            <img src="/images/work.png" alt="" />
+          </div>
+        </Slider>
       </Section>
     );
   }
