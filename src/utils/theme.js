@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.mainBrandColor};
     transition: background-color 0.2s ease;
     :hover {
-      background-color: ${darken(0.06, theme.mainBrandColor)};
+    background-color: ${darken(0.06, theme.mainBrandColor)};
     }
   }
   .button.is-secondary {
