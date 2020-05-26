@@ -21,7 +21,9 @@ const Footer = () => (
     <div className="container">
       <div className="columns has-text-centered-mobile">
         <div className="column">
-          <p className="subtitle is-6 has-text-weight-semibold">ZEIQ</p>
+          <p className="is-uppercase is-size-6 has-text-weight-semibold">
+            ZEIQ
+          </p>
           <ul>
             <li>
               <LinkStyled to="/">About Us</LinkStyled>
@@ -60,7 +62,9 @@ const Footer = () => (
           </ul>
         </div>
         <div className="column">
-          <p className="subtitle is-6 has-text-weight-semibold">Reach us</p>
+          <p className="is-uppercase is-size-6 has-text-weight-semibold">
+            Reach us
+          </p>
           <ul>
             <li>
               <LinkStyled to="/">Career</LinkStyled>
