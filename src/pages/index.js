@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import OurProcessIndex from '../components/OurProcessIndex';
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -23,6 +24,7 @@ export default class IndexPage extends React.Component {
             <h1 className="title">Hi people</h1>
             <p>Welcome to your new Gatsby site.</p>
             <p>Now go build something great.</p>
+            <OurProcessIndex />
           </Container>
         </section>
       </Layout>
