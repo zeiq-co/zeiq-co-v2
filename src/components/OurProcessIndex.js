@@ -27,7 +27,7 @@ const Text = styled.h2`
 const OurProcessIndex = () => {
   return (
     <div>
-      <p className="subtitle is-3 has-text-weight-medium">Our Process</p>
+      <p className="subtitle is-3 has-text-black">Our Process</p>
       <div className="columns is-multiline is-centered">
         {OurProcessIndexData.map((data, i) => {
           if (data.Icon === 'star') {
