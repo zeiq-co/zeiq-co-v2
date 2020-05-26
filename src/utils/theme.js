@@ -12,7 +12,7 @@ export const theme = {
   mainBrandColor,
   // Accent colors can be used to bring attention to design elements
   // by contrasting with the rest of the palette.
-  lightAccent: '#FFDC57',
+  lightAccent: '#acb6bd',
   // Use this color as the background for your dark-on-light designs,
   // or the text color of an inverted design.
   lightShades,
@@ -90,7 +90,7 @@ const GlobalStyle = createGlobalStyle`
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
-  .has-text-warning {
+  .has-text-light {
     color: ${theme.lightAccent} !important;
   }
   .has-text-black {

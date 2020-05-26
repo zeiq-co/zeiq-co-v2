@@ -1,20 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import OurProcessIndex from '../components/OurProcessIndex';
+import OurProcess from '../components/OurProcess';
 import HomeHero from '../components/HomeHero';
 import Work from '../components/Work';
-
-const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${props => props.theme.mainBrandColor} !important;
-  }
-`;
 
 export default class IndexPage extends React.Component {
   render() {
@@ -23,9 +14,18 @@ export default class IndexPage extends React.Component {
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <HomeHero />
         <Work />
-        <Container>
-          <OurProcessIndex />
-        </Container>
+        <section className="section">
+          <div className="container">
+            <div className="columns is-multiline">
+              <OurProcess text="Requirement Analysis" sideImage />
+              <OurProcess sideImage text="Project Allocation" />
+              <OurProcess text="Team match-up" />
+              <OurProcess sideImage text="Project implementation" />
+              <OurProcess sideImage text="Effect analysis" />
+              <OurProcess text="Long-term relationship!" />
+            </div>
+          </div>
+        </section>
       </Layout>
     );
   }
