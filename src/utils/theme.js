@@ -39,6 +39,7 @@ export const theme = {
   primaryFontFamily: "'Merriweather',sans-serif",
   secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
+  black: '#000',
 };
 
 const GlobalStyle = createGlobalStyle`
