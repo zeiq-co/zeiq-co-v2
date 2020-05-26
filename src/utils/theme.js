@@ -93,6 +93,9 @@ const GlobalStyle = createGlobalStyle`
   .has-text-warning {
     color: ${theme.lightAccent} !important;
   }
+  .has-text-black {
+    color: ${theme.textColor} !important;
+  }
 `;
 
 export default GlobalStyle;
