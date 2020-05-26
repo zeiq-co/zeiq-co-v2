@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
@@ -21,7 +21,9 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <HomeHero />
-        <OurProcessIndex />
+        <Container>
+          <OurProcessIndex />
+        </Container>
       </Layout>
     );
   }
