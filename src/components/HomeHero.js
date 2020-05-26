@@ -6,17 +6,14 @@ const Section = styled.section`
     max-width: 600px;
     margin: 0px auto;
   }
-  p
 `;
-
-const Header = styled.div``;
 
 const HomeHero = () => (
   <Section className="section hero  is-relative">
     <div className="container">
       <div className="columns is-vcentered is-desktop">
         <div className="column is-5-desktop has-text-centered-touch">
-          <Header>
+          <header>
             <h1 className="title is-spaced is-1">
               Your Trusted Developer Partner
             </h1>
@@ -30,7 +27,7 @@ const HomeHero = () => (
             <button className="button is-primary is-medium" type="button">
               What we do
             </button>
-          </Header>
+          </header>
         </div>
         <div className="column is-1" />
         <div className="column">
