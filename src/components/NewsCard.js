@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   .card {
-    border-radius: 8px;
     box-shadow: none;
   }
   img {
@@ -31,15 +30,13 @@ const NewsCard = () => {
         <Content className="card-content">
           <div className="media">
             <div className="media-content">
-              <p className="title is-4">John Smith</p>
-              <p className="subtitle is-6">@johnsmith</p>
+              <time dateTime="2016-1-1">04 Jun 2018</time>
             </div>
           </div>
           <div className="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris. <a>@bulmaio</a>.<a href="#">#css</a>{' '}
-            <a href="#">#responsive</a>
-            <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <h1 className="is-size-4">
+              Why Do You Need To Join An Affiliate Marketing Network
+            </h1>
           </div>
         </Content>
       </div>
