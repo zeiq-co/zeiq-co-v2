@@ -6,6 +6,7 @@ import OurProcess from '../components/OurProcess';
 import HomeHero from '../components/HomeHero';
 import Work from '../components/Work';
 import FreeClassifieds from '../components/FreeClassifieds';
+import NewsAndUpdates from '../components/NewsAndUpdates';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -27,6 +28,7 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
         <FreeClassifieds />
+        <NewsAndUpdates />
       </Layout>
     );
   }
