@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import OurProcess from '../components/OurProcess';
 import HomeHero from '../components/HomeHero';
 import Work from '../components/Work';
-import FreeClassifieds from '../components/FreeClassifieds';
+import SocialStuff from '../components/SocialStuff';
 import NewsAndUpdates from '../components/NewsAndUpdates';
 
 export default class IndexPage extends React.Component {
@@ -27,7 +26,7 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <FreeClassifieds />
+        <SocialStuff />
         <NewsAndUpdates />
       </Layout>
     );
