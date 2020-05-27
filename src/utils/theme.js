@@ -88,6 +88,9 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${darken(0.06, theme.mainBrandColor)};
     }
   }
+  .button.is-info {
+    background:transparent;
+  }
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
@@ -96,6 +99,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-black {
     color: ${theme.textColor} !important;
+  }
+  .has-text-info{
+    color: ${theme.mainBrandColor} !important;
   }
 `;
 
