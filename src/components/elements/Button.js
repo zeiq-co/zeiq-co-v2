@@ -16,8 +16,8 @@ const StyledButton = styled(Link)`
 const Button = ({ to }) => {
   return (
     <StyledButton className="button" type="button" to={to}>
-      <span>Learn More</span>
-      <span className="icon has-text-info">
+      <span className="has-text-info has-text-weight-bold">Learn More</span>
+      <span className="icon has-text-info ">
         <i className="fas fa-chevron-circle-right" />
       </span>
     </StyledButton>
