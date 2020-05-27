@@ -13,6 +13,9 @@ const CardWrapper = styled.div`
 const Content = styled.div`
   padding-left: 0;
   padding-right: 0;
+  h2 {
+    color: ${props => props.theme.textColorLite}!important;
+  }
 `;
 
 const NewsCard = () => {
@@ -30,13 +33,17 @@ const NewsCard = () => {
         <Content className="card-content">
           <div className="media">
             <div className="media-content">
-              <time dateTime="2016-1-1">04 Jun 2018</time>
+              <h2 className="is-size-6">04 Jun 2018</h2>
             </div>
           </div>
           <div className="content">
-            <h1 className="is-size-4">
+            <h1 className="title is-4 is-spaced">
               Why Do You Need To Join An Affiliate Marketing Network
             </h1>
+            <h2 className="is-size-6 has-text-weight-normal">
+              Many of us are so used to working on a computer desktop that when
+              it comes time to purchase a new computer, we don’t consider
+            </h2>
           </div>
         </Content>
       </div>

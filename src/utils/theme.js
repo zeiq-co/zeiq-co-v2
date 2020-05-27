@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { darken, lighten } from 'polished';
+import { darken } from 'polished';
 
 const mainBrandColor = '#634ce9';
 const lightShades = '#acb6bd';
@@ -39,7 +39,7 @@ export const theme = {
   primaryFontFamily: "'Merriweather',sans-serif",
   secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
-  black: '#000',
+  secondaryBlack: '#141414',
 };
 
 const GlobalStyle = createGlobalStyle`
