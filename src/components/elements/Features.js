@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Features = () => {
+const Point = styled.div`
+  strong {
+    padding-left: 10px;
+  }
+`;
+const Features = ({ text }) => {
   return (
-    <h1 className="subtitle is-6">
-      <i className="fas fa-check-circle" /> Native IOS development
-    </h1>
+    <Point>
+      <span className="bd-footer-link-icon has-text-star">
+        <i className="fas fa-check-circle" />
+      </span>
+      <strong>{text}</strong>
+    </Point>
   );
 };
 export default Features;
