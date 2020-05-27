@@ -11,6 +11,11 @@ const CardWrapper = styled.div`
   }
 `;
 
+const Content = styled.div`
+  padding-left: 0;
+  padding-right: 0;
+`;
+
 const NewsCard = () => {
   return (
     <CardWrapper className="column is-4">
@@ -23,7 +28,7 @@ const NewsCard = () => {
             />
           </figure>
         </div>
-        <div className="card-content">
+        <Content className="card-content">
           <div className="media">
             <div className="media-content">
               <p className="title is-4">John Smith</p>
@@ -36,7 +41,7 @@ const NewsCard = () => {
             <a href="#">#responsive</a>
             <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
           </div>
-        </div>
+        </Content>
       </div>
     </CardWrapper>
   );
