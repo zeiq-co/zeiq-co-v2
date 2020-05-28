@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import { theme } from '../utils/theme';
 import Heading from './elements/Heading';
 
-const Purple = styled.span`
-  color: ${theme.primaryColor};
-`;
-
 const Container = styled.div`
   img {
     border: 1px solid ${theme.secondaryBlack};
