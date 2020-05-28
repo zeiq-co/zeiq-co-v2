@@ -8,6 +8,10 @@ const Section = styled.section`
   }
 `;
 
+const Button = styled.button`
+  margin-top: 15px;
+`;
+
 const HomeHero = () => (
   <Section className="section hero  is-relative">
     <div className="container">
@@ -24,9 +28,9 @@ const HomeHero = () => (
               approach and project execution processes help you to deliver the
               right solutions.
             </p>
-            <button className="button is-primary is-medium" type="button">
+            <Button className="button is-primary is-medium" type="button">
               What we do
-            </button>
+            </Button>
           </header>
         </div>
         <div className="column is-1" />

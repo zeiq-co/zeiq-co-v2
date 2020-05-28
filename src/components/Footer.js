@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.section`
-  .columns {
-    margin-top: 2rem;
-  }
   li,
   p {
     margin-bottom: 1rem;

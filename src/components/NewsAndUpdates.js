@@ -1,18 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import Heading from './elements/Heading';
 import NewsCard from './NewsCard';
-
-const Header = styled.header`
-  margin-bottom: 2rem;
-`;
 
 const NewsAndUpdates = () => {
   return (
     <div className="hero section is-block is-relative">
       <div className="container">
-        <Header className="">
-          <h1 className="title is-3 has-text-centered ">News and Updates</h1>
-        </Header>
+        <Heading title="News and Updates" />
         <div className="columns is-multiline">
           <NewsCard />
           <NewsCard />

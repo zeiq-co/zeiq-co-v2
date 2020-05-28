@@ -21,9 +21,11 @@ const Services = () => {
             </div>
           </div>
           <ServicesType />
-          <ServicesType rowReverse />
+          <ServicesType flex />
           <ServicesType />
-          <ServicesType rowReverse />
+          <ServicesType flex />
+          <ServicesType />
+          <ServicesType flex />
         </div>
       </div>
     </Layout>
