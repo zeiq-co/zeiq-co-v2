@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Heading from './elements/Heading';
 import NewsCard from './NewsCard';
 
