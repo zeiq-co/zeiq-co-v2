@@ -18,12 +18,14 @@ const About = () => {
             we are ready to help you improve your business performance
             together with our great team."
           />
-          <div className="columns is-centered">
-            <div className="column is-10">
-              <img
-                alt="website"
-                src="https://unsplash.com/photos/67l-QujB14w/download?force=true&w=2400"
-              />
+          <div className="columns">
+            <div className="column">
+              <figure className="image is-2by1">
+                <img
+                  src="https://unsplash.com/photos/67l-QujB14w/download?force=true&w=2400"
+                  alt="website"
+                />
+              </figure>
             </div>
           </div>
           <WhatWeDo />
