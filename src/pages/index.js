@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import OurProcess from '../components/OurProcess';
 import HomeHero from '../components/HomeHero';
 import Work from '../components/Work';
+import Hire from '../components/Hire';
 import SocialStuff from '../components/SocialStuff';
 import NewsAndUpdates from '../components/NewsAndUpdates';
 
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Seo title="Home" description="Home" />
       <HomeHero />
       <Work />
+      <Hire />
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">

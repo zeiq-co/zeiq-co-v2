@@ -35,7 +35,7 @@ const SocialStuff = () => {
           ))}
         </div>
         <div className="has-text-centered">
-          <Button to="/" />
+          <Button to="/" text="Learn More" />
         </div>
       </div>
     </div>
