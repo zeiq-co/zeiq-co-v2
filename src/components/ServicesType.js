@@ -27,7 +27,7 @@ const ServicesType = ({ rowReverse }) => {
           </figure>
         </div>
         <div className="column is-6">
-          <h2 className="title is-1 is-spaced ">Mobile Apps development</h2>
+          <h2 className="title is-2 ">Mobile Apps development</h2>
           <h2 className="subtitle is-6 is-spaced">
             A successful offshore software application development company since
             1997, providing a full range of website and mobile app development ,

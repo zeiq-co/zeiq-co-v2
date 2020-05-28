@@ -11,7 +11,7 @@ const Section = styled.section`
     margin-bottom: 1rem;
   }
   strong {
-    margin-left: 0.7em !important;
+    margin-left: 0.5em !important;
   }
 `;
 const LinkStyled = styled(Link)``;
