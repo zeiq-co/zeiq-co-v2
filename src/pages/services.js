@@ -1,25 +1,20 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
+import Heading from '../components/elements/Heading';
 import ServicesType from '../components/ServicesType';
 
 const Services = () => {
   return (
     <Layout>
+      <Seo title="Services" description="Our Services" />
       <div className="section">
         <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-6">
-              <h2 className="title is-2 is-spaced  has-text-centered">
-                Web and Mobile Software Development Services
-              </h2>
-              <h2 className="subtitle is-6 has-text-centered">
-                A successful offshore software application development company
-                since 1997, providing a full range of website and mobile app
-                development , and other IT services and solutions globally.
-              </h2>
-            </div>
-          </div>
+          <Heading
+            title="Web and Mobile Software Development Services"
+            subtitle="A successful offshore software application development company since 1997, providing a full range of website and mobile app development , and other IT services and solutions globally."
+          />
           <ServicesType />
           <ServicesType flex />
           <ServicesType />

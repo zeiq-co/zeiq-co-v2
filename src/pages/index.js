@@ -10,7 +10,7 @@ import NewsAndUpdates from '../components/NewsAndUpdates';
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo title="Home" description="Welcome to GatsbyJs v1" />
+      <Seo title="Home" description="Home" />
       <HomeHero />
       <Work />
       <section className="section">
