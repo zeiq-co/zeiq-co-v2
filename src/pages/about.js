@@ -29,7 +29,7 @@ const About = () => {
             </div>
           </div>
           <WhatWeDo />
-          <WhatWeDo rowReverse />
+          <WhatWeDo flex />
           <TechStack />
         </div>
       </div>

@@ -6,6 +6,7 @@ const Section = styled.div`
   .container {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 18px;
   }
+
   img {
     width: 100%;
     height: 30rem;
@@ -32,19 +33,22 @@ export default class Work extends React.Component {
       autoplaySpeed: 3000,
     };
     return (
-      <Section className="section">
-        <div className="container">
-          <Slider {...settings}>
-            <div className="">
-              <img src="/images/work.png" alt="" />
-            </div>
-            <div className="">
-              <img src="/images/ecommerce-app.png" alt="" />
-            </div>
-            <div className="">
-              <img src="/images/work.png" alt="" />
-            </div>
-          </Slider>
+      <Section>
+        <h2 className="title is-3  has-text-centered">Work</h2>
+        <div className="section">
+          <div className="container">
+            <Slider {...settings}>
+              <div className="">
+                <img src="/images/work.png" alt="" />
+              </div>
+              <div className="">
+                <img src="/images/ecommerce-app.png" alt="" />
+              </div>
+              <div className="">
+                <img src="/images/work.png" alt="" />
+              </div>
+            </Slider>
+          </div>
         </div>
       </Section>
     );
