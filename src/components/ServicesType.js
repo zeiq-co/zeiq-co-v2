@@ -9,7 +9,13 @@ const Container = styled.div`
   }
   img {
     border-radius: 8px;
+    width: 100%;
+    height: 545px;
   }
+`;
+
+const TextWrapper = styled.div`
+  margin-bottom: 1.5rem;
 `;
 
 const features = [
@@ -46,15 +52,13 @@ const features = [
 ];
 const ServicesType = ({ flex }) => {
   return (
-    <Container className="section is-block is-relative " flex={flex}>
+    <Container className="section is-block hero is-relative " flex={flex}>
       <div className="columns is-multiline is-flex">
         <div className="column is-6">
-          <figure className="image">
-            <img
-              src="https://images.unsplash.com/photo-1565306257414-bbc84fdaaade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-              alt="mobile"
-            />
-          </figure>
+          <img
+            src="https://images.unsplash.com/photo-1565306257414-bbc84fdaaade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt="mobile"
+          />
         </div>
         <div className="column is-6">
           <h2 className="title is-2 is-spaced">Mobile Apps development</h2>
@@ -67,7 +71,9 @@ const ServicesType = ({ flex }) => {
             affordable prices. Our design-focused approach and project execution
             processes help you to deliver the right solutions.
           </p>
-          <h2 className="title is-4 is-spaced ">Features</h2>
+          <TextWrapper>
+            <h2 className="title is-4">Features</h2>
+          </TextWrapper>
           <div className="columns is-multiline">
             {features.map(item => (
               <div className="column is-6">
