@@ -25,13 +25,13 @@ export default class Work extends React.Component {
       <Section className="section">
         <div className="container">
           <Slider {...settings}>
-            <div className="box">
+            <div className="">
               <img src="/images/work.png" alt="" />
             </div>
-            <div className="box">
+            <div className="">
               <img src="/images/ecommerce-app.png" alt="" />
             </div>
-            <div className="box">
+            <div className="">
               <img src="/images/work.png" alt="" />
             </div>
           </Slider>
