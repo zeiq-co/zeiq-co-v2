@@ -20,7 +20,7 @@ const WhatWeDo = ({ flex }) => {
           <div className="column is-4">
             <h2 className="title is-3 is-spaced ">Who We Are</h2>
           </div>
-          <BorderDiv className="column is-1" />
+          <BorderDiv className="column is-1 is-hidden-mobile" />
           <div className="column is-">
             <p className="subtitle is-6">
               A successful offshore software application development company

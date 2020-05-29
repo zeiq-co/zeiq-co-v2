@@ -13,7 +13,7 @@ const Button = styled.button`
 `;
 
 const HomeHero = () => (
-  <Section className="section hero  is-relative">
+  <Section className="section hero is-relative">
     <div className="container">
       <div className="columns is-vcentered is-desktop">
         <div className="column is-5-desktop has-text-centered-touch">
