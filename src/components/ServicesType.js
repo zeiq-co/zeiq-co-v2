@@ -56,15 +56,9 @@ const ServicesType = ({ flex }) => {
             />
           </figure>
         </div>
-<<<<<<< HEAD
-        <div className="column is-6">
-          <h2 className="title is-2 ">Mobile Apps development</h2>
-          <h2 className="subtitle is-6 is-spaced">
-=======
         <div className="column is-6 ">
           <h1 className="title is-1 is-spaced ">Mobile Apps development</h1>
           <p className="subtitle is-6 is-spaced">
->>>>>>> e850ca224d85fb155734e29e1464b82cab93f5d6
             A successful offshore software application development company since
             1997, providing a full range of website and mobile app development ,
             and other IT services and solutions globally. We deliver web and
