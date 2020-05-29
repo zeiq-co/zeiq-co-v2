@@ -25,7 +25,7 @@ const Section = styled.div`
 
 const Contact = () => (
   <Layout>
-    <Seo title="Contact Us" />
+    <Seo title="Contact Us" description="Contact Us" />
     <Section className="section">
       <div className="container">
         <div className="columns is-centered">
