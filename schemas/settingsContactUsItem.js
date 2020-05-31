@@ -4,16 +4,13 @@ export default {
   type: 'object',
   fields: [
     {
-      title: 'Genre',
-      name: 'genre',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Phone Number', value: 'phoneNumber' },
-          { title: 'Mail', value: 'mail' },
-        ],
-        layout: 'radio',
-      },
+      title: 'Link',
+      name: 'href',
+      type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel'],
+        }),
     },
     {
       title: 'Title',
