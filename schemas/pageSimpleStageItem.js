@@ -18,5 +18,10 @@ export default {
       title: 'Avatar',
       type: 'image',
     },
+    {
+      title: 'Button Link',
+      name: 'buttonLink',
+      type: 'slug',
+    },
   ],
 };
