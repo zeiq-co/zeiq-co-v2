@@ -15,26 +15,26 @@ const data = [
     icon: 'far fa-circle',
   },
   {
-    text: 'Requirement Analysis',
+    text: 'Project Allocation',
     arrow: ' ',
     icon: 'fas fa-palette',
   },
   {
-    text: 'Requirement Analysis',
+    text: 'Team match-up',
     icon: 'fas fa-code',
   },
   {
-    text: 'Requirement Analysis',
+    text: 'Project implementation',
     arrow: ' ',
     icon: 'fas fa-code',
   },
   {
-    text: 'Requirement Analysis',
+    text: 'Effect analysis',
     arrow: ' ',
     icon: 'fas fa-rocket',
   },
   {
-    text: 'Requirement Analysis',
+    text: 'Long-term relationship !',
     icon: 'fas fa-code',
   },
 ];
