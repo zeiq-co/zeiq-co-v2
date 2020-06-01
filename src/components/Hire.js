@@ -12,17 +12,15 @@ const Container = styled.section`
 const Hire = () => (
   <Container className="section">
     <div className="container">
-      <div className="columns box">
-        <div className="column is-5 hero is-normal">
-          <div className="hero-body">
-            <h1 className="title is-spaced is-1">
-              Hire the Best Web and Mobile App Developers
-            </h1>
-          </div>
+      <div className="columns box ">
+        <div className="column is-5 ">
+          <h1 className="title is-spaced is-1">
+            Hire the Best Web and Mobile App Developers
+          </h1>
         </div>
         <div className="column is-1" />
-        <div className="column hero is-normal">
-          <header className="hero-body">
+        <div className="column">
+          <header className="">
             <p className="subtitle is-6 has-text-weight-normal">
               Zeiq is a top web design agency and software development company
               with a large pool of software developers available for dedicated
