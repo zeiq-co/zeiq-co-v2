@@ -8,6 +8,37 @@ import Hire from '../components/Hire';
 import SocialStuff from '../components/SocialStuff';
 import NewsAndUpdates from '../components/NewsAndUpdates';
 
+const data = [
+  {
+    text: 'Requirement Analysis',
+    arrow: ' ',
+    icon: 'far fa-circle',
+  },
+  {
+    text: 'Requirement Analysis',
+    arrow: ' ',
+    icon: 'fas fa-palette',
+  },
+  {
+    text: 'Requirement Analysis',
+    icon: 'fas fa-code',
+  },
+  {
+    text: 'Requirement Analysis',
+    arrow: ' ',
+    icon: 'fas fa-code',
+  },
+  {
+    text: 'Requirement Analysis',
+    arrow: ' ',
+    icon: 'fas fa-rocket',
+  },
+  {
+    text: 'Requirement Analysis',
+    icon: 'fas fa-code',
+  },
+];
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -18,12 +49,13 @@ const IndexPage = () => {
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
-            <OurProcess text="Requirement Analysis" sideImage />
-            <OurProcess sideImage text="Project Allocation" />
-            <OurProcess text="Team match-up" />
-            <OurProcess sideImage text="Project implementation" />
-            <OurProcess sideImage text="Effect analysis" />
-            <OurProcess text="Long-term relationship!" />
+            {data.map(item => (
+              <OurProcess
+                text={item.text}
+                sideImage={item.arrow}
+                icon={item.icon}
+              />
+            ))}
           </div>
         </div>
       </section>

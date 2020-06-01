@@ -6,7 +6,7 @@ import Heading from './elements/Heading';
 const Section = styled.div`
   img {
     width: 100%;
-    height: 30rem;
+    height: 38rem;
   }
   .slick-dots {
     bottom: -50px !important;
@@ -35,10 +35,7 @@ export default class Work extends React.Component {
           <Heading title="Work" />
           <Slider {...settings}>
             <div>
-              <img src="/images/work/work1.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work/work2.png" alt="" />
+              <img src="/images/work/Packers.png" alt="" />
             </div>
             <div>
               <img src="/images/work/work1.png" alt="" />

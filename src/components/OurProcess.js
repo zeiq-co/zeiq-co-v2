@@ -28,14 +28,14 @@ const Arrow = styled.i`
   margin: 10px;
 `;
 
-const OurProcess = ({ sideImage, text }) => {
+const OurProcess = ({ sideImage, text, icon }) => {
   return (
     <div className="column is-4 has-text-centered">
       <div className="columns">
         <Column className="column">
           <article className="box">
             <span className="icon has-text-light">
-              <i className="fas fa-star" />
+              <i className={icon} />
             </span>
             <div className="title is-5">{text}</div>
           </article>
