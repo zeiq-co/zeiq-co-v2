@@ -4,10 +4,6 @@ import styled from 'styled-components';
 import Heading from './elements/Heading';
 
 const Section = styled.div`
-  .container {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 18px;
-  }
-
   img {
     width: 100%;
     height: 30rem;
@@ -34,22 +30,17 @@ export default class Work extends React.Component {
       autoplaySpeed: 3000,
     };
     return (
-      <Section>
-        <div className="section">
+      <Section className="section">
+        <div className="container">
           <Heading title="Work" />
-          <div className="container">
-            <Slider {...settings}>
-              <div className="">
-                <img src="/images/work.png" alt="" />
-              </div>
-              <div className="">
-                <img src="/images/ecommerce-app.png" alt="" />
-              </div>
-              <div className="">
-                <img src="/images/work.png" alt="" />
-              </div>
-            </Slider>
-          </div>
+          <Slider {...settings}>
+            <div>
+              <img src="/images/work/work1.png" alt="" />
+            </div>
+            <div>
+              <img src="/images/work/work2.png" alt="" />
+            </div>
+          </Slider>
         </div>
       </Section>
     );

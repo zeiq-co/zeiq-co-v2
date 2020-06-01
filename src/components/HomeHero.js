@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
-  .image {
-    max-width: 600px;
+  img {
+    width: auto;
     margin: 0px auto;
   }
 `;
@@ -33,10 +33,14 @@ const HomeHero = () => (
             </Button>
           </header>
         </div>
-        <div className="column is-1" />
+        <div className="column is-3" />
         <div className="column">
           <figure className="image">
-            <img src="/images/ecommerce-app.png" alt="placeholder" />
+            <img
+              className="is-pulled-right-is-desktop"
+              src="/images/ecommerce-app.png"
+              alt="placeholder"
+            />
           </figure>
         </div>
       </div>
