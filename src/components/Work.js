@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
+import Heading from './elements/Heading';
 
 const Section = styled.div`
   .container {
@@ -34,8 +35,8 @@ export default class Work extends React.Component {
     };
     return (
       <Section>
-        <h2 className="title is-3  has-text-centered">Work</h2>
         <div className="section">
+          <Heading title="Work" />
           <div className="container">
             <Slider {...settings}>
               <div className="">
