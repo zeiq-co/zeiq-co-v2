@@ -40,6 +40,9 @@ export default class Work extends React.Component {
             <div>
               <img src="/images/work/work2.png" alt="" />
             </div>
+            <div>
+              <img src="/images/work/work1.png" alt="" />
+            </div>
           </Slider>
         </div>
       </Section>
