@@ -18,16 +18,13 @@ const Content = styled.div`
   }
 `;
 
-const NewsCard = () => {
+const NewsCard = ({ asset }) => {
   return (
     <CardWrapper className="column is-4">
       <div className="card">
         <div className="card-image">
           <figure className="image is-4by3">
-            <img
-              src="https://bulma.io/images/placeholders/1280x960.png"
-              alt="Place"
-            />
+            <img src={asset} alt="Place" />
           </figure>
         </div>
         <Content className="card-content">
