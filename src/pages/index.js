@@ -7,6 +7,7 @@ import Work from '../components/Work';
 import Hire from '../components/Hire';
 import SocialStuff from '../components/SocialStuff';
 import NewsAndUpdates from '../components/NewsAndUpdates';
+import ClientReview from '../components/ClientReview';
 
 const data = [
   {
@@ -51,9 +52,9 @@ const IndexPage = () => {
           <div className="columns is-multiline">
             {data.map(item => (
               <OurProcess
-                text={item.text}
                 sideImage={item.arrow}
                 icon={item.icon}
+                text={item.text}
               />
             ))}
           </div>
@@ -61,6 +62,7 @@ const IndexPage = () => {
       </section>
       <SocialStuff />
       <NewsAndUpdates />
+      <ClientReview />
     </Layout>
   );
 };
