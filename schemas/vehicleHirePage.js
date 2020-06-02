@@ -94,30 +94,38 @@ export default {
       type: 'text',
       description: 'Describe Deckerdence',
     },
+
+    // {
+    //   title: 'First Vehicle Feature',
+    //   name: 'firstVehicleFeature',
+    //   type: 'vehicleFeature',
+    // },
     {
-      title: 'Information ',
-      name: 'information',
-      type: 'vehicleInformation',
-    },
-    {
-      title: 'First Vehicle Feature',
-      name: 'firstVehicleFeature',
-      type: 'vehicleFeature',
+      title: 'First Feature',
+      name: 'firstFeature',
+      type: 'image',
     },
     {
       title: 'Festival',
       name: 'festival',
       type: 'pageSimpleStage',
     },
+
     {
-      title: 'Second Vehicle Feature',
-      name: 'secondVehicleFeature',
-      type: 'vehicleFeature',
+      title: 'Second Feature',
+      name: 'secondFeature',
+      type: 'image',
     },
     {
-      title: 'Third Vehicle Feature',
-      name: 'thirdVehicleFeature',
-      type: 'vehicleFeature',
+      title: 'Information ',
+      name: 'information',
+      type: 'vehicleInformation',
+    },
+
+    {
+      title: 'Third Feature',
+      name: 'thirdFeature',
+      type: 'image',
     },
     {
       title: 'Footer Title',
