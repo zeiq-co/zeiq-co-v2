@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Header = styled.div`
   .column {
     :last-child {
-      margin-bottom: 2rem !important;
+      margin-bottom: 1.5rem !important;
     }
   }
 `;

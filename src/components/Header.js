@@ -76,8 +76,7 @@ export default class Header extends React.Component {
           <nav
             className="navbar"
             role="navigation"
-            aria-label="main navigation"
-          >
+            aria-label="main navigation">
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
                 <img src="/images/zeiq-logo.png" alt="site logo" />
@@ -93,8 +92,7 @@ export default class Header extends React.Component {
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
-              >
+                onClick={() => this.handleMobileMenu()}>
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
@@ -114,7 +112,7 @@ export default class Header extends React.Component {
                 <Link to="/contact" className="navbar-item">
                   BLOG
                 </Link>
-                <div className="buttons">
+                <div className="buttons is-shadowless">
                   <Link to="/contact" className="button is-primary">
                     <strong>CONTACT US</strong>
                   </Link>

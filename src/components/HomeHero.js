@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
+  padding-bottom: 0rem !important;
   img {
     margin: 0px auto;
   }

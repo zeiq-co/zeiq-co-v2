@@ -4,17 +4,15 @@ import styled from 'styled-components';
 import Heading from './elements/Heading';
 
 const Section = styled.div`
-  img {
-    width: 100%;
-    height: 38rem;
-  }
   .slick-dots {
     bottom: -50px !important;
   }
   .slick-dots li button:before {
     color: ${props => props.theme.mainBrandColor} !important;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 8px;
+  }
+  .slick-dots li button {
+    font-size: 12px;
   }
 `;
 
@@ -26,8 +24,10 @@ export default class Work extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 3000,
+      fade: true,
+      cssEase: 'linear',
     };
     return (
       <Section className="section">
@@ -38,7 +38,19 @@ export default class Work extends React.Component {
               <img src="/images/work/Packers.png" alt="" />
             </div>
             <div>
-              <img src="/images/work/work1.png" alt="" />
+              <img src="/images/work/work.png" alt="" />
+            </div>
+            <div>
+              <img src="/images/work/Packers.png" alt="" />
+            </div>
+            <div>
+              <img src="/images/work/work.png" alt="" />
+            </div>
+            <div>
+              <img src="/images/work/Packers.png" alt="" />
+            </div>
+            <div>
+              <img src="/images/work/work.png" alt="" />
             </div>
           </Slider>
         </div>
