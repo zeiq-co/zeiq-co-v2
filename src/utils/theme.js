@@ -49,7 +49,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.lightShadess};
     letter-spacing: 0.03rem !important;
     font-size: 16px;
-    padding: 0rem 7rem !important;
   }
   .title {
     font-family: ${theme.primaryFontFamily};
@@ -105,6 +104,11 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-info{
     color: ${theme.mainBrandColor} !important;
+  }
+  .section{
+    @media only screen and (min-width: 1023px) {
+      padding:3rem 8rem !important;
+    }
   }
 `;
 

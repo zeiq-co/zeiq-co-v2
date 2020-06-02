@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Header = styled.div`
+  .title {
+    line-height: 46px !important;
+  }
   .column {
     :last-child {
       margin-bottom: 1.5rem !important;
