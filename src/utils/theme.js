@@ -49,15 +49,17 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.lightShadess};
     letter-spacing: 0.03rem !important;
     font-size: 16px;
+    padding: 0rem 7rem !important;
   }
   .title {
     font-family: ${theme.primaryFontFamily};
+    line-height: 62px !important;
   }
   .button {
     font-family: ${theme.primaryFontFamily};
   }
   p {
-    line-height: 1.5rem;
+    line-height: 25px !important;
   }
   p, .title, .box {
     color: ${theme.textColor} !important;
@@ -65,6 +67,7 @@ const GlobalStyle = createGlobalStyle`
 
   .subtitle {
     color: ${theme.darkAccent} !important;
+    line-height: 25px !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};

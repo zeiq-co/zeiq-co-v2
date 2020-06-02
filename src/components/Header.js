@@ -28,9 +28,7 @@ const Section = styled.section`
   }
   .navbar-item {
     font-family: ${props => props.theme.secondaryFontFamily} !important;
-    letter-spacing: 1px;
-    font-weight: 400;
-    height: 3rem;
+    margin: 0px 10px;
     color: ${props => props.theme.darkShades};
     :hover {
       color: ${props => props.theme.darkShades} !important;
@@ -46,6 +44,9 @@ const Section = styled.section`
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
+  }
+  .button {
+    margin-left: 20px;
   }
 `;
 
@@ -100,31 +101,22 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-end">
+              <div className="navbar-end has-text-weight-medium">
                 <Link to="/" className="navbar-item">
-                  Work
+                  WORK
                 </Link>
                 <Link to="/services" className="navbar-item">
-                  Services
+                  SERVICES
                 </Link>
                 <Link to="/about" className="navbar-item">
-                  About
+                  ABOUT
                 </Link>
                 <Link to="/contact" className="navbar-item">
-                  News
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
-                </Link>
-                <Link to="/" className="navbar-item">
-                  Jobs
-                </Link>
-                <Link to="/" className="navbar-item">
-                  Open Source
+                  BLOG
                 </Link>
                 <div className="buttons">
                   <Link to="/contact" className="button is-primary">
-                    <strong>Contact Us</strong>
+                    <strong>CONTACT US</strong>
                   </Link>
                 </div>
               </div>
