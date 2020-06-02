@@ -23,11 +23,15 @@ const Section = styled.div`
     }
   }
   .card {
-    border: 2px solid ${props => props.theme.borderColor} !important;
+    border: 2px solid #f3f3f3 !important;
     border-radius: 8px;
     box-shadow: none;
   }
+  .title {
+    line-height: 18px !important;
+  }
 `;
+
 const data = [
   {
     position: 'Project Manager',
@@ -73,7 +77,7 @@ export default class MultipleItems extends Component {
     return (
       <Section className="section">
         <div className="container">
-          <Heading title="Words From Clients" />
+          <Heading title="WORDS FROM CLIENTS" />
           <Slider {...settings}>
             {data.map(item => (
               <div className="wrapper">

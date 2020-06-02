@@ -23,7 +23,7 @@ const NewsCard = ({ asset }) => {
     <CardWrapper className="column is-4">
       <div className="card">
         <div className="card-image">
-          <figure className="image is-4by3">
+          <figure className="image is-1by1">
             <img src={asset} alt="Place" />
           </figure>
         </div>
@@ -34,10 +34,10 @@ const NewsCard = ({ asset }) => {
             </div>
           </div>
           <div className="content">
-            <h1 className="title is-4 is-spaced">
+            <h1 className="subtitle is-5 is-spaced has-text-black">
               Why Do You Need To Join An Affiliate Marketing Network
             </h1>
-            <h2 className="is-size-6 has-text-weight-normal">
+            <h2 className="subtitle is-size-6 has-text-weight-normal">
               Many of us are so used to working on a computer desktop that when
               it comes time to purchase a new computer, we don’t consider
             </h2>
