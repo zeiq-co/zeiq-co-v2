@@ -44,10 +44,10 @@ const NewsCard = ({ asset, title, subtitle, pera, tags }) => {
               {pera}
             </h2>
             {tags && (
-              <div className="tags is-uppercase">
-                <span className="tag">javascript</span>
-                <span className="tag">bulma</span>
-                <span className="tag">react native</span>
+              <div className="tags is-uppercase has-text-weight-bold">
+                <span className="tag has-text-light">javascript</span>
+                <span className="tag has-text-light">bulma</span>
+                <span className="tag has-text-light">react native</span>
               </div>
             )}
           </div>

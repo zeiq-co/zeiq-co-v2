@@ -95,7 +95,7 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: ${theme.boxShadow};
   }
   .has-text-light {
-    color: ${theme.lightAccent} !important;
+    color: #616161 !important;
   }
   .has-text-black {
     color: ${theme.textColor} !important;

@@ -30,7 +30,8 @@ const Work = () => {
               <NewsCard
                 asset={item.image}
                 title="ECOMMERCE"
-                subtitle="An online food ordering and delivery app for Android & iOS users."
+                subtitle="Food On Mood"
+                pera="An online food ordering and delivery app for Android & iOS users."
                 tags
               />
             ))}
