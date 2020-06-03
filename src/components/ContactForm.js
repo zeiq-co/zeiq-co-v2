@@ -6,11 +6,11 @@ import { theme } from '../utils/theme';
 const Container = styled.div`
   input,
   select {
-    color: ${theme.inputColor}!important;
+    color: ${theme.darkAccent}!important;
     background: #f3f3f3;
     box-shadow: none;
     ::-webkit-input-placeholder {
-      color: ${theme.inputColor}!important;
+      color: ${theme.darkAccent}!important;
     }
   }
   .button {
@@ -26,7 +26,7 @@ const Container = styled.div`
   }
 `;
 
-const ButtonIcon = styled.button`
+const ButtonIcon = styled.div`
   margin-left: 75% !important;
 `;
 const ContactForm = () => {

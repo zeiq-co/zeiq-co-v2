@@ -18,7 +18,6 @@ const Section = styled.div`
   }
   .wrapper {
     :focus {
-      outline: 0;
       outline: none;
     }
   }

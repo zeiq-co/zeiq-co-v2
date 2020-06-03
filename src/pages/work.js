@@ -29,10 +29,8 @@ const Work = () => {
             {data.map(item => (
               <NewsCard
                 asset={item.image}
-                title="04 Jun 2018"
-                subtitle="Why Do You Need To Join An Affiliate Marketing Network"
-                pera="Many of us are so used to working on a computer desktop that when
-                it comes time to purchase a new computer, we don’t consider"
+                title="ECOMMERCE"
+                subtitle="An online food ordering and delivery app for Android & iOS users."
                 tags
               />
             ))}
