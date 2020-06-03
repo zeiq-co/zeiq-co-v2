@@ -105,7 +105,7 @@ export default class Header extends React.Component {
                 className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}
               >
                 <div className="navbar-end has-text-weight-medium">
-                  <Link to="/" className="navbar-item">
+                  <Link to="/work" className="navbar-item">
                     WORK
                   </Link>
                   <Link to="/services" className="navbar-item">

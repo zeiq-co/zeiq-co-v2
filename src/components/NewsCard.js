@@ -8,6 +8,9 @@ const CardWrapper = styled.div`
   img {
     border-radius: 8px;
   }
+  .tag {
+    border-radius: 8px;
+  }
 `;
 
 const Content = styled.div`
@@ -18,7 +21,7 @@ const Content = styled.div`
   }
 `;
 
-const NewsCard = ({ asset }) => {
+const NewsCard = ({ asset, title, subtitle, pera, tags }) => {
   return (
     <CardWrapper className="column is-4">
       <div className="card">
@@ -30,17 +33,23 @@ const NewsCard = ({ asset }) => {
         <Content className="card-content">
           <div className="media">
             <div className="media-content">
-              <h2 className="is-size-6">04 Jun 2018</h2>
+              <h2 className="is-size-6">{title}</h2>
             </div>
           </div>
           <div className="content">
             <h1 className="subtitle is-5 is-spaced has-text-black">
-              Why Do You Need To Join An Affiliate Marketing Network
+              {subtitle}
             </h1>
             <h2 className="subtitle is-size-6 has-text-weight-normal">
-              Many of us are so used to working on a computer desktop that when
-              it comes time to purchase a new computer, we don’t consider
+              {pera}
             </h2>
+            {tags && (
+              <div className="tags is-uppercase">
+                <span className="tag">javascript</span>
+                <span className="tag">bulma</span>
+                <span className="tag">react native</span>
+              </div>
+            )}
           </div>
         </Content>
       </div>
