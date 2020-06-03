@@ -91,9 +91,6 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${darken(0.06, theme.mainBrandColor)};
     }
   }
-  .button.is-info {
-    background:transparent;
-  }
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
