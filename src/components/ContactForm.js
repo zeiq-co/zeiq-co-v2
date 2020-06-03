@@ -24,13 +24,19 @@ const Container = styled.div`
   select {
     border-radius: 8px !important;
   }
+  .title {
+    line-height: 22.4px !important;
+  }
   .subtitle {
     font-size: 24px !important;
   }
 `;
 
-const ButtonIcon = styled.div`
-  margin-left: 75% !important;
+const Button = styled.button`
+  margin-top: 35px;
+  span {
+    margin-left: 75% !important;
+  }
 `;
 const ContactForm = () => {
   return (
@@ -72,15 +78,15 @@ const ContactForm = () => {
                 </span>
               </p>
             </div>
-            <button
+            <Button
               className="button is-medium is-primary is-fullwidth has-text-weight-medium"
               type="button"
             >
               <strong>Submit</strong>
-              <ButtonIcon className="icon">
+              <span className="icon">
                 <i className="fas fa-user-tie" />
-              </ButtonIcon>
-            </button>
+              </span>
+            </Button>
           </div>
         </div>
       </div>
