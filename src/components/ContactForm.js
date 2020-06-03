@@ -24,6 +24,9 @@ const Container = styled.div`
   select {
     border-radius: 8px !important;
   }
+  .subtitle {
+    font-size: 24px !important;
+  }
 `;
 
 const ButtonIcon = styled.div`
