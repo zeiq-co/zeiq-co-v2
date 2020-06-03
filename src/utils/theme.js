@@ -40,6 +40,7 @@ export const theme = {
   secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
   secondaryBlack: '#141414',
+  inputColor: '#616161',
 };
 
 const GlobalStyle = createGlobalStyle`
