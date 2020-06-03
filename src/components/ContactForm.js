@@ -13,9 +13,7 @@ const Container = styled.div`
       color: ${theme.darkAccent}!important;
     }
   }
-  .button {
-    justify-content: flex-start;
-  }
+
   .field:not(:last-child) {
     margin-bottom: 20px;
   }

@@ -30,7 +30,6 @@ const About = () => {
           </div>
           <WhatWeDo />
           <WhatWeDo flex />
-          <TechStack />
         </div>
       </div>
     </Layout>
