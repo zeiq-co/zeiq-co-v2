@@ -11,10 +11,10 @@ const Header = styled.div`
     }
   }
 `;
-const Heading = ({ title, subtitle }) => {
+const Heading = ({ title, subtitle, columnSize }) => {
   return (
     <Header className="columns is-centered">
-      <div className="column is-8">
+      <div className={`column is-7 ${columnSize || 'column is-8'}`}>
         {title && (
           <h2 className="title is-3 is-spaced has-text-centered">{title}</h2>
         )}

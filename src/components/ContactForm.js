@@ -42,7 +42,7 @@ const ContactForm = () => {
   return (
     <Container className="section">
       <Heading
-        title="Ready to start a Project"
+        title="Ready to start a Project?"
         subtitle="To start, use form below to tell us about you and the project"
       />
       <div className="container">
