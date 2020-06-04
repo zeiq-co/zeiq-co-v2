@@ -32,7 +32,11 @@ const Country = styled.div`
   }
 `;
 
-const Socials = styled.div``;
+const Socials = styled.div`
+  span {
+    margin-right: 10px;
+  }
+`;
 
 const ContactPage = () => {
   return (
@@ -103,22 +107,22 @@ const ContactPage = () => {
                           socials
                         </H2>
                         <a href="">
-                          <span className="icon has-text-light">
+                          <span className="icon has-text-light is-size-4">
                             <i className="fab fa-facebook-square" />
                           </span>
                         </a>
                         <a href="">
-                          <span className="icon has-text-light">
+                          <span className="icon has-text-light is-size-4">
                             <i className="fab fa-google-plus-g" />
                           </span>
                         </a>
                         <a href="">
-                          <span className="icon has-text-light">
+                          <span className="icon has-text-light is-size-4">
                             <i className="fab fa-twitter" />
                           </span>
                         </a>
                         <a href="">
-                          <span className="icon has-text-light">
+                          <span className="icon has-text-light is-size-4">
                             <i className="fab fa-instagram" />
                           </span>
                         </a>
