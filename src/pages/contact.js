@@ -12,18 +12,18 @@ const Container = styled.section`
 
 const Mail = styled.a`
   color: ${props => props.theme.mainBrandColor} !important;
+  margin-bottom: 37px !important;
 `;
 
 const H2 = styled.h2`
   margin-bottom: 7.6px !important;
-  line-height: 7.6px !important;
 `;
-const H1 = styled.h1`
-  margin-top: 30px !important;
-  line-height: 7.6px !important;
+const MailWrapper = styled.div`
+  margin-bottom: 37px !important;
 `;
 
 const Country = styled.div`
+  margin-bottom: 36px;
   img {
     margin-right: 14px;
   }
@@ -64,46 +64,64 @@ const ContactPage = () => {
                 <div className="column">
                   <section className="hero">
                     <div className="hero-body">
-                      <H2 className="title is-7 has-text-black">EMAIL</H2>
-                      <Mail href="mailto:hi@zeiq.co">hi@zeiq.co</Mail>
-                      <H1 className="title is-7 has-text-black is-uppercase">
+                      <MailWrapper>
+                        <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
+                          EMAIL
+                        </H2>
+                        <Mail href="mailto:hi@zeiq.co">hi@zeiq.co</Mail>
+                      </MailWrapper>
+                      <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                         Phone
-                      </H1>
+                      </H2>
                       <Country>
-                        <a href="tel:+91-8847411956">
-                          <span className="icon">
-                            <img src="/images/india.png" alt="" />
-                          </span>
-                          +91-8847411956
-                        </a>
+                        <div className="main">
+                          <a href="tel:+91-8847411956">
+                            <span className="icon">
+                              <img src="/images/india.png" alt="" />
+                            </span>
+                            +91-8847411956
+                          </a>
+                        </div>
+                        <div className="main">
+                          <a href="tel:01582-888653">
+                            <span className="icon">
+                              <img src="/images/uk.png" alt="" />
+                            </span>
+                            01582-888653
+                          </a>
+                        </div>
                       </Country>
-                      <Country>
-                        <a href="tel:01582-888653">
-                          <span className="icon">
-                            <img src="/images/uk.png" alt="" />
-                          </span>
-                          01582-888653
-                        </a>
-                      </Country>
-                      <h1 className="title is-7 has-text-black">Address</h1>
-                      <p>Guru Amadas Nagar, Salempur Road, Jalandhar</p>
-                      <p>38 Golf Road, Swineshead Bridge, England </p>
+                      <MailWrapper>
+                        <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
+                          Address
+                        </H2>
+                        <p>Guru Amadas Nagar, Salempur Road, Jalandhar</p>
+                        <p>38 Golf Road, Swineshead Bridge, England </p>
+                      </MailWrapper>
                       <Socials>
-                        <h1 className="title is-7 has-text-black is-uppercase">
+                        <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                           socials
-                        </h1>
-                        <span className="icon has-text-light">
-                          <i className="fab fa-facebook-square" />
-                        </span>
-                        <span className="icon has-text-light">
-                          <i className="fab fa-google-plus-g" />
-                        </span>
-                        <span className="icon has-text-light">
-                          <i className="fab fa-twitter" />
-                        </span>
-                        <span className="icon has-text-light">
-                          <i className="fab fa-instagram" />
-                        </span>
+                        </H2>
+                        <a href="">
+                          <span className="icon has-text-light">
+                            <i className="fab fa-facebook-square" />
+                          </span>
+                        </a>
+                        <a href="">
+                          <span className="icon has-text-light">
+                            <i className="fab fa-google-plus-g" />
+                          </span>
+                        </a>
+                        <a href="">
+                          <span className="icon has-text-light">
+                            <i className="fab fa-twitter" />
+                          </span>
+                        </a>
+                        <a href="">
+                          <span className="icon has-text-light">
+                            <i className="fab fa-instagram" />
+                          </span>
+                        </a>
                       </Socials>
                     </div>
                   </section>
