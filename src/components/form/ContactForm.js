@@ -23,7 +23,7 @@ const InputContainer = styled.form`
 
     :active,
     :focus {
-      color: ${props => props.theme.darkAccent} !important;
+      color: ${props => props.theme.secondaryBlack} !important;
     }
   }
   .button {

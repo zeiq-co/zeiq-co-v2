@@ -31,6 +31,7 @@ const Country = styled.div`
   margin-bottom: 36px;
   img {
     margin-right: 14px;
+    height: 20px;
   }
   span {
     width: 3rem !important;
