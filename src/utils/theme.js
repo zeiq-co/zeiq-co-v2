@@ -103,6 +103,9 @@ const GlobalStyle = createGlobalStyle`
   .has-text-info{
     color: ${theme.mainBrandColor} !important;
   }
+  .has-text-grey-light {
+    color: ${theme.darkAccent} !important;
+  }
   .section{
     @media only screen and (min-width: 1023px) {
       padding:3rem 8rem !important;

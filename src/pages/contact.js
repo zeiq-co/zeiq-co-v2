@@ -107,22 +107,22 @@ const ContactPage = () => {
                           socials
                         </H2>
                         <a href="">
-                          <span className="icon has-text-light is-size-4">
+                          <span className="icon has-text-grey-light is-size-4">
                             <i className="fab fa-facebook-square" />
                           </span>
                         </a>
                         <a href="">
-                          <span className="icon has-text-light is-size-4">
+                          <span className="icon has-text-grey-light is-size-4">
                             <i className="fab fa-google-plus-g" />
                           </span>
                         </a>
                         <a href="">
-                          <span className="icon has-text-light is-size-4">
+                          <span className="icon has-text-grey-light is-size-4">
                             <i className="fab fa-twitter" />
                           </span>
                         </a>
                         <a href="">
-                          <span className="icon has-text-light is-size-4">
+                          <span className="icon has-text-grey-light is-size-4">
                             <i className="fab fa-instagram" />
                           </span>
                         </a>
