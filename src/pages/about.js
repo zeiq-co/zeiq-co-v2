@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Heading from '../components/elements/Heading';
 import WhatWeDo from '../components/WhatWeDo';
-import TechStack from '../components/TechStack';
 
 const About = () => {
   return (
