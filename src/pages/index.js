@@ -13,7 +13,16 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" description="Home" />
-      <HomeHero />
+      <HomeHero
+        title="Your Trusted Developer Partner"
+        subtitle="  We deliver web and mobile app development services to global
+        businesses since 1997, with 100% project delivery success. Hire the
+        best programmers at affordable prices. Our design-focused approach
+        and project execution processes help you to deliver the right
+        solutions."
+        image="/images/ecommerce-app.png"
+        button
+      />
       <Work />
       <Hire />
       <Steps />
