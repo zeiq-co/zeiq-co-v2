@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Heading from '../components/elements/Heading';
 import NewsCard from '../components/NewsCard';
-import ContactForm from '../components/ContactForm';
+import RejisterForm from '../components/form/RejisterForm';
 
 const data = [
   {
@@ -38,7 +38,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <RejisterForm />
     </Layout>
   );
 };

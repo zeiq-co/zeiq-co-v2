@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heading from './elements/Heading';
-import { theme } from '../utils/theme';
+import Heading from '../elements/Heading';
+import { theme } from '../../utils/theme';
 
 const Container = styled.div`
   input,
