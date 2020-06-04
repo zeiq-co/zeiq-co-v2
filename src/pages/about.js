@@ -19,11 +19,8 @@ const About = () => {
           />
           <div className="columns">
             <div className="column">
-              <figure className="image is-2by1">
-                <img
-                  src="https://unsplash.com/photos/67l-QujB14w/download?force=true&w=2400"
-                  alt="website"
-                />
+              <figure className="image">
+                <img src="/images/about.png" alt="website" />
               </figure>
             </div>
           </div>
