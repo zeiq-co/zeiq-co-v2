@@ -12,10 +12,10 @@ const Container = styled.div`
     border-radius: 8px;
     width: 100%;
     height: 100%;
-    /* height: 545px; */
   }
   .subtitle {
     margin: 0rem;
+    text-align: justify;
   }
   .button {
     margin-top: 10px;

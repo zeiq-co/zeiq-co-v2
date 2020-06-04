@@ -5,7 +5,7 @@ import Button from './elements/Button';
 const Container = styled.section`
   .hero {
     border-radius: 8px;
-    border: 1px solid #654ce8;
+    border: 1px solid ${props => props.theme.mainBrandColor};
   }
   p {
     text-align: justify;
@@ -37,7 +37,7 @@ const Hire = () => (
                       back-end technologies like Node.js to develop custom and
                       responsive websites, web apps and eCommerce solutions.
                     </p>
-                    <Button to="/" text="Contact Us" />
+                    <Button to="/contact" text="Contact Us" />
                   </div>
                 </div>
               </div>
