@@ -36,7 +36,7 @@ const Button = styled.button`
     margin-left: 75% !important;
   }
 `;
-const ContactForm = () => {
+const RegisterForm = () => {
   return (
     <Container className="section">
       <Heading
@@ -91,4 +91,4 @@ const ContactForm = () => {
     </Container>
   );
 };
-export default ContactForm;
+export default RegisterForm;

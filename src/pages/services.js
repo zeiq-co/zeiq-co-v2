@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Heading from '../components/elements/Heading';
 import ServicesType from '../components/ServicesType';
-import RejisterForm from '../components/form/RejisterForm';
+import RegisterForm from '../components/form/RegisterForm';
 
 const Services = () => {
   return (
@@ -25,7 +25,7 @@ const Services = () => {
           <ServicesType flex />
         </div>
       </div>
-      <RejisterForm />
+      <RegisterForm />
     </Layout>
   );
 };
