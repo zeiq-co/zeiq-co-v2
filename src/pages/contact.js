@@ -20,6 +20,11 @@ const H2 = styled.h2`
 `;
 const MailWrapper = styled.div`
   margin-bottom: 37px !important;
+  @media only screen and (min-width: 768px) {
+    p {
+      padding: 0px 8rem 0px 0px;
+    }
+  }
 `;
 
 const Country = styled.div`

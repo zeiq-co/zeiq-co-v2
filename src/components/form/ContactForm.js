@@ -8,6 +8,9 @@ import styled from 'styled-components';
 import InputGroup from '../elements/InputGroup';
 
 const InputContainer = styled.form`
+  .field:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .input,
   .textarea {
     background-color: ${props => props.theme.backgroundColorLight};
@@ -17,13 +20,14 @@ const InputContainer = styled.form`
       color: ${props => props.theme.darkAccent}!important;
     }
     background: #f3f3f3;
-    .field:not(:last-child) {
-      margin-bottom: 10px;
-    }
+
     :active,
     :focus {
       color: ${props => props.theme.darkAccent} !important;
     }
+  }
+  .button {
+    margin-top: 10px;
   }
 `;
 
@@ -74,7 +78,7 @@ const ContactForm = props => {
       </div>
       <button
         type="submit"
-        className="button is-primary is-large has-text-weight-bold"
+        className="button is-primary is-medium has-text-weight-bold"
         onClick={() => alert('working on it')}
       >
         <span>Submit</span>
