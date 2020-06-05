@@ -2,6 +2,8 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import WorkHero from '../components/WorkHero';
+
 import Heading from '../components/elements/Heading';
 import NewsCard from '../components/NewsCard';
 import RegisterForm from '../components/form/RegisterForm';
@@ -22,6 +24,7 @@ const Work = () => {
   return (
     <Layout>
       <Seo title="Work" description="Our Work" />
+      <WorkHero />
       <div className="hero section">
         <div className="container">
           <Heading title="OUR WORk" />
