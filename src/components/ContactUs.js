@@ -21,6 +21,9 @@ const MailWrapper = styled.div`
       padding: 0px 8rem 0px 0px;
     }
   }
+  .text {
+    margin-bottom: 8px !important;
+  }
 `;
 
 const Country = styled.div`
@@ -114,7 +117,9 @@ const ContactUs = () => (
                     <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                       Address
                     </H2>
-                    <p>Guru Amadas Nagar, Salempur Road, Jalandhar</p>
+                    <p className="text">
+                      Guru Amadas Nagar, Salempur Road, Jalandhar
+                    </p>
                     <p>38 Golf Road, Swineshead Bridge, England </p>
                   </MailWrapper>
                   <Socials>
