@@ -40,6 +40,7 @@ export const theme = {
   secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
   secondaryBlack: '#141414',
+  inputColor: '#616161',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -52,12 +53,13 @@ const GlobalStyle = createGlobalStyle`
   }
   .title {
     font-family: ${theme.primaryFontFamily};
+    line-height: 62px !important;
   }
   .button {
     font-family: ${theme.primaryFontFamily};
   }
   p {
-    line-height: 1.5rem;
+    line-height: 25px !important;
   }
   p, .title, .box {
     color: ${theme.textColor} !important;
@@ -65,6 +67,7 @@ const GlobalStyle = createGlobalStyle`
 
   .subtitle {
     color: ${theme.darkAccent} !important;
+    line-height: 25px !important;
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
@@ -88,20 +91,25 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${darken(0.06, theme.mainBrandColor)};
     }
   }
-  .button.is-info {
-    background:transparent;
-  }
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
   }
   .has-text-light {
-    color: ${theme.lightAccent} !important;
+    color: #616161 !important;
   }
   .has-text-black {
     color: ${theme.textColor} !important;
   }
   .has-text-info{
     color: ${theme.mainBrandColor} !important;
+  }
+  .has-text-grey-light {
+    color: ${theme.darkAccent} !important;
+  }
+  .section{
+    @media only screen and (min-width: 1023px) {
+      padding:3rem 8rem !important;
+    }
   }
 `;
 

@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import { theme } from '../utils/theme';
 
 const Column = styled.div`
+  .title {
+    line-height: 32px !important;
+  }
   .box {
     box-shadow: none;
   }
@@ -12,7 +15,6 @@ const Column = styled.div`
     background-color: ${theme.backgroundColor};
     height: 5rem;
     width: 5rem;
-    font-size: 2.5rem;
     border-radius: 3rem;
     margin: 0 0 20px;
   }
@@ -28,14 +30,14 @@ const Arrow = styled.i`
   margin: 10px;
 `;
 
-const OurProcess = ({ sideImage, text }) => {
+const OurProcess = ({ sideImage, text, icon }) => {
   return (
     <div className="column is-4 has-text-centered">
       <div className="columns">
         <Column className="column">
           <article className="box">
-            <span className="icon has-text-light">
-              <i className="fas fa-star" />
+            <span className="icon has-text-light is-size-2">
+              <i className={icon} />
             </span>
             <div className="title is-5">{text}</div>
           </article>

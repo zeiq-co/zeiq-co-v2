@@ -4,18 +4,26 @@ import { Link } from 'gatsby';
 import Features from './elements/Features';
 
 const Container = styled.div`
-  .columns.is-flex {
+  padding: 3rem 0rem;
+  .columns {
     flex-direction: ${props => (props.flex ? 'row-reverse' : '')};
   }
   img {
     border-radius: 8px;
     width: 100%;
-    height: 545px;
+    height: 100%;
+  }
+  .subtitle {
+    margin: 0rem;
+    text-align: justify;
+  }
+  .button {
+    margin-top: 10px;
   }
 `;
 
-const TextWrapper = styled.div`
-  margin-bottom: 1.5rem;
+const Points = styled.div`
+  padding: 10px !important;
 `;
 
 const features = [
@@ -52,15 +60,15 @@ const features = [
 ];
 const ServicesType = ({ flex }) => {
   return (
-    <Container className="section is-block hero is-relative " flex={flex}>
-      <div className="columns is-multiline is-flex">
-        <div className="column is-6">
+    <Container flex={flex}>
+      <div className="columns is-multiline  is-variable is-8">
+        <div className="column is-5">
           <img
             src="https://images.unsplash.com/photo-1565306257414-bbc84fdaaade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
             alt="mobile"
           />
         </div>
-        <div className="column is-6">
+        <div className="column">
           <h2 className="title is-2 is-spaced">Mobile Apps development</h2>
           <p className="subtitle is-6">
             A successful offshore software application development company since
@@ -71,17 +79,20 @@ const ServicesType = ({ flex }) => {
             affordable prices. Our design-focused approach and project execution
             processes help you to deliver the right solutions.
           </p>
-          <TextWrapper>
+          <div>
             <h2 className="title is-4">Features</h2>
-          </TextWrapper>
+          </div>
           <div className="columns is-multiline">
             {features.map(item => (
-              <div className="column is-6">
+              <Points className="column is-6 points">
                 <Features text={item.text} />
-              </div>
+              </Points>
             ))}
           </div>
-          <Link to="/" className="button is-primary">
+          <Link
+            to="/"
+            className="button is-primary is-medium has-text-weight-medium"
+          >
             <strong>Learn More</strong>
           </Link>
         </div>

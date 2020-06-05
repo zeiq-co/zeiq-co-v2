@@ -28,9 +28,7 @@ const Section = styled.section`
   }
   .navbar-item {
     font-family: ${props => props.theme.secondaryFontFamily} !important;
-    letter-spacing: 1px;
-    font-weight: 400;
-    height: 3rem;
+    margin: 0px 10px;
     color: ${props => props.theme.darkShades};
     :hover {
       color: ${props => props.theme.darkShades} !important;
@@ -46,6 +44,9 @@ const Section = styled.section`
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
+  }
+  .button {
+    margin-left: 20px;
   }
 `;
 
@@ -72,64 +73,59 @@ export default class Header extends React.Component {
     return (
       <Section className="section">
         <div className="container">
-          <nav
-            className="navbar"
-            role="navigation"
-            aria-label="main navigation"
-          >
-            <div className="navbar-brand">
-              <Link className="navbar-item" to="/">
-                <img src="/images/zeiq-logo.png" alt="site logo" />
-              </Link>
-              <a
-                href="#"
-                role="button"
-                className={
-                  isActive
-                    ? 'navbar-burger burger mobile is-active'
-                    : 'navbar-burger burger mobile'
-                }
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
+          <div className="container">
+            <nav
+              className="navbar"
+              role="navigation"
+              aria-label="main navigation"
+            >
+              <div className="navbar-brand">
+                <Link className="navbar-item" to="/">
+                  <img src="/images/zeiq-logo.png" alt="site logo" />
+                </Link>
+                <a
+                  href="#"
+                  role="button"
+                  className={
+                    isActive
+                      ? 'navbar-burger burger mobile is-active'
+                      : 'navbar-burger burger mobile'
+                  }
+                  aria-label="menu"
+                  aria-expanded="false"
+                  data-target="navbarBasicExample"
+                  onClick={() => this.handleMobileMenu()}
+                >
+                  <span aria-hidden="true" />
+                  <span aria-hidden="true" />
+                  <span aria-hidden="true" />
+                </a>
+              </div>
+              <div
+                className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}
               >
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-              </a>
-            </div>
-            <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-end">
-                <Link to="/" className="navbar-item">
-                  Work
-                </Link>
-                <Link to="/services" className="navbar-item">
-                  Services
-                </Link>
-                <Link to="/about" className="navbar-item">
-                  About
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  News
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
-                </Link>
-                <Link to="/" className="navbar-item">
-                  Jobs
-                </Link>
-                <Link to="/" className="navbar-item">
-                  Open Source
-                </Link>
-                <div className="buttons">
-                  <Link to="/contact" className="button is-primary">
-                    <strong>Contact Us</strong>
+                <div className="navbar-end has-text-weight-medium">
+                  <Link to="/work" className="navbar-item">
+                    WORK
                   </Link>
+                  <Link to="/services" className="navbar-item">
+                    SERVICES
+                  </Link>
+                  <Link to="/about" className="navbar-item">
+                    ABOUT
+                  </Link>
+                  <Link to="/contact" className="navbar-item">
+                    BLOG
+                  </Link>
+                  <div className="buttons is-shadowless">
+                    <Link to="/contact" className="button is-primary">
+                      <strong>CONTACT US</strong>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </Section>
     );

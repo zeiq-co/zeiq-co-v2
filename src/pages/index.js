@@ -1,34 +1,34 @@
 import React from 'react';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import OurProcess from '../components/OurProcess';
 import HomeHero from '../components/HomeHero';
 import Work from '../components/Work';
 import Hire from '../components/Hire';
+import Steps from '../components/Steps';
 import SocialStuff from '../components/SocialStuff';
 import NewsAndUpdates from '../components/NewsAndUpdates';
+import ClientReview from '../components/ClientReview';
 
 const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" description="Home" />
-      <HomeHero />
+      <HomeHero
+        title="Your Trusted Developer Partner"
+        subtitle="  We deliver web and mobile app development services to global
+        businesses since 1997, with 100% project delivery success. Hire the
+        best programmers at affordable prices. Our design-focused approach
+        and project execution processes help you to deliver the right
+        solutions."
+        image="/images/ecommerce-app.png"
+        button
+      />
       <Work />
       <Hire />
-      <section className="section">
-        <div className="container">
-          <div className="columns is-multiline">
-            <OurProcess text="Requirement Analysis" sideImage />
-            <OurProcess sideImage text="Project Allocation" />
-            <OurProcess text="Team match-up" />
-            <OurProcess sideImage text="Project implementation" />
-            <OurProcess sideImage text="Effect analysis" />
-            <OurProcess text="Long-term relationship!" />
-          </div>
-        </div>
-      </section>
+      <Steps />
       <SocialStuff />
       <NewsAndUpdates />
+      <ClientReview />
     </Layout>
   );
 };

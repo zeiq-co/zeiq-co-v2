@@ -14,7 +14,7 @@ const data = [
   },
 ];
 
-const NewsAndUpdates = () => {
+const Service = () => {
   return (
     <div className="hero section">
       <div className="container">
@@ -34,4 +34,4 @@ const NewsAndUpdates = () => {
     </div>
   );
 };
-export default NewsAndUpdates;
+export default Service;

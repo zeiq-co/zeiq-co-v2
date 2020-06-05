@@ -1,22 +1,33 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Heading from './elements/Heading';
 import Button from './elements/Button';
 
 const data = [
   {
-    source: '/images/google-logo.jpg',
+    source: '/images/social/Amazon.png',
   },
   {
-    source: '/images/google-logo.jpg',
+    source: '/images/social/Facebook.png',
   },
   {
-    source: '/images/google-logo.jpg',
+    source: '/images/social/Google Copy.png',
   },
   {
-    source: '/images/google-logo.jpg',
+    source: '/images/social/Linkdedin.png',
   },
 ];
+
+const Wrapper = styled.div`
+  .box {
+    min-height: 8rem;
+  }
+  img {
+    width: auto;
+    margin: 0 auto;
+  }
+`;
 
 const SocialStuff = () => {
   return (
@@ -27,11 +38,15 @@ const SocialStuff = () => {
           subtitle=" Audio player software is used to playback sound recordings in one
           of the many formats available for computers today."
         />
-        <div className="columns is-multiline is-centered">
+        <div className="columns is-multiline">
           {data.map(items => (
-            <div className="column is-3">
-              <img src={items.source} alt="company" />
-            </div>
+            <Wrapper className="column is-one-quarter hero">
+              <div className="box hero-body">
+                <figure className="image">
+                  <img src={items.source} alt="social" />
+                </figure>
+              </div>
+            </Wrapper>
           ))}
         </div>
         <div className="has-text-centered">
