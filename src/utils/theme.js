@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#634ce9';
 const lightShades = '#acb6bd';
@@ -33,6 +33,7 @@ export const theme = {
   fontSizeMedium: 18,
   fontSizeLarge: 22,
   textColor: darkShades, // '#262a2c',
+  secondaryTextColor: '#616161',
   textColorLite: darkAccent, // 'rgb(139, 153, 163)',
   textColorInverse: lightShades,
   menuTintColor: darkAccent,
@@ -47,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   ${reset};
   body {
     font-family: ${theme.secondaryFontFamily};
-    color: ${theme.lightShadess};
+    color: ${theme.lightShades};
     letter-spacing: 0.03rem !important;
     font-size: 16px;
   }
@@ -105,6 +106,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-grey-light {
     color: ${theme.darkAccent} !important;
+  }
+  .has-text-white-ter {
+    color: ${lighten(0.04, theme.secondaryTextColor)};
   }
   .section{
     @media only screen and (min-width: 1023px) {
