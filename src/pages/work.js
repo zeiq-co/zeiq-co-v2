@@ -10,13 +10,40 @@ import RegisterForm from '../components/form/RegisterForm';
 
 const data = [
   {
-    image: '/images/news/news-one.png',
+    image: '/images/work/work one.png',
+    title: '',
+    subtitle: '',
+    pera: '',
   },
   {
-    image: '/images/news/news2.png',
+    image: '/images/work/work two.png',
+    title: '',
+    subtitle: '',
+    pera: '',
   },
   {
-    image: '/images/news/news3.png',
+    image: '/images/work/work tree.png',
+    title: '',
+    subtitle: '',
+    pera: '',
+  },
+  {
+    image: '/images/work/work four.png',
+    title: '',
+    subtitle: '',
+    pera: '',
+  },
+  {
+    image: '/images/work/work five.png',
+    title: '',
+    subtitle: '',
+    pera: '',
+  },
+  {
+    image: '/images/work/work six.png',
+    title: '',
+    subtitle: '',
+    pera: '',
   },
 ];
 
