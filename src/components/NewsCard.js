@@ -33,7 +33,7 @@ const NewsCard = ({ asset, title, subtitle, pera, tags }) => {
         <Content className="card-content">
           <div className="media">
             <div className="media-content">
-              <h2 className="is-size-6">{title}</h2>
+              <h2 className="is-size-6 is-uppercase">{title}</h2>
             </div>
           </div>
           <div className="content">
@@ -45,9 +45,10 @@ const NewsCard = ({ asset, title, subtitle, pera, tags }) => {
             </h2>
             {tags && (
               <div className="tags is-uppercase has-text-weight-bold">
-                <span className="tag has-text-light">javascript</span>
-                <span className="tag has-text-light">bulma</span>
-                <span className="tag has-text-light">react native</span>
+                <span className="tag has-text-light">Android</span>
+                <span className="tag has-text-light">ios</span>
+                <span className="tag has-text-light">React</span>
+                <span className="tag has-text-light">React Native</span>
               </div>
             )}
           </div>
