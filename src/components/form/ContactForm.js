@@ -17,7 +17,7 @@ const InputContainer = styled.form`
     box-shadow: none !important;
     border-radius: 8px !important;
     ::-webkit-input-placeholder {
-      color: ${props => props.theme.darkAccent}!important;
+      color: ${props => props.theme.inputColor}!important;
     }
     background: #f3f3f3;
 

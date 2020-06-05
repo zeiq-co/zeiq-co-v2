@@ -4,8 +4,8 @@ import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#634ce9';
 const lightShades = '#acb6bd';
-const darkAccent = 'rgb(139, 153, 163)';
-const darkShades = '#262a2c';
+const darkAccent = '#262a2c';
+const darkShades = '#141414';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -41,7 +41,7 @@ export const theme = {
   secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
   secondaryBlack: '#141414',
-  inputColor: '#616161',
+  inputColor: '#727f88',
 };
 
 const GlobalStyle = createGlobalStyle`
