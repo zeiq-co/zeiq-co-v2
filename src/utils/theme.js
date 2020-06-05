@@ -110,6 +110,12 @@ const GlobalStyle = createGlobalStyle`
   .has-text-white-ter {
     color: ${lighten(0.04, theme.secondaryTextColor)};
   }
+  a {
+    color: ${props => props.theme.darkShades} !important;
+    :hover {
+      color: ${props => props.theme.darkShades} !important;
+    }
+  }
   .section{
     @media only screen and (min-width: 1023px) {
       padding:3rem 8rem !important;

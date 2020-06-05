@@ -26,10 +26,11 @@ const MailWrapper = styled.div`
 const Country = styled.div`
   a {
     color: ${props => props.theme.darkShades} !important;
+    :hover {
+      color: ${props => props.theme.darkShades} !important;
+    }
   }
-  a:hover {
-    color: ${props => props.theme.darkShades} !important;
-  }
+
   .icons {
     margin-bottom: 10px !important;
   }
