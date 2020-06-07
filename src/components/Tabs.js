@@ -5,29 +5,36 @@ import styled from 'styled-components';
 
 const data = [
   {
-    image: '/images/tabs/api.png',
-  },
-  {
-    image: '/images/tabs/aws.png',
-  },
-  {
-    image: '/images/tabs/expo.png',
-  },
-  {
-    image: '/images/tabs/gatsby.png',
-  },
-  {
-    image: '/images/tabs/react.png',
-  },
-  {
-    image: '/images/tabs/next.png',
-  },
-  {
-    image: '/images/tabs/ql.png',
+    box: [
+      {
+        image: '/images/tabs/api.png',
+      },
+      {
+        image: '/images/tabs/aws.png',
+      },
+      {
+        image: '/images/tabs/expo.png',
+      },
+      {
+        image: '/images/tabs/gatsby.png',
+      },
+      {
+        image: '/images/tabs/react.png',
+      },
+      {
+        image: '/images/tabs/next.png',
+      },
+      {
+        image: '/images/tabs/ql.png',
+      },
+    ],
   },
 ];
 
 const Wrapper = styled.div`
+  .has-text-weight-bold {
+    margin: 29px 0px 0px 0px;
+  }
   .box {
     min-height: 12rem;
   }
@@ -45,8 +52,8 @@ const Section = styled.div`
   }
   .react-tabs__tab {
     border: none;
-    user-select: none;
     color: ${props => props.theme.darkShades};
+    user-select: none;
   }
   .react-tabs__tab--selected {
     color: ${props => props.theme.mainBrandColor};
@@ -66,17 +73,19 @@ const TabComponents = () => {
         </TabList>
         {data.map(items => (
           <TabPanel>
-            <div className="columns">
-              <Wrapper className="column is-one-quarter hero">
-                <div className="box hero-body">
-                  <figure className="image">
-                    <img src={items.image} alt="social" />
-                    <h2 className="is-size-6 has-text-centered has-text-weight-bold">
-                      React js
-                    </h2>
-                  </figure>
-                </div>
-              </Wrapper>
+            <div className="columns is-multiline">
+              {items.box.map(item => (
+                <Wrapper className="column is-one-quarter hero">
+                  <div className="box hero-body">
+                    <figure className="image">
+                      <img src={item.image} alt="social" />
+                      <h2 className="is-size-6 has-text-centered has-text-weight-bold is-unselectable	">
+                        React js
+                      </h2>
+                    </figure>
+                  </div>
+                </Wrapper>
+              ))}
             </div>
           </TabPanel>
         ))}
