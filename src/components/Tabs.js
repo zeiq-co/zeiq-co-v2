@@ -8,24 +8,32 @@ const data = [
     box: [
       {
         image: '/images/tabs/api.png',
-      },
-      {
-        image: '/images/tabs/aws.png',
-      },
-      {
-        image: '/images/tabs/expo.png',
+        text: 'React js',
       },
       {
         image: '/images/tabs/gatsby.png',
+        text: 'Gatsby',
       },
       {
-        image: '/images/tabs/react.png',
+        image: '/images/tabs/expo.png',
+        text: 'Expo',
       },
       {
-        image: '/images/tabs/next.png',
+        image: '/images/tabs/api.png',
+        text: 'Api',
       },
       {
         image: '/images/tabs/ql.png',
+        text: 'GraphQL',
+      },
+
+      {
+        image: '/images/tabs/next.png',
+        text: 'Next.js',
+      },
+      {
+        image: '/images/tabs/Aws.png',
+        text: 'Aws',
       },
     ],
   },
@@ -80,7 +88,7 @@ const TabComponents = () => {
                     <figure className="image">
                       <img src={item.image} alt="social" />
                       <h2 className="is-size-6 has-text-centered has-text-weight-bold is-unselectable	">
-                        React js
+                        {item.text}
                       </h2>
                     </figure>
                   </div>
