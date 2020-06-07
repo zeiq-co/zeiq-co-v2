@@ -30,6 +30,7 @@ const About = () => {
         </div>
       </div>
       <div className="section">
+        <Heading title="Technologies we work with" />
         <div className="container">
           <Tabs />
         </div>
