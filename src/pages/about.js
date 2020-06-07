@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Heading from '../components/elements/Heading';
 import WhatWeDo from '../components/WhatWeDo';
+import Tabs from '../components/Tabs';
 
 const About = () => {
   return (
@@ -26,6 +27,11 @@ const About = () => {
           </div>
           <WhatWeDo />
           <WhatWeDo flex />
+        </div>
+      </div>
+      <div className="section">
+        <div className="container">
+          <Tabs />
         </div>
       </div>
     </Layout>
