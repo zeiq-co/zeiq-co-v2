@@ -128,6 +128,11 @@ export default {
       type: 'image',
     },
     {
+      title: 'Download Showcase',
+      name: 'downloadShowcase',
+      type: 'image',
+    },
+    {
       title: 'Footer Title',
       name: 'footerTitle',
       type: 'string',

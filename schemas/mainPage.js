@@ -77,6 +77,11 @@ export default {
       type: 'array',
       of: [{ type: 'mainPageGallery' }],
     },
+    {
+      title: 'Download Showcase',
+      name: 'downloadShowcase',
+      type: 'image',
+    },
   ],
   preview: {
     select: {

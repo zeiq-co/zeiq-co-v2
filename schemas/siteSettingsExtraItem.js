@@ -4,6 +4,11 @@ export default {
   type: 'object',
   fields: [
     {
+      title: 'Has Items Right',
+      name: 'itemRight',
+      type: 'boolean',
+    },
+    {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
