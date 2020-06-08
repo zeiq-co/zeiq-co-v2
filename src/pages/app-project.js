@@ -37,6 +37,18 @@ const data = [
   },
 ];
 
+const slider = [
+  {
+    screen: 'https://www.zeiq.co/images/FoodApp/Categories.png',
+  },
+  {
+    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
+  },
+  {
+    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
+  },
+];
+
 const Project = () => {
   return (
     <Layout>
@@ -47,7 +59,7 @@ const Project = () => {
         title="Food On Mood"
         subtitle="Food On Mood is an online food and app that facilitates online shopping for the day-to-day needs of the customers."
       />
-      <AppSlider />
+      <AppSlider data={slider} />
       <div className="section">
         <Heading title="Features" />
         <div className="container">

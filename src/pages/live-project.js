@@ -5,6 +5,19 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import HomeHero from '../components/HomeHero';
 import PaidScreens from '../components/PaidScreens';
+import AppSlider from '../components/AppSlider';
+
+const slider = [
+  {
+    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
+  },
+  {
+    screen: 'https://www.zeiq.co/images/FoodApp/Categories.png',
+  },
+  {
+    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
+  },
+];
 
 const LiveProject = () => {
   return (
@@ -18,6 +31,7 @@ const LiveProject = () => {
         secondButtonText="Live Demo"
       />
       <PaidScreens />
+      <AppSlider data={slider} />
     </Layout>
   );
 };
