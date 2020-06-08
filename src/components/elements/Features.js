@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { theme } from '../../utils/theme';
 
 const Point = styled.div`
+  margin-bottom: 8px;
   span,
   strong {
     color: ${theme.darkAccent} !important;

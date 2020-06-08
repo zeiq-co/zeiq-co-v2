@@ -1,8 +1,10 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+
 import Seo from '../components/Seo';
 import HomeHero from '../components/HomeHero';
+import PaidScreens from '../components/PaidScreens';
 
 const LiveProject = () => {
   return (
@@ -15,6 +17,7 @@ const LiveProject = () => {
         firstButtonText="Buy Now"
         secondButtonText="Live Demo"
       />
+      <PaidScreens />
     </Layout>
   );
 };
