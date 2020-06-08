@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-
 import styled from 'styled-components';
-import Heading from './elements/Heading';
 
 const Section = styled.div`
   padding: 3rem 1.5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+
   .container {
     padding-right: 10px !important;
     padding-left: 4px !important;
@@ -51,20 +48,13 @@ const AppSlider = ({ data }) => {
   };
   return (
     <Section className="section">
-      <Heading
-        columnSize
-        title="About Project"
-        subtitle="Food On Mood is a personal assistant to meet your everyday needs of online supermarket. At Mumu, customer can select nearby stores available, and order things as per their needs. The customer can also get alternative products in case the desired item is not available in the store. A Mover goes to the store and buys the ordered items and delivers on a given location at the specified delivery time."
-      />
-      <div className="container">
-        <Slider {...settings}>
-          {data.map(item => (
-            <div>
-              <img src={item.screen} alt="" />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <Slider {...settings}>
+        {data.map(item => (
+          <div>
+            <img src={item.screen} alt="" />
+          </div>
+        ))}
+      </Slider>
     </Section>
   );
 };
