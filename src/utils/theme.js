@@ -101,7 +101,7 @@ const GlobalStyle = createGlobalStyle`
   .has-text-black {
     color: ${theme.textColor} !important;
   }
-  .has-text-info{
+  .has-text-info {
     color: ${theme.mainBrandColor} !important;
   }
   .has-text-grey-light {

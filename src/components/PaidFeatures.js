@@ -35,7 +35,7 @@ const PaidFeatures = () => (
     <div className="container">
       <div className="columns is-centered">
         <div className="column is-10">
-          <h1 className=" is-size-6 has-text-centered has-text-black has-text-weight-bold">
+          <h1 className=" is-size-6 has-text-centered has-text-info has-text-weight-bold">
             Features
           </h1>
           <section className="hero">
