@@ -21,7 +21,7 @@ const IndexPage = () => {
         and project execution processes help you to deliver the right
         solutions."
         image="/images/ecommerce-app.png"
-        button
+        firstButtonText="Live Demo"
       />
       <Work />
       <Hire />
