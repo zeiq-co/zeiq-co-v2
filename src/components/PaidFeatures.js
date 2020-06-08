@@ -7,7 +7,8 @@ const Container = styled.section`
     border-radius: 3rem;
     background: #f3f3f3;
   }
-  p {
+  p,
+  h1 {
     line-height: 26px !important;
   }
 `;
@@ -34,9 +35,9 @@ const PaidFeatures = () => (
     <div className="container">
       <div className="columns is-centered">
         <div className="column is-10">
-          <h4 className="title is-3 has-text-centered has-text-success">
+          <h1 className=" is-size-6 has-text-centered has-text-black has-text-weight-bold">
             Features
-          </h4>
+          </h1>
           <section className="hero">
             <div className="hero-body">
               <div className="columns is-multiline">
