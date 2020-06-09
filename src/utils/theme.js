@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#634ce9';
 const lightShades = '#acb6bd';
-const darkAccent = 'rgb(139, 153, 163)';
-const darkShades = '#262a2c';
+const darkAccent = '#262a2c';
+const darkShades = '#141414';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -33,6 +33,7 @@ export const theme = {
   fontSizeMedium: 18,
   fontSizeLarge: 22,
   textColor: darkShades, // '#262a2c',
+  secondaryTextColor: '#616161',
   textColorLite: darkAccent, // 'rgb(139, 153, 163)',
   textColorInverse: lightShades,
   menuTintColor: darkAccent,
@@ -40,14 +41,14 @@ export const theme = {
   secondaryFontFamily: "'Rubik', sans-serif",
   boxShadow: '0 15px 30px 0 rgba(139, 153, 163, 0.2)',
   secondaryBlack: '#141414',
-  inputColor: '#616161',
+  inputColor: '#727f88',
 };
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
   body {
     font-family: ${theme.secondaryFontFamily};
-    color: ${theme.lightShadess};
+    color: ${theme.lightShades};
     letter-spacing: 0.03rem !important;
     font-size: 16px;
   }
@@ -100,11 +101,20 @@ const GlobalStyle = createGlobalStyle`
   .has-text-black {
     color: ${theme.textColor} !important;
   }
-  .has-text-info{
+  .has-text-info {
     color: ${theme.mainBrandColor} !important;
   }
   .has-text-grey-light {
     color: ${theme.darkAccent} !important;
+  }
+  .has-text-white-ter {
+    color: ${lighten(0.04, theme.secondaryTextColor)};
+  }
+  a {
+    color: ${props => props.theme.darkShades} !important;
+    :hover {
+      color: ${props => props.theme.darkShades} !important;
+    }
   }
   .section{
     @media only screen and (min-width: 1023px) {

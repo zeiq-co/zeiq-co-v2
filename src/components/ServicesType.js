@@ -14,7 +14,7 @@ const Container = styled.div`
     height: 100%;
   }
   .subtitle {
-    margin: 0rem;
+    margin-bottom: 36px;
     text-align: justify;
   }
   .button {

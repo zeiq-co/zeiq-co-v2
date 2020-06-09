@@ -21,9 +21,22 @@ const MailWrapper = styled.div`
       padding: 0px 8rem 0px 0px;
     }
   }
+  .text {
+    margin-bottom: 8px !important;
+  }
 `;
 
 const Country = styled.div`
+  a {
+    color: ${props => props.theme.darkShades} !important;
+    :hover {
+      color: ${props => props.theme.darkShades} !important;
+    }
+  }
+
+  .icons {
+    margin-bottom: 10px !important;
+  }
   margin-bottom: 36px;
   img {
     margin-right: 14px;
@@ -40,6 +53,16 @@ const Socials = styled.div`
   }
 `;
 
+const Header = styled.div`
+  h1 {
+    margin-bottom: 23px !important;
+  }
+
+  p {
+    margin-bottom: 17px !important;
+  }
+`;
+
 const ContactUs = () => (
   <Container className="section">
     <div className="container">
@@ -49,11 +72,13 @@ const ContactUs = () => (
             <div className="column is-6">
               <section className="hero">
                 <div className="hero-body">
-                  <h1 className="title is-2 has-text-black">Get in touch</h1>
-                  <p className="subtitle is-6">
-                    When you enter into any new area of science you almost
-                    always find yourself.
-                  </p>
+                  <Header>
+                    <h1 className="title is-2 has-text-black">Get in touch</h1>
+                    <p className="subtitle is-6">
+                      When you enter into any new area of science you almost
+                      always find yourself.
+                    </p>
+                  </Header>
                   <ContactForm />
                 </div>
               </section>
@@ -71,7 +96,7 @@ const ContactUs = () => (
                     Phone
                   </H2>
                   <Country>
-                    <div className="main">
+                    <div className="main icons">
                       <a href="tel:+91-8847411956">
                         <span className="icon">
                           <img src="/images/india.png" alt="" />
@@ -92,7 +117,9 @@ const ContactUs = () => (
                     <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                       Address
                     </H2>
-                    <p>Guru Amadas Nagar, Salempur Road, Jalandhar</p>
+                    <p className="text">
+                      Guru Amadas Nagar, Salempur Road, Jalandhar
+                    </p>
                     <p>38 Golf Road, Swineshead Bridge, England </p>
                   </MailWrapper>
                   <Socials>

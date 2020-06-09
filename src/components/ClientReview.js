@@ -22,9 +22,10 @@ const Section = styled.div`
     }
   }
   .card {
-    border: 2px solid #f3f3f3 !important;
+    border: 1px solid #f3f3f3 !important;
     border-radius: 8px;
     box-shadow: none;
+    min-height: 10rem;
   }
   .title {
     line-height: 18px !important;

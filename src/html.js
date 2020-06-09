@@ -42,6 +42,9 @@ export default class HTML extends React.Component {
             charset="UTF-8"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
           />
+          <script src="https://unpkg.com/react-tabs/dist/react-tabs.development.js" />
+
+          <script src="https://unpkg.com/react-tabs/dist/react-tabs.production.min.js" />
           <link
             rel="stylesheet"
             type="text/css"

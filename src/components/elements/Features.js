@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import { theme } from '../../utils/theme';
 
 const Point = styled.div`
+  margin-bottom: 8px;
   span,
   strong {
-    color: ${theme.secondaryBlack};
+    color: ${theme.darkAccent} !important;
   }
   strong {
     padding-left: 10px;
@@ -15,10 +16,10 @@ const Point = styled.div`
 const Features = ({ text }) => {
   return (
     <Point>
-      <span className="bd-footer-link-icon has-text-light">
+      <span className="bd-footer-link-icon">
         <i className="fas fa-check-circle" />
       </span>
-      <strong className="has-text-light">{text}</strong>
+      <strong className="">{text}</strong>
     </Point>
   );
 };

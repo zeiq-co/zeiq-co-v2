@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-
 import styled from 'styled-components';
-import Heading from './elements/Heading';
 
 const Section = styled.div`
   padding: 3rem 1.5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+
   .container {
     padding-right: 10px !important;
     padding-left: 4px !important;
@@ -38,57 +35,28 @@ const Section = styled.div`
     transform: translateZ(0);
   }
 `;
-const data = [
-  {
-    id: 1,
-    screen: 'https://www.zeiq.co/images/FoodApp/Categories.png',
-  },
-  {
-    id: 2,
-    screen: 'https://www.zeiq.co/images/FoodApp/Checkout_Scroll%20View.png',
-  },
-  {
-    id: 3,
-    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
-  },
-  {
-    id: 4,
-    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
-  },
-  {
-    id: 5,
-    screen: ' https://www.zeiq.co/images/FoodApp/Checkout.png',
-  },
-];
 
-export default class AppSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    };
-    return (
-      <Section className="section">
-        <Heading
-          columnSize
-          title="About Project"
-          subtitle="Food On Mood is a personal assistant to meet your everyday needs of online supermarket. At Mumu, customer can select nearby stores available, and order things as per their needs. The customer can also get alternative products in case the desired item is not available in the store. A Mover goes to the store and buys the ordered items and delivers on a given location at the specified delivery time."
-        />
-        <div className="container">
-          <Slider {...settings}>
-            {data.map(item => (
-              <div>
-                <img src={item.screen} alt="" />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </Section>
-    );
-  }
-}
+const AppSlider = ({ data }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+  return (
+    <Section className="section">
+      <Slider {...settings}>
+        {data.map(item => (
+          <div>
+            <img src={item.screen} alt="" />
+          </div>
+        ))}
+      </Slider>
+    </Section>
+  );
+};
+
+export default AppSlider;
