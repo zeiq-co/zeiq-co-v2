@@ -4,22 +4,20 @@ export default {
   type: 'object',
   fields: [
     {
+      title: 'Content',
+      name: 'content',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+    {
       title: 'Image',
       name: 'finerDetailsImage',
       type: 'image',
     },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'markdown',
-      options: {
-        minRows: 20,
-      },
-    },
   ],
   preview: {
     select: {
-      title: 'body',
+      // title: 'content',
       media: 'finerDetailsImage',
     },
   },
