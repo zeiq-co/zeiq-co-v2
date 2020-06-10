@@ -72,8 +72,7 @@ export default {
     {
       title: 'Content',
       name: 'content',
-      type: 'array',
-      of: [{ type: 'blogPageContent' }],
+      type: 'blogPageContent',
     },
     {
       name: 'blogArticleCategoriesHeading',

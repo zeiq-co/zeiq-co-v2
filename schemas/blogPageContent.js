@@ -4,14 +4,14 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'title',
-      type: 'string',
-      title: 'Title',
-    },
-    {
-      name: 'subTitle',
-      type: 'text',
-      title: 'Subtitle',
+      name: 'portableText',
+      type: 'array',
+      title: 'Content',
+      of: [
+        {
+          type: 'block',
+        },
+      ],
     },
   ],
 };
