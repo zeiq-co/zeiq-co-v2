@@ -49,11 +49,7 @@ export default {
       name: 'releaseDate',
       type: 'date',
     },
-    {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-    },
+
     {
       name: 'blogArticleSeoTitle',
       title: 'Blog Article Seo Title',
@@ -84,6 +80,16 @@ export default {
       name: 'blogArticleCategories',
       type: 'array',
       of: [{ type: 'string' }],
+    },
+    {
+      name: 'image',
+      title: 'Thumbnail Image',
+      type: 'image',
+    },
+    {
+      name: 'heroImage',
+      title: 'Hero Image',
+      type: 'image',
     },
   ],
   preview: {
