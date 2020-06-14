@@ -90,8 +90,8 @@ const ServicesType = ({ flex, image }) => {
             ))}
           </div>
           <Link
-            to="/"
-            className="button is-primary is-medium has-text-weight-medium"
+            to="/single-service"
+            className="button is-primary is-medium has-text-weight-medium has-text-white"
           >
             <strong>Learn More</strong>
           </Link>
