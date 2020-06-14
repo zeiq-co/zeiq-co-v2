@@ -6,6 +6,11 @@ const Columns = styled.div`
   flex-direction: ${props => (props.flex ? 'row-reverse' : '')};
 `;
 
+const Section = styled.div`
+  @media only screen and (min-width: 1023px) {
+    padding: 3rem 1.5rem !important;
+  }
+`;
 const BorderDiv = styled.div`
   border: solid ${theme.primaryColor};
   border-width: 0px 0px 0px 3px;
@@ -13,14 +18,14 @@ const BorderDiv = styled.div`
 
 const WhatWeDo = ({ flex }) => {
   return (
-    <div className="section">
+    <Section className="section">
       <div className="container">
         <Columns className="columns is-multiline" flex={flex}>
-          <div className="column is-4">
+          <div className="column is-3">
             <h2 className="title is-3 is-spaced ">Who We Are</h2>
           </div>
-          <BorderDiv className="column is-1 is-hidden-mobile" />
-          <div className="column is-">
+          <BorderDiv className="column is-1" />
+          <div className="column ">
             <p className="subtitle is-6">
               A successful offshore software application development company
               since 1997, providing a full range of website and mobile app
@@ -34,7 +39,7 @@ const WhatWeDo = ({ flex }) => {
           </div>
         </Columns>
       </div>
-    </div>
+    </Section>
   );
 };
 

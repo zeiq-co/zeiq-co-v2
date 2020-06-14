@@ -52,7 +52,7 @@ export default class Work extends React.Component {
           <Heading title="Work" />
           <Slider {...settings}>
             {data.map(item => (
-              <Link to="/">
+              <Link to="/work">
                 <img src={item.img} alt="" />
               </Link>
             ))}

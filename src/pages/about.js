@@ -25,10 +25,12 @@ const About = () => {
               </figure>
             </div>
           </div>
+
           <WhatWeDo />
           <WhatWeDo flex />
         </div>
       </div>
+
       <div className="section">
         <Heading title="Technologies we work with" />
         <div className="container">

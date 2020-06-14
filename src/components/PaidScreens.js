@@ -5,20 +5,32 @@ import Features from './elements/Features';
 
 const features = [
   {
-    title: 'Asteroids',
-    points: ['Long Feature One', 'Feature Two', 'Long Feature Three'],
+    title: 'Category',
+    points: ['GROCERY BY CATEGORY', 'NOTIFICATIONS', 'STORE LOCATOR'],
   },
   {
-    title: 'The Night Sky',
-    points: ['Long Feature One', 'Feature Two', 'Long Feature Three'],
+    title: 'Features',
+    points: [
+      'FILTER AVAILABLE',
+      'PROFILE',
+      'ORDER TRACKING',
+      'APP SOURCE CODE,',
+    ],
+  },
+
+  {
+    title: 'Order Status',
+    points: [
+      'SEARCH GROCERY ITEMS',
+      'ORDER HISTORY',
+      'COUPONS',
+      'COUPON OFFERS',
+      'ATTRIBUTES OF PRODUCT',
+    ],
   },
   {
-    title: 'Telescopes 101',
-    points: ['Long Feature One', 'Feature Two', 'Long Feature Three'],
-  },
-  {
-    title: 'Moon Fever',
-    points: ['Long Feature One', 'Feature Two', 'Long Feature Three'],
+    title: 'Activities',
+    points: ['CREATE PRODUCT ITEM', 'EDIT PRODUCT ITEM', 'DELETE PRODUCT ITEM'],
   },
 ];
 
@@ -33,8 +45,8 @@ const PaidScreens = () => {
     <Section className="section is-medium">
       <div className="container">
         <Heading
-          title="GROCERY ORDERING SYSTEM SCREENS"
-          subtitle="Fully customizable, functional, ready-to-use by the end-users with easily configurable Online Grocery Ordering Mobile Application/Software built on the latest leading technology Flutter. You Should check out with app features."
+          title="APP ORDERING SYSTEM SCREENS"
+          subtitle="Fully customizable, functional, ready-to-use by the end-users with easily configurable Online Zeiq delivery Mobile Application/Software built on the latest leading technology Flutter. You Should check out with app features."
         />
 
         <div className="columns is-multiline">

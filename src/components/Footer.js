@@ -67,13 +67,13 @@ const Footer = () => (
               <LinkStyled to="/">Career</LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">Contact Us</LinkStyled>
+              <LinkStyled to="/contact">Contact Us</LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">Third Link</LinkStyled>
+              <LinkStyled to="/app-project/">Third Link</LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">Fourth Link</LinkStyled>
+              <LinkStyled to="/paid-project/">Fourth Link</LinkStyled>
             </li>
           </ul>
         </div>
