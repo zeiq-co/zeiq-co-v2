@@ -25,8 +25,9 @@ const Section = styled.div`
     border: 1px solid #f3f3f3 !important;
     border-radius: 8px;
     box-shadow: none;
-    min-height: 10rem;
+    height: 19rem;
   }
+
   .title {
     line-height: 18px !important;
   }

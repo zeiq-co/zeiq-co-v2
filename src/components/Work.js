@@ -16,7 +16,6 @@ const Section = styled.div`
     font-size: 15px;
   }
 `;
-// const LinkStyled = styled(Link)``;
 
 const data = [
   {
