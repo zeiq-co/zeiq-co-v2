@@ -58,15 +58,12 @@ const features = [
     text: 'Frontend',
   },
 ];
-const ServicesType = ({ flex }) => {
+const ServicesType = ({ flex, image }) => {
   return (
     <Container flex={flex}>
       <div className="columns is-multiline  is-variable is-8">
         <div className="column is-5">
-          <img
-            src="https://images.unsplash.com/photo-1565306257414-bbc84fdaaade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            alt="mobile"
-          />
+          <img src={image} alt="mobile" />
         </div>
         <div className="column">
           <h2 className="title is-2 is-spaced">Mobile Apps development</h2>
