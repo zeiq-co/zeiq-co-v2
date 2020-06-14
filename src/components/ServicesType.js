@@ -24,6 +24,9 @@ const Container = styled.div`
 
 const Points = styled.div`
   padding: 10px !important;
+  .gdQBmQ {
+    margin-bottom: 0px !important;
+  }
 `;
 
 const features = [
