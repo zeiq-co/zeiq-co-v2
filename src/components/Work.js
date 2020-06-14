@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import Heading from './elements/Heading';
 
 const Section = styled.div`
@@ -12,9 +13,25 @@ const Section = styled.div`
     font-size: 8px;
   }
   .slick-dots li button {
-    font-size: 12px;
+    font-size: 15px;
   }
 `;
+// const LinkStyled = styled(Link)``;
+
+const data = [
+  {
+    img: '/images/work/Packers.png',
+  },
+  {
+    img: '/images/work/work.png',
+  },
+  {
+    img: '/images/work/Packers.png',
+  },
+  {
+    img: '/images/work/work.png',
+  },
+];
 
 export default class Work extends React.Component {
   render() {
@@ -24,8 +41,8 @@ export default class Work extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      // autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 3500,
+      autoplay: true,
       fade: true,
       cssEase: 'linear',
     };
@@ -34,24 +51,11 @@ export default class Work extends React.Component {
         <div className="container">
           <Heading title="Work" />
           <Slider {...settings}>
-            <div>
-              <img src="/images/work/Packers.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work/work.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work/Packers.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work/work.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work/Packers.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/work/work.png" alt="" />
-            </div>
+            {data.map(item => (
+              <Link to="/">
+                <img src={item.img} alt="" />
+              </Link>
+            ))}
           </Slider>
         </div>
       </Section>
