@@ -49,7 +49,7 @@ const Data = [
   {
     title: 'Design UX',
     description:
-      'Modern and clear design is at the heart of our principles. We design your products in collaboration with so you have the products that fit the needs of your users and we have the clarity to create amazing solutions.',
+      'Modern and clear design is at the heart of our principles. We design your products in collaboration with so you have the products that fits the needs of your users and we have the clarity to create amazing solutions.',
     features: [
       { feature: 'End to End' },
       { feature: 'Modern Design Practices' },
