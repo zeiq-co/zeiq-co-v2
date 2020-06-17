@@ -14,13 +14,13 @@ const Container = styled.section`
 `;
 const data = [
   {
-    text: 'An Ugly Myspace Profile Will Sure Ruin Your Reputation',
+    text: 'Browse categories and their Menu items',
   },
   {
-    text: '5 Reasons To Choose A Notebook Over A Computer Desktop',
+    text: 'Add to cart Menu items',
   },
   {
-    text: 'Popular Uses Of The Internet',
+    text: 'Manage Address and Checkout features',
   },
   {
     text: 'How To Meet That Special Someone',
