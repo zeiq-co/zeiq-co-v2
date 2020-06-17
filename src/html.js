@@ -16,6 +16,7 @@ export default class HTML extends React.Component {
           />
 
           {/* Add custom css or scripts here */}
+
           <link
             href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Rubik:400,700"
             rel="stylesheet"
