@@ -29,39 +29,7 @@ const Points = styled.div`
   }
 `;
 
-const features = [
-  {
-    text: 'Developers',
-  },
-  {
-    text: 'UI Developers',
-  },
-  {
-    text: 'UX Developers',
-  },
-  {
-    text: 'Frontend',
-  },
-  {
-    text: 'Developers',
-  },
-  {
-    text: 'UI Developers',
-  },
-  {
-    text: 'UX Developers',
-  },
-  {
-    text: 'Frontend',
-  },
-  {
-    text: 'UX Developers',
-  },
-  {
-    text: 'Frontend',
-  },
-];
-const ServicesType = ({ flex, image }) => {
+const ServicesType = ({ flex, title, image, description, features }) => {
   return (
     <Container flex={flex}>
       <div className="columns is-multiline  is-variable is-8">
@@ -69,23 +37,15 @@ const ServicesType = ({ flex, image }) => {
           <img src={image} alt="mobile" />
         </div>
         <div className="column">
-          <h2 className="title is-2 is-spaced">Mobile Apps development</h2>
-          <p className="subtitle is-6">
-            A successful offshore software application development company since
-            1997, providing a full range of website and mobile app development ,
-            and other IT services and solutions globally. We deliver web and
-            mobile app development services to global businesses since 1997,
-            with 100% project delivery success. Hire the best programmers at
-            affordable prices. Our design-focused approach and project execution
-            processes help you to deliver the right solutions.
-          </p>
+          <h2 className="title is-2 is-spaced">{title}</h2>
+          <p className="subtitle is-6">{description}</p>
           <div>
             <h2 className="title is-4">Features</h2>
           </div>
           <div className="columns is-multiline">
             {features.map(item => (
               <Points className="column is-6 points">
-                <Features text={item.text} />
+                <Features text={item.feature} />
               </Points>
             ))}
           </div>

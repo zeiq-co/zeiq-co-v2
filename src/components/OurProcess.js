@@ -12,7 +12,6 @@ const Column = styled.div`
     box-shadow: none;
   }
   span {
-    background-color: ${theme.backgroundColor};
     height: 5rem;
     width: 5rem;
     border-radius: 3rem;
@@ -36,7 +35,7 @@ const OurProcess = ({ sideImage, text, icon }) => {
       <div className="columns">
         <Column className="column">
           <article className="box">
-            <span className="icon has-text-light is-size-2">
+            <span className="icon is-size-2">
               <i className={icon} />
             </span>
             <div className="title is-5">{text}</div>

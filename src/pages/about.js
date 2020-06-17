@@ -6,6 +6,32 @@ import Heading from '../components/elements/Heading';
 import WhatWeDo from '../components/WhatWeDo';
 import Tabs from '../components/Tabs';
 
+const Data = [
+  {
+    title: 'Who We Are',
+    description: `A successful offshore software application development company
+      since 1997, providing a full range of website and mobile app
+      development , and other IT services and solutions globally. We
+      deliver web and mobile app development services to global
+      businesses since 1997, with 100% project delivery success. Hire
+      the best programmers at affordable prices. Our design-focused
+      approach and project execution processes help you to deliver the
+      right solutions.`,
+    flex: false,
+  },
+
+  {
+    title: 'What We Do',
+    description: `We design JAMstack websites and cross platform apps for IOS and Android
+      with Expo and React Native, We design our apps with serverless architecture that scales
+      automatically as your usage or user base extends, so you can scale 
+      your app or site without hassle and all our websites are 
+      statically rendered websites with no plugins 
+       that are a fortress and let you save money on security.`,
+    flex: true,
+  },
+];
+
 const About = () => {
   return (
     <Layout>
@@ -26,8 +52,13 @@ const About = () => {
             </div>
           </div>
 
-          <WhatWeDo />
-          <WhatWeDo flex />
+          {Data.map(item => (
+            <WhatWeDo
+              flex={item.flex}
+              description={item.description}
+              title={item.title}
+            />
+          ))}
         </div>
       </div>
 

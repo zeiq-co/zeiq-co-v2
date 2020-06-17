@@ -33,7 +33,7 @@ const Container = styled.div`
 const Button = styled.button`
   margin-top: 35px;
   span {
-    margin-left: 75% !important;
+    margin-left: 70% !important;
   }
 `;
 const RegisterForm = () => {
