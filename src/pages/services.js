@@ -10,7 +10,7 @@ const Data = [
   {
     title: 'Mobile Apps Development',
     description:
-      'We  create cross platform mobile apps with javascript and react . Choosing react as an options to build apps already puts you a step forward in the competition as it allows you to give both IOS and android users with native experiences which leads to saved  time and money.Apps built in react native help the team to develop projects in the most efficient way possible as there is no dealing with lower level native code of mobile OS`es',
+      ' We  create cross platform mobile apps with javascript and react . Choosing react as an options to build apps already puts you a step forward in the competition as it allows you to give both IOS and android users with native experiences which leads to saved  time and money.Apps built in react native help the team to develop projects in the most efficient way possible as there is no dealing with lower level native code of mobile OS`es',
     features: [
       { feature: 'Native Experiences' },
       { feature: 'Custom UI' },
