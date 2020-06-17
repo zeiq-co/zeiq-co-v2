@@ -75,8 +75,8 @@ const ContactUs = () => (
                   <Header>
                     <h1 className="title is-2 has-text-black">Get in touch</h1>
                     <p className="subtitle is-6">
-                      When you enter into any new area of science you almost
-                      always find yourself.
+                      Tell us about your project, get a quick estimate and a
+                      plan for making it live.
                     </p>
                   </Header>
                   <ContactForm />

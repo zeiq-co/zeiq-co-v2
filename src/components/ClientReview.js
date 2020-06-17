@@ -38,31 +38,31 @@ const data = [
     position: 'Project Manager',
     name: 'Zachary Frank',
     content:
-      'For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed ',
+      'Our website previously was static, and we wanted enhancements to the presentation layer. Thankfully, Zeiq knows how to build a good website.',
   },
   {
     position: 'Project Manager',
     name: 'Lenora Andrews',
     content:
-      'There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun. The truth is the universe is a constantly changing, moving, some would say “living” thing because you just never know what you.',
+      'Having worked intensively with Zeiq on multiple projects, our partnership has been a professional and productive experience with impressive results to date. The team is responsive, full of ideas and delivers on their commitments. I can highly recommend Zeiq as a serious partner in modern web development projects involving JAMstack and React.',
   },
   {
     position: 'Project Manager',
     name: 'Francis Morgan',
     content:
-      'While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space. It is those feelings that drive our love of astronomy and our desire.',
+      'Zeiq stood out as experts on the JAMstack products that are available and recommended sanity CMS which was not on our radar previously. That kind of guidance, approachability and subject matter expertise is what we were looking for. I am very happy with our decision.',
   },
   {
     position: 'Project Manager',
     name: 'Lenora Andrews',
     content:
-      'For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed ',
+      'Zeiq became a natural development partner for us given their deep knowledge of web development. Despite the geographical distance, our collaboration has been successful with strong deliveries on time, together with a good communication.      ',
   },
   {
     position: 'Project Manager',
     name: 'Francis Morgan',
     content:
-      'For business professionals caught between high OEM price and mediocre print and graphic output, there’s a solution: Business Express’s Eclipse line of compatible laser toner cartridges that meet or exceed ',
+      'Zeiq team cares deeply about not just the project but also the people they partner with. It’s not often that you see this in people with Deep domain expertise and relentless energy.      ',
   },
 ];
 
