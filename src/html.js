@@ -29,15 +29,7 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
           />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-119011756-1"
-          />
-          {/* <script>
-            window.dataLayer = window.dataLayer || []; function gtag()
-            {dataLayer.push(arguments)} gtag('js', new Date()); gtag('config',
-            'UA-119011756-1');
-          </script> */}
+
           <script
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
