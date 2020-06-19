@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "DeckerDence"
+    "name": "Zeiq"
   },
   "api": {
     "projectId": "bonciv2x",
@@ -17,7 +17,9 @@
     "@sanity/dashboard",
     "dashboard-widget-notes",
     "media",
-    "dashboard-widget-netlify"
+    "seo-tools",
+    "dashboard-widget-netlify",
+    "content-model-graph"
   ],
   "env": {
     "development": {
