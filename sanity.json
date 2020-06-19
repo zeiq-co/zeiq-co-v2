@@ -4,7 +4,7 @@
     "name": "DeckerDence"
   },
   "api": {
-    "projectId": "8zqv9o3f",
+    "projectId": "bonciv2x",
     "dataset": "production"
   },
   "plugins": [
@@ -21,9 +21,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [

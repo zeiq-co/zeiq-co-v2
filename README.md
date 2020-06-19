@@ -1,4 +1,4 @@
-# DeckerDence Admin Panel
+# Zeiq Admin Panel
 
 Admin Panel built using Sanity.io
 
