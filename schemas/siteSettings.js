@@ -16,39 +16,31 @@ export default {
     },
     {
       name: 'homeHeroDescription',
-      type: 'text',
       title: 'Home Hero Description',
+      type: 'markdown',
+      options: {
+        minRows: 7,
+      },
     },
     {
-      title: 'Slug',
-      name: 'slug',
+      title: 'Button Link',
+      name: 'buttonLink',
       type: 'slug',
       options: {
         maxLength: 80,
       },
     },
     {
-      title: 'Home Hero Link',
-      name: 'homeHeroLink',
-      type: 'string',
-    },
-    {
       name: 'homeHeroImage',
       title: 'Home Hero Image',
       type: 'image',
-    },
-    {
-      title: 'Hero Section Title',
-      name: 'heroSectionTitle',
-      type: 'string',
-    },
-    {
-      title: 'Hero Section Subtitle',
-      name: 'heroSectionSubtitle',
-      type: 'markdown',
-      options: {
-        minRows: 5,
-      },
+      fields: [
+        {
+          title: 'Alternative Text',
+          name: 'alt',
+          type: 'string',
+        },
+      ],
     },
     {
       title: 'Team Section Title',
