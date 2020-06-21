@@ -25,11 +25,6 @@ class Particle extends Component {
               type: ['image', 'circle'],
               image: [
                 {
-                  src: '/images/particles/gatsby.svg',
-                  height: 30,
-                  width: 30,
-                },
-                {
                   src: '/images/particles/react-brands.svg',
                   height: 30,
                   width: 30,
@@ -56,6 +51,11 @@ class Particle extends Component {
                 },
                 {
                   src: '/images/particles/next.png',
+                  height: 30,
+                  width: 30,
+                },
+                {
+                  src: '/images/particles/gatsby.svg',
                   height: 30,
                   width: 30,
                 },
