@@ -2,6 +2,7 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import styled from 'styled-components';
+import Particle from './Particle';
 
 const data = [
   {
@@ -66,11 +67,15 @@ const Section = styled.div`
   .react-tabs__tab--selected {
     color: ${props => props.theme.mainBrandColor};
   }
+  .tsparticles-canvas-el {
+    position: absolute !important;
+  }
 `;
 
 const TabComponents = () => {
   return (
     <Section>
+      <Particle />
       <Tabs>
         <TabList>
           <Tab>Mobile</Tab>
