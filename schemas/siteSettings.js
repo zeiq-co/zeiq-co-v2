@@ -10,29 +10,130 @@ export default {
   ],
   fields: [
     {
-      name: 'homeSeoTitle',
-      title: 'Home Seo Title',
+      name: 'homeHeroTitle',
       type: 'string',
+      title: 'Home Hero Title',
     },
     {
-      title: 'Home Seo Keywords',
-      name: 'homeSeoKeywords',
-      type: 'string',
-    },
-    {
-      title: 'Home Seo Meta Description',
-      name: 'homeSeoMetaDescription',
+      name: 'homeHeroDescription',
       type: 'text',
+      title: 'Home Hero Description',
     },
     {
-      name: 'homeHeroBackgroundImage',
-      title: 'Home Hero Background Image',
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        maxLength: 80,
+      },
+    },
+    {
+      title: 'Home Hero Link',
+      name: 'homeHeroLink',
+      type: 'string',
+    },
+    {
+      name: 'homeHeroImage',
+      title: 'Home Hero Image',
       type: 'image',
     },
     {
-      name: 'homeHeroBannerImage',
-      title: 'Home Hero Banner Image',
-      type: 'image',
+      title: 'Hero Section Title',
+      name: 'heroSectionTitle',
+      type: 'string',
+    },
+    {
+      title: 'Hero Section Subtitle',
+      name: 'heroSectionSubtitle',
+      type: 'markdown',
+      options: {
+        minRows: 5,
+      },
+    },
+    {
+      title: 'Team Section Title',
+      name: 'teamSectionTitle',
+      type: 'string',
+    },
+    {
+      title: 'Team Section Subtitle',
+      name: 'teamSectionSubtitle',
+      type: 'markdown',
+      options: {
+        minRows: 5,
+      },
+    },
+    {
+      title: 'Team Title',
+      name: 'teamTitle',
+      type: 'string',
+    },
+    {
+      title: 'Team Subtitle',
+      name: 'teamSubtitle',
+      type: 'markdown',
+      options: {
+        minRows: 5,
+      },
+    },
+    {
+      title: 'Blog Section Title',
+      name: 'blogSectionTitle',
+      type: 'string',
+    },
+    {
+      title: 'Blog Section Subtitle',
+      name: 'blogSectionSubtitle',
+      type: 'markdown',
+      options: {
+        minRows: 5,
+      },
+    },
+    {
+      title: 'Package Section Title',
+      name: 'packageSectionTitle',
+      type: 'string',
+    },
+    {
+      title: 'Package Section Subtitle',
+      name: 'packageSectionSubtitle',
+      type: 'markdown',
+      options: {
+        minRows: 5,
+      },
+    },
+    {
+      title: 'Package Team Title',
+      name: 'packageTeamTitle',
+      type: 'string',
+    },
+    {
+      title: 'package Team Subtitle',
+      name: 'packageTeamSubtitle',
+      type: 'markdown',
+      options: {
+        minRows: 5,
+      },
+    },
+    {
+      name: 'facebook',
+      type: 'string',
+      title: 'Facebook URL',
+    },
+    {
+      name: 'twitter',
+      type: 'string',
+      title: 'Twitter URL',
+    },
+    {
+      name: 'instagram',
+      type: 'string',
+      title: 'Instagram URL',
+    },
+    {
+      name: 'pinterest',
+      type: 'string',
+      title: 'Pinterest URL',
     },
     {
       name: 'telephone',
@@ -45,91 +146,9 @@ export default {
       title: 'Email',
     },
     {
-      title: 'Home Features',
-      name: 'homeFeatures',
-      type: 'settingsFeatures',
-    },
-    {
-      title: 'Simple Stages',
-      name: 'simpleStages',
-      type: 'pageSimpleStage',
-    },
-    {
-      name: 'hireOptionSeoTitle',
-      title: 'Hire Option Seo Title',
+      name: 'address',
       type: 'string',
-    },
-    {
-      title: 'Hire Option Seo Keywords',
-      name: 'hireOptionSeoKeywords',
-      type: 'string',
-    },
-    {
-      title: 'Hire Option Seo Meta Description',
-      name: 'hireOptionSeoMetaDescription',
-      type: 'text',
-    },
-    {
-      name: 'hireOptionSmallText',
-      type: 'string',
-      title: 'Hire Option Small Text',
-    },
-
-    {
-      name: 'hireOptionLargeText',
-      type: 'string',
-      title: 'Hire Option Large Text',
-    },
-    {
-      name: 'hireOptionDescription',
-      type: 'text',
-      title: 'Hire Option Description',
-      description: 'Describe your hireOption .',
-    },
-    {
-      name: 'hireOptionBackgroundImage',
-      title: 'Hire Option Background Image',
-      type: 'image',
-    },
-    {
-      title: 'Extras Page',
-      name: 'extrasPage',
-      type: 'siteSettingsExtra',
-    },
-    {
-      title: 'About Page',
-      name: 'aboutPage',
-      type: 'about',
-    },
-    {
-      title: 'Testimonials Page',
-      name: 'testimonialsPage',
-      type: 'about',
-    },
-    {
-      title: 'Blog Seo Title',
-      name: 'blogSeoTitle',
-      type: 'string',
-    },
-    {
-      title: 'Blog Seo Keywords',
-      name: 'blogSeoKeywords',
-      type: 'string',
-    },
-    {
-      title: 'Blog Seo Meta Description',
-      name: 'blogSeoMetaDescription',
-      type: 'text',
-    },
-    {
-      title: 'Blog Main Title',
-      name: 'blogMainTitle',
-      type: 'string',
-    },
-    {
-      title: 'Contact Us',
-      name: 'contactUs',
-      type: 'settingsContactUs',
+      title: 'Address',
     },
   ],
 };
