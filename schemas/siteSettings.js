@@ -43,79 +43,26 @@ export default {
       ],
     },
     {
-      title: 'Team Section Title',
-      name: 'teamSectionTitle',
-      type: 'string',
+      name: 'workGallery',
+      title: 'Work Gallery',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          fields: [
+            {
+              title: 'Alternative Text',
+              name: 'alt',
+              type: 'string',
+            },
+          ],
+        },
+      ],
     },
     {
-      title: 'Team Section Subtitle',
-      name: 'teamSectionSubtitle',
-      type: 'markdown',
-      options: {
-        minRows: 5,
-      },
-    },
-    {
-      title: 'Team Title',
-      name: 'teamTitle',
-      type: 'string',
-    },
-    {
-      title: 'Team Subtitle',
-      name: 'teamSubtitle',
-      type: 'markdown',
-      options: {
-        minRows: 5,
-      },
-    },
-    {
-      title: 'Blog Section Title',
-      name: 'blogSectionTitle',
-      type: 'string',
-    },
-    {
-      title: 'Blog Section Subtitle',
-      name: 'blogSectionSubtitle',
-      type: 'markdown',
-      options: {
-        minRows: 5,
-      },
-    },
-    {
-      title: 'Package Section Title',
-      name: 'packageSectionTitle',
-      type: 'string',
-    },
-    {
-      title: 'Package Section Subtitle',
-      name: 'packageSectionSubtitle',
-      type: 'markdown',
-      options: {
-        minRows: 5,
-      },
-    },
-    {
-      title: 'Package Team Title',
-      name: 'packageTeamTitle',
-      type: 'string',
-    },
-    {
-      title: 'package Team Subtitle',
-      name: 'packageTeamSubtitle',
-      type: 'markdown',
-      options: {
-        minRows: 5,
-      },
-    },
-    {
-      name: 'facebook',
-      type: 'string',
-      title: 'Facebook URL',
-    },
-    {
-      name: 'twitter',
-      type: 'string',
-      title: 'Twitter URL',
+      name: 'purchaseUs',
+      type: 'hireUs',
+      title: 'Hire Us',
     },
     {
       name: 'instagram',
