@@ -41,6 +41,12 @@ export default {
       type: 'array',
       of: [{ type: 'string' }],
     },
+    // {
+    //   title: 'Directors',
+    //   name: 'directors',
+    //   type: 'reference',
+    //   to: [{ type: 'technology' }],
+    // },
   ],
   preview: {
     select: {
