@@ -1,9 +1,12 @@
 import Tabs from 'sanity-plugin-tabs';
+import { RiComputerLine } from 'react-icons/ri';
 
 export default {
   type: 'document',
   title: `Technology`,
   name: `technology`,
+  icon: RiComputerLine,
+
   fields: [
     {
       name: 'content',
@@ -59,4 +62,9 @@ export default {
       ],
     },
   ],
+  preview: {
+    select: {
+      title: 'name',
+    },
+  },
 };
