@@ -13,6 +13,9 @@ import news from './news';
 import clientReview from './clientReview';
 import work from './work';
 import aboutProject from './aboutProject';
+import service from './service';
+import technology from './technology';
+import tab from './tab';
 
 // import seoTool from './seoTool';
 
@@ -30,11 +33,14 @@ export default createSchema({
     news,
     clientReview,
     work,
+    service,
+    technology,
     // seoTool,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
     hireUs,
     aboutProject,
+    tab,
   ]),
 });
