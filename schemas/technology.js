@@ -9,6 +9,11 @@ export default {
 
   fields: [
     {
+      title: 'Title',
+      name: 'title',
+      type: 'string',
+    },
+    {
       name: 'content',
       type: 'object',
       inputComponent: Tabs,
@@ -64,7 +69,12 @@ export default {
   ],
   preview: {
     select: {
-      title: 'name',
+      subtitle: 'title',
+    },
+    prepare(technology) {
+      return Object.assign({}, technology, {
+        title: 'Technologies',
+      });
     },
   },
 };
