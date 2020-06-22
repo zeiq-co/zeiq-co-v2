@@ -82,7 +82,7 @@ const TabComponents = () => {
           <Tab>Front End</Tab>
           <Tab>Database</Tab>
           <Tab>Backend</Tab>
-          <Tab>info and developers8</Tab>
+          <Tab>Info and Developers</Tab>
         </TabList>
         {data.map(items => (
           <TabPanel>
