@@ -18,7 +18,6 @@ export default {
       name: 'name',
       type: 'string',
     },
-
     {
       title: 'Work Type',
       name: 'type',
