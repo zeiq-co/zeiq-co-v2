@@ -8,7 +8,7 @@ class Particle extends Component {
         params={{
           particles: {
             number: {
-              value: 8,
+              value: 9,
               density: {
                 enable: true,
                 value_area: 800,
@@ -22,42 +22,55 @@ class Particle extends Component {
               out_mode: 'out',
             },
             shape: {
-              type: ['image', 'circle'],
+              type: ['image'],
               image: [
                 {
-                  src: '/images/particles/react-brands.svg',
-                  height: 30,
-                  width: 30,
+                  src:
+                    'https://www.zeiq.co/static/1c69680f3ddc8121a0add7a1aa25c114/c4cc1/api.png',
+                  height: 40,
+                  width: 40,
                 },
                 {
-                  src: '/images/particles/api.png',
-                  height: 30,
-                  width: 30,
+                  src:
+                    'https://www.zeiq.co/static/f4a6009688cc0b1197c0ec0b845e30e4/8afbc/aws.png',
+                  height: 40,
+                  width: 40,
                 },
                 {
-                  src: '/images/particles/expo.png',
-                  height: 20,
-                  width: 20,
+                  src:
+                    'https://www.zeiq.co/static/a3cc31c7659540aee2c270dbcdcfd6a2/8afbc/contentful.png',
+                  height: 40,
+                  width: 40,
                 },
                 {
-                  src: '/images/particles/ql.png',
-                  height: 30,
-                  width: 30,
+                  src:
+                    'https://www.zeiq.co/static/af6024eb2c50b2d606d4631feebda1a5/8afbc/amazon-web.png',
+                  height: 40,
+                  width: 40,
                 },
                 {
-                  src: '/images/particles/aws.png',
-                  height: 20,
-                  width: 23,
+                  src:
+                    'https://www.zeiq.co/static/3c7b082cc439aae9a592b1d26f622b48/8afbc/graphql.png',
+                  height: 40,
+                  width: 40,
                 },
                 {
-                  src: '/images/particles/next.png',
-                  height: 30,
-                  width: 30,
+                  src:
+                    'https://www.zeiq.co/static/af07a466d9a3ac09d852440d1c2b092b/8afbc/gatsby.png',
+                  height: 40,
+                  width: 40,
                 },
                 {
-                  src: '/images/particles/gatsby.svg',
-                  height: 30,
-                  width: 30,
+                  src:
+                    'https://www.zeiq.co/static/0f2ab8cc0e9d5b2d15643785d71f3d3f/8afbc/machine-learning.png',
+                  height: 40,
+                  width: 40,
+                },
+                {
+                  src:
+                    'https://www.zeiq.co/static/b825c1b2a86b71abce3c689d86a04c7d/8afbc/react.png',
+                  height: 40,
+                  width: 40,
                 },
               ],
             },
@@ -70,8 +83,8 @@ class Particle extends Component {
               anim: {
                 enable: true,
                 speed: 5,
-                size_min: 10,
-                sync: false,
+                size_min: 2,
+                sync: true,
               },
             },
           },
