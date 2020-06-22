@@ -10,6 +10,7 @@ import siteSettings from './siteSettings';
 import hireUs from './hireUs';
 import process from './process';
 import news from './news';
+import clientReview from './clientReview';
 
 // import seoTool from './seoTool';
 
@@ -25,6 +26,7 @@ export default createSchema({
     siteSettings,
     process,
     news,
+    clientReview,
     // seoTool,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
