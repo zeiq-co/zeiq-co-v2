@@ -11,6 +11,8 @@ import hireUs from './hireUs';
 import process from './process';
 import news from './news';
 import clientReview from './clientReview';
+import work from './work';
+import aboutProject from './aboutProject';
 
 // import seoTool from './seoTool';
 
@@ -27,10 +29,12 @@ export default createSchema({
     process,
     news,
     clientReview,
+    work,
     // seoTool,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
     hireUs,
+    aboutProject,
   ]),
 });
