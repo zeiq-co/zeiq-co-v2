@@ -7,7 +7,7 @@ module.exports = {
   siteUrl: 'https://www.zeiq.co',
   logo: '/images/logo-1024.png',
 
-  telephone: '+1-123-123-123',
+  telephone: '+91-8847411956',
   email: 'john@doe.com',
   location: 'California, USA',
   twitter: 'https://twitter.com/Zeiqofficial',
