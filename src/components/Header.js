@@ -114,7 +114,7 @@ export default class Header extends React.Component {
                   <Link to="/about" className="navbar-item">
                     ABOUT
                   </Link>
-                  <Link to="/contact" className="navbar-item">
+                  <Link to="/blog" className="navbar-item">
                     BLOG
                   </Link>
                   <div className="buttons is-shadowless ">
