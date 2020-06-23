@@ -13,6 +13,9 @@ export const workQuery = graphql`
     allSanityWork {
       edges {
         node {
+          slug {
+            current
+          }
           name
           type
           description
@@ -41,10 +44,11 @@ const Work = ({ data }) => {
             {work.map(item => (
               <NewsCard
                 asset={item.node.image.asset.url}
-                title={item.node.name}
-                subtitle={item.node.type}
+                title={item.node.type}
+                subtitle={item.node.name}
                 pera={item.node.description}
                 tags={item.node.tags}
+                to={`work/${item.node.slug.current}`}
               />
             ))}
           </div>

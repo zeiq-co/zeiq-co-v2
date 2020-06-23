@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 
@@ -49,9 +49,9 @@ const AppSlider = ({ data }) => {
   return (
     <Section className="section">
       <Slider {...settings}>
-        {data.map(item => (
+        {data.screenshots.map(item => (
           <div>
-            <img src={item.screen} alt="" />
+            <img src={item.asset.url} alt="" />
           </div>
         ))}
       </Slider>
