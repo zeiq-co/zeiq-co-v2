@@ -54,25 +54,25 @@ export default {
       title: 'Image',
       name: 'image',
       type: 'image',
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative',
-        },
-      ],
+      // fields: [
+      //   {
+      //     name: 'alt',
+      //     type: 'string',
+      //     title: 'Alternative',
+      //   },
+      // ],
     },
     {
       name: 'homeHeroImage',
       title: 'Home Hero Image',
       type: 'image',
-      fields: [
-        {
-          title: 'Alternative Text',
-          name: 'alt',
-          type: 'string',
-        },
-      ],
+      // fields: [
+      //   {
+      //     title: 'Alternative Text',
+      //     name: 'alt',
+      //     type: 'string',
+      //   },
+      // ],
     },
     {
       title: 'About',

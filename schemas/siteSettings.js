@@ -33,14 +33,7 @@ export default {
     {
       name: 'homeHeroImage',
       title: 'Home Hero Image',
-      type: 'image',
-      fields: [
-        {
-          title: 'Alternative Text',
-          name: 'alt',
-          type: 'string',
-        },
-      ],
+      type: 'alternative',
     },
     {
       name: 'workGallery',
@@ -49,13 +42,13 @@ export default {
       of: [
         {
           type: 'image',
-          fields: [
-            {
-              title: 'Alternative Text',
-              name: 'alt',
-              type: 'string',
-            },
-          ],
+          // fields: [
+          //   {
+          //     title: 'Alternative Text',
+          //     name: 'alt',
+          //     type: 'string',
+          //   },
+          // ],
         },
       ],
     },
@@ -90,4 +83,10 @@ export default {
       title: 'Address',
     },
   ],
+  preview: {
+    select: {
+      title: 'homeHeroTitle',
+      media: 'homeHeroImage',
+    },
+  },
 };
