@@ -45,10 +45,9 @@ const NewsCard = ({ asset, title, subtitle, pera, tags }) => {
             </h2>
             {tags && (
               <div className="tags is-uppercase has-text-weight-bold">
-                <span className="tag has-text-light">Android</span>
-                <span className="tag has-text-light">ios</span>
-                <span className="tag has-text-light">React</span>
-                <span className="tag has-text-light">React Native</span>
+                {tags.map(item => (
+                  <span className="tag has-text-light">{item}</span>
+                ))}
               </div>
             )}
           </div>
