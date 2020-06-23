@@ -9,12 +9,10 @@ const Blogs = () => {
   return (
     <Layout>
       <Seo title="Blog" description="Blog" keywords="Blog" />
-
       <Heading
         title="Our Blogs"
         subtitle="A home for inspiring stories on business and technology."
       />
-
       <Blog />
     </Layout>
   );

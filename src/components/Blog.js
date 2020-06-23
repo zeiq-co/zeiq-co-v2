@@ -35,7 +35,13 @@ const Blogs = () => {
                       <img src="/images/news/news-one.png" alt="" />
                     </figure>
                   </div>
+
                   <div className="card-content">
+                    <div>
+                      <h6 className="subtitle is-spaced is-7 has-text-info">
+                        Article
+                      </h6>
+                    </div>
                     <div className="content">
                       <h1 className="is-size-6 has-text-weight-bold">
                         Business
