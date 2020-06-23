@@ -44,12 +44,45 @@ export const query = graphql`
         }
       }
     }
+    allSanityNews {
+      edges {
+        node {
+          _id
+          image {
+            alt
+            asset {
+              url
+            }
+          }
+          releaseDate(formatString: "DD MM YYYY")
+          title
+          description
+        }
+      }
+    }
+    allSanityClientReview {
+      edges {
+        node {
+          _id
+          name
+          position
+          description
+          image {
+            asset {
+              url
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
   const processes = data.allSanityProcess.edges;
+  const news = data.allSanityNews.edges;
+  const review = data.allSanityClientReview.edges;
   return (
     <Layout>
       <Seo title="Home" description="Home" />
@@ -65,8 +98,8 @@ const IndexPage = ({ data }) => {
       <Hire data={home.purchaseUs} />
       <Steps data={processes} />
       <SocialStuff />
-      <NewsAndUpdates />
-      <ClientReview />
+      <NewsAndUpdates data={news} />
+      <ClientReview data={review} />
     </Layout>
   );
 };
