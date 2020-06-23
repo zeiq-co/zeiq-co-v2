@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HomeHero from '../components/HomeHero';
@@ -9,21 +11,43 @@ import SocialStuff from '../components/SocialStuff';
 import NewsAndUpdates from '../components/NewsAndUpdates';
 import ClientReview from '../components/ClientReview';
 
-const IndexPage = () => {
+export const query = graphql`
+  query HomePageQuery {
+    sanitySiteSettings {
+      homeHeroTitle
+      homeHeroDescription
+      buttonLink {
+        current
+      }
+      homeHeroImage {
+        alt
+        asset {
+          url
+        }
+      }
+      workGallery {
+        asset {
+          url
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = ({ data }) => {
+  const home = data.sanitySiteSettings;
   return (
     <Layout>
       <Seo title="Home" description="Home" />
       <HomeHero
-        title="Your Trusted Developer Partner"
-        subtitle="  We deliver web and mobile app development services to global
-        businesses since 1997, with 100% project delivery success. Hire the
-        best programmers at affordable prices. Our design-focused approach
-        and project execution processes help you to deliver the right
-        solutions."
-        image="/images/ecommerce-app.png"
+        title={home.homeHeroTitle}
+        subtitle={home.homeHeroDescription}
+        image={home.homeHeroImage.asset.url}
+        alt={home.alt}
         firstButtonText="Live Demo"
+        to={`/${home.buttonLink.current}`}
       />
-      <Work />
+      <Work data={home} />
       <Hire />
       <Steps />
       <SocialStuff />

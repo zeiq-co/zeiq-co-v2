@@ -30,6 +30,8 @@ const HomeHero = ({
   image,
   firstButtonText,
   secondButtonText,
+  alt,
+  to,
 }) => (
   <Section className="section">
     <div className="container">
@@ -38,7 +40,7 @@ const HomeHero = ({
           <h1 className="title is-spaced is-1">{title}</h1>
           <p className="subtitle is-6 has-text-weight-normal">{subtitle}</p>
           {firstButtonText && (
-            <Link to="/">
+            <Link to={to}>
               <Button className="button is-primary is-medium" type="button">
                 {firstButtonText}
               </Button>
@@ -66,7 +68,7 @@ const HomeHero = ({
         <div className="column is-2" />
         <div className="column">
           <figure className="image">
-            <img src={image} alt="placeholder" />
+            <img src={image} alt={alt} />
           </figure>
         </div>
       </div>

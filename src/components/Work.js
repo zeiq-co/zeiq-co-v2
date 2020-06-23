@@ -17,23 +17,9 @@ const Section = styled.div`
   }
 `;
 
-const data = [
-  {
-    img: '/images/work/Packers.png',
-  },
-  {
-    img: '/images/work/work.png',
-  },
-  {
-    img: '/images/work/Packers.png',
-  },
-  {
-    img: '/images/work/work.png',
-  },
-];
-
 export default class Work extends React.Component {
   render() {
+    const { data } = this.props;
     const settings = {
       dots: true,
       infinite: true,
@@ -50,9 +36,9 @@ export default class Work extends React.Component {
         <div className="container">
           <Heading title="Work" />
           <Slider {...settings}>
-            {data.map(item => (
+            {data.workGallery.map(item => (
               <Link to="/work">
-                <img src={item.img} alt="" />
+                <img src={item.asset.url} alt="" />
               </Link>
             ))}
           </Slider>

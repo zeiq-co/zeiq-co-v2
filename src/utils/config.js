@@ -16,6 +16,7 @@ module.exports = {
   instagram: 'https://www.instagram.com/zeiqofficial/',
   medium: 'https://medium.com/zeiq/',
   Github: 'https://github.com/zeiq-co',
+  sanityId: 'bonciv2x',
 
   type: 'website',
   googleAnalytics: 'UA-1390187-41',

@@ -26,6 +26,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: config.sanityId,
+        dataset: 'production',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteName,
