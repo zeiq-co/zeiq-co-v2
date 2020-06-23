@@ -12,7 +12,7 @@ const Container = styled.section`
   }
 `;
 
-const Hire = () => (
+const Hire = ({ data }) => (
   <Container className="section">
     <div className="container">
       <section className="hero">
@@ -22,20 +22,11 @@ const Hire = () => (
               <div className="column is-11">
                 <div className="columns">
                   <div className="column is-5 ">
-                    <h1 className="title is-spaced is-1">
-                      Hire the Best Web and Mobile App Developers
-                    </h1>
+                    <h1 className="title is-spaced is-1">{data.title}</h1>
                   </div>
                   <div className="column">
                     <p className="subtitle is-6 has-text-weight-normal">
-                      Zeiq is a top web design agency and software development
-                      company with a large pool of software developers available
-                      for dedicated and fixed time/cost projects. Hire web
-                      developers from IndiaNIC who have proven expertise in
-                      trending web technologies like PHP, Laravel, Magento,
-                      ReactJS, front-end technologies like AngularJS and
-                      back-end technologies like Node.js to develop custom and
-                      responsive websites, web apps and eCommerce solutions.
+                      {data.description}
                     </p>
                     <Button to="/contact" text="Contact Us" />
                   </div>

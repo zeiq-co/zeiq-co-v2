@@ -30,12 +30,26 @@ export const query = graphql`
           url
         }
       }
+      purchaseUs {
+        title
+        description
+      }
+    }
+    allSanityProcess {
+      edges {
+        node {
+          arrowIcon
+          svgIcon
+          title
+        }
+      }
     }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
+  const processes = data.allSanityProcess.edges;
   return (
     <Layout>
       <Seo title="Home" description="Home" />
@@ -48,8 +62,8 @@ const IndexPage = ({ data }) => {
         to={`/${home.buttonLink.current}`}
       />
       <Work data={home} />
-      <Hire />
-      <Steps />
+      <Hire data={home.purchaseUs} />
+      <Steps data={processes} />
       <SocialStuff />
       <NewsAndUpdates />
       <ClientReview />

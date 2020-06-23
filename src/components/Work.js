@@ -38,7 +38,7 @@ export default class Work extends React.Component {
           <Slider {...settings}>
             {data.workGallery.map(item => (
               <Link to="/work">
-                <img src={item.asset.url} alt="" />
+                <img src={item.asset.url} alt={item.alt} />
               </Link>
             ))}
           </Slider>
