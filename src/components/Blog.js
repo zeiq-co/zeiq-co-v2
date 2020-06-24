@@ -24,7 +24,6 @@ const Blogs = ({ data }) => {
                       <img src={item.node.image.asset.url} alt="" />
                     </figure>
                   </div>
-
                   <div className="card-content">
                     <div>
                       <h6 className="subtitle is-spaced is-7 has-text-info">
@@ -33,12 +32,10 @@ const Blogs = ({ data }) => {
                     </div>
                     <div className="content">
                       <h1 className="is-size-6 has-text-weight-bold">
-                        Business
+                        {item.node.title}
                       </h1>
-                      <p className="is-size-6 has-text-weight-normal">
-                        Learn how to overcome challenges creating medical apps
-                        with the help of APIs and how they can benefit both
-                        healthcare providers and software developers.
+                      <p className="is-size-7 has-text-weight-normal">
+                        {item.node.except}
                       </p>
                     </div>
                   </div>

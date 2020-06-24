@@ -13,6 +13,7 @@ export const query = graphql`
         node {
           date(formatString: "DD MM YYYY")
           title
+          except
           slug {
             current
           }
