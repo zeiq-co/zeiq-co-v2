@@ -8,7 +8,7 @@ export default {
     {
       name: 'image',
       title: 'Image',
-      type: 'image',
+      type: 'alternative',
     },
     {
       title: 'Release Date',

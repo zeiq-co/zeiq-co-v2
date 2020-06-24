@@ -41,14 +41,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'image',
-          // fields: [
-          //   {
-          //     title: 'Alternative Text',
-          //     name: 'alt',
-          //     type: 'string',
-          //   },
-          // ],
+          type: 'alternative',
         },
       ],
     },

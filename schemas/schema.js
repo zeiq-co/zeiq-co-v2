@@ -14,6 +14,7 @@ import clientReview from './clientReview';
 import work from './work';
 import aboutProject from './aboutProject';
 import service from './service';
+import article from './article';
 // import technology from './technology';
 import tab from './tab';
 import alternative from './alternative';
@@ -34,6 +35,7 @@ export default createSchema({
     clientReview,
     work,
     service,
+    article,
     // technology,
     // seoTool,
     // When added to this list, object types can be used as
