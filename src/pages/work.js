@@ -48,7 +48,7 @@ const Work = ({ data }) => {
                 subtitle={item.node.name}
                 pera={item.node.description}
                 tags={item.node.tags}
-                to={`work/${item.node.slug.current}`}
+                to={`${item.node.slug.current}`}
               />
             ))}
           </div>
