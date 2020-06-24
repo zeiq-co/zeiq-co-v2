@@ -1,11 +1,34 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Blog from '../components/Blog';
 import Heading from '../components/elements/Heading';
 
-const Blogs = () => {
+export const query = graphql`
+  query blogPageQuery {
+    allSanityArticle {
+      edges {
+        node {
+          date(formatString: "DD MM YYYY")
+          title
+          slug {
+            current
+          }
+          image {
+            asset {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const Blogs = ({ data }) => {
+  const blog = data.allSanityArticle.edges;
   return (
     <Layout>
       <Seo title="Blog" description="Blog" keywords="Blog" />
@@ -13,7 +36,7 @@ const Blogs = () => {
         title="Our Blogs"
         subtitle="A home for inspiring stories on business and technology."
       />
-      <Blog />
+      <Blog data={blog} />
     </Layout>
   );
 };

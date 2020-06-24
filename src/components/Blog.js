@@ -9,19 +9,8 @@ const Card = styled.div`
     border-radius: 0.5rem 0.5rem 0 0;
   }
 `;
-const data = [
-  {
-    image: '/images/news/news-one.png',
-  },
-  {
-    image: '/images/news/news2.png',
-  },
-  {
-    image: '/images/news/news3.png',
-  },
-];
 
-const Blogs = () => {
+const Blogs = ({ data }) => {
   return (
     <section className="section">
       <div className="container">
@@ -29,17 +18,17 @@ const Blogs = () => {
           {data.map(item => (
             <div className="column is-4 ">
               <Card className="card">
-                <Link to="/">
+                <Link to={`blog/${item.node.slug.current}`}>
                   <div className="card-image">
                     <figure className="image is-4by3">
-                      <img src="/images/news/news-one.png" alt="" />
+                      <img src={item.node.image.asset.url} alt="" />
                     </figure>
                   </div>
 
                   <div className="card-content">
                     <div>
                       <h6 className="subtitle is-spaced is-7 has-text-info">
-                        Article
+                        {item.node.date}
                       </h6>
                     </div>
                     <div className="content">
