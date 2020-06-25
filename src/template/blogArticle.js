@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import BlockContent from '@sanity/block-content-to-react';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -15,13 +16,34 @@ const Section = styled.div`
   }
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  h2 {
+    color: ${props => props.theme.darkShades} !important;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    font-weight: 300;
+    color: ${props => props.theme.mainBrandColor} !important;
+  }
+  p,
+  h1,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+`;
 
 export const blogArticleQuery = graphql`
   query($slug: String) {
     sanityArticle(slug: { current: { eq: $slug } }) {
       date
       title
+      _rawBody
       image {
         asset {
           url
@@ -50,12 +72,9 @@ const BlogArticle = ({ data }) => {
           <div className="hero-body" />
         </div>
       </Section>
-      <Content className="section columns is-mobile is-centered">
-        <div className="column is-10">
-          <h4 className="title is-spaced is-4 has-text-centered">
-            {blog.title}
-          </h4>
-          {/* <p className="subtitle is-6 has-text-centered">{blog.body}</p> */}
+      <Content className="section ">
+        <div className="container">
+          <BlockContent blocks={blog._rawBody} />
         </div>
       </Content>
     </Layout>
