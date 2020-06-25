@@ -1,6 +1,5 @@
 import { GrArticle } from 'react-icons/gr';
 import { BsImageFill } from 'react-icons/bs';
-BsImageFill;
 export default {
   name: 'article',
   title: 'Article',
@@ -19,6 +18,12 @@ export default {
       type: 'string',
     },
     {
+      title: 'Except',
+      name: 'except',
+      type: 'text',
+      validation: (Rule) => Rule.required().max(200),
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -27,12 +32,6 @@ export default {
         maxLength: 96,
       },
     },
-    // {
-    //   title: 'Except',
-    //   name: 'except',
-    //   type: 'text',
-    //   validation: (Rule) => Rule.required().max(200),
-    // },
     {
       title: 'Body',
       type: 'array',
