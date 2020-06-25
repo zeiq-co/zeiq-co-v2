@@ -43,7 +43,7 @@ export const blogArticleQuery = graphql`
     sanityArticle(slug: { current: { eq: $slug } }) {
       date
       title
-      _rawBody
+      _rawBody(resolveReferences: { maxDepth: 5 })
       image {
         asset {
           url
