@@ -14,6 +14,8 @@ import ClientReview from '../components/ClientReview';
 export const query = graphql`
   query HomePageQuery {
     sanitySiteSettings {
+      seoTitle
+      seoDescription
       homeHeroTitle
       homeHeroDescription
       buttonLink {
@@ -85,7 +87,7 @@ const IndexPage = ({ data }) => {
   const review = data.allSanityClientReview.edges;
   return (
     <Layout>
-      <Seo title="Home" description="Home" />
+      <Seo title={home.seoTitle} description={home.seoDescription} />
       <HomeHero
         title={home.homeHeroTitle}
         subtitle={home.homeHeroDescription}
