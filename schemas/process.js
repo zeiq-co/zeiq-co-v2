@@ -11,20 +11,20 @@ export default {
       type: 'boolean',
     },
     {
-      title: 'Svg Icon Url',
-      name: 'svgIcon',
-      type: 'string',
-    },
-    {
       title: 'Title',
       name: 'title',
       type: 'string',
+    },
+    {
+      title: 'Icon',
+      name: 'svgIcon',
+      type: 'image',
     },
   ],
   preview: {
     select: {
       title: 'title',
-      subtitle: 'svgIcon',
+      media: 'svgIcon',
     },
   },
 };

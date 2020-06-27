@@ -14,6 +14,7 @@ export default {
       type: 'string',
       title: 'Seo Title',
     },
+
     {
       name: 'seoDescription',
       type: 'text',
