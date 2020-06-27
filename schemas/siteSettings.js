@@ -21,6 +21,11 @@ export default {
       description: 'Describe Your Website',
     },
     {
+      name: 'homeHeroTitle',
+      title: 'Home Hero Title',
+      type: 'string',
+    },
+    {
       name: 'homeHeroDescription',
       title: 'Home Hero Description',
       type: 'markdown',
