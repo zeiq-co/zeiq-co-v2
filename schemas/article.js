@@ -8,6 +8,17 @@ export default {
   icon: GrArticle,
   fields: [
     {
+      name: 'seoTitle',
+      type: 'string',
+      title: 'Seo Title',
+    },
+    {
+      name: 'seoDescription',
+      type: 'text',
+      title: 'Seo Description',
+      description: 'Describe Your Website',
+    },
+    {
       title: 'Date',
       name: 'date',
       type: 'date',

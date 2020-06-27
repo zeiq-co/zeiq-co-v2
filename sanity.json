@@ -17,16 +17,13 @@
     "@sanity/dashboard",
     "dashboard-widget-notes",
     "media",
-    "seo-tools",
     "dashboard-widget-netlify",
     "content-model-graph",
     "tabs"
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [

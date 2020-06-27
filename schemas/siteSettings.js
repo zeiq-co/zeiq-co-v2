@@ -10,9 +10,15 @@ export default {
   ],
   fields: [
     {
-      name: 'homeHeroTitle',
+      name: 'seoTitle',
       type: 'string',
-      title: 'Home Hero Title',
+      title: 'Seo Title',
+    },
+    {
+      name: 'seoDescription',
+      type: 'text',
+      title: 'Seo Description',
+      description: 'Describe Your Website',
     },
     {
       name: 'homeHeroDescription',
