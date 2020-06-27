@@ -41,6 +41,8 @@ const Content = styled.div`
 export const blogArticleQuery = graphql`
   query($slug: String) {
     sanityArticle(slug: { current: { eq: $slug } }) {
+      seoTitle
+      seoDescription
       date
       title
       _rawBody(resolveReferences: { maxDepth: 5 })
@@ -58,12 +60,10 @@ const BlogArticle = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="blog-article"
-        description="Blog Article"
+        title={blog.seoTitle}
+        description={blog.seoDescription}
         url={config.siteUrl}
-        keywords="blog"
       />
-
       <Section
         className="hero section is-block is-relative is-medium"
         img={blog.image.asset.url}

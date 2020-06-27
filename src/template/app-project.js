@@ -24,6 +24,8 @@ const FeatureWrapper = styled.div`
 export const productQuery = graphql`
   query project($slug: String) {
     sanityWork(slug: { current: { eq: $slug } }) {
+      seoTitle
+      seoDescription
       name
       description
       homeHeroImage {
@@ -52,7 +54,7 @@ const Project = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="app-projects" description="app-projects" />
+      <Seo title={projects.seoTitle} description={projects.seoDescription} />
       <HomeHero
         storeIcons
         image={projects.homeHeroImage.asset.url}
