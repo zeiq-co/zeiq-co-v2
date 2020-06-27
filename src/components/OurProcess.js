@@ -6,17 +6,18 @@ import { theme } from '../utils/theme';
 
 const Column = styled.div`
   .title {
+    margin: 24px 0px 0px 0px;
     line-height: 32px !important;
   }
   .box {
     box-shadow: none;
   }
-  span {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 3rem;
-    margin: 0 0 20px;
+
   }
+`;
+
+const Figure = styled.figure`
+  margin: 0 auto;
 `;
 
 const SideImage = styled.div`
@@ -35,9 +36,9 @@ const OurProcess = ({ sideImage, text, icon }) => {
       <div className="columns">
         <Column className="column">
           <article className="box">
-            <span className="icon is-size-2">
-              <i className={icon} />
-            </span>
+            <Figure className="image is-48x48">
+              <img src={icon} alt="" />
+            </Figure>
             <div className="title is-5">{text}</div>
           </article>
         </Column>

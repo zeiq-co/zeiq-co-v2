@@ -12,7 +12,7 @@ const Steps = ({ data }) => {
           {data.map(item => (
             <OurProcess
               sideImage={item.node.arrowIcon}
-              icon={item.node.svgIcon}
+              icon={item.node.svgIcon.asset.url}
               text={item.node.title}
             />
           ))}

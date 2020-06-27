@@ -41,7 +41,11 @@ export const query = graphql`
       edges {
         node {
           arrowIcon
-          svgIcon
+          svgIcon {
+            asset {
+              url
+            }
+          }
           title
         }
       }
