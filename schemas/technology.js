@@ -1,28 +1,19 @@
 import Tabs from 'sanity-plugin-tabs';
-import { RiComputerLine } from 'react-icons/ri';
 
 export default {
   type: 'document',
-  title: `Technology`,
-  name: `technology`,
-  icon: RiComputerLine,
-
+  title: `Frontpage`,
+  name: `frontpage`,
   fields: [
-    {
-      title: 'Title',
-      name: 'title',
-      type: 'string',
-    },
     {
       name: 'content',
       type: 'object',
       inputComponent: Tabs,
+
       fieldsets: [
-        { name: 'mobile', title: 'Mobile' },
-        { name: 'frontEnd', title: 'Front End' },
-        { name: 'database', title: 'Database' },
-        { name: 'backEnd', title: 'Backend' },
-        { name: 'developers', title: 'Developers' },
+        { name: 'main', title: 'Main' },
+        { name: 'aside', title: 'Aside' },
+        { name: 'meta', title: 'Meta' },
       ],
       options: {
         layout: 'object',
@@ -30,51 +21,56 @@ export default {
 
       fields: [
         {
-          title: 'Module',
-          name: 'firstTab',
-          fieldset: 'mobile',
-          type: 'array',
-          of: [{ type: 'tab' }],
+          type: 'object',
+          name: 'mainTitle',
+          title: 'Main Title',
+          fieldset: 'main',
+          fields: [
+            {
+              type: 'string',
+              name: 'header',
+              title: 'Header',
+            },
+            {
+              type: 'image',
+              name: 'ingressText',
+              title: 'Text',
+            },
+          ],
         },
         {
-          title: 'Module',
-          name: 'secondTab',
-          fieldset: 'frontEnd',
-          type: 'array',
-          of: [{ type: 'tab' }],
+          type: 'string',
+          name: 'info',
+          title: 'Information',
+          fieldset: 'aside',
         },
         {
-          title: 'Module',
-          name: 'thirdTab',
-          fieldset: 'database',
-          type: 'array',
-          of: [{ type: 'tab' }],
-        },
-        {
-          title: 'Module',
-          name: 'fourthTab',
-          fieldset: 'backEnd',
-          type: 'array',
-          of: [{ type: 'tab' }],
-        },
-        {
-          title: 'Module',
-          name: 'fifthTab',
-          fieldset: 'developers',
-          type: 'array',
-          of: [{ type: 'tab' }],
+          type: 'object',
+          name: 'aside',
+          fieldset: 'meta',
+          inputComponent: Tabs,
+
+          fieldsets: [
+            { name: 'tags', title: 'Tags' },
+            { name: 'categories', title: 'Categories' },
+          ],
+
+          fields: [
+            {
+              type: 'string',
+              name: 'contentType',
+              title: 'Content Type',
+              fieldset: 'tags',
+            },
+            {
+              type: 'string',
+              name: 'category',
+              title: 'Category',
+              fieldset: 'categories',
+            },
+          ],
         },
       ],
     },
   ],
-  preview: {
-    select: {
-      subtitle: 'title',
-    },
-    prepare(technology) {
-      return Object.assign({}, technology, {
-        title: 'Technologies',
-      });
-    },
-  },
 };
