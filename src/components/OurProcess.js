@@ -12,8 +12,6 @@ const Column = styled.div`
   .box {
     box-shadow: none;
   }
-
-  }
 `;
 
 const Figure = styled.figure`
