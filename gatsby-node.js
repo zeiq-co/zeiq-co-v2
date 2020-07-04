@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
   result.data.allSanityWork.edges.forEach(({ node }) => {
     createPage({
-      path: `${node.slug.current}`,
+      path: `/${node.slug.current}`,
       component: path.resolve(`./src/template/app-project.js`),
       context: {
         slug: node.slug.current,
