@@ -12,6 +12,10 @@ const CardWrapper = styled.div`
   .tag {
     border-radius: 8px;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const Content = styled.div`
@@ -28,7 +32,7 @@ const NewsCard = ({ asset, title, subtitle, pera, tags, to }) => {
       <Link to={to}>
         <div className="card">
           <div className="card-image">
-            <figure className="image is-1by1">
+            <figure className="">
               <img src={asset} alt="Place" />
             </figure>
           </div>
