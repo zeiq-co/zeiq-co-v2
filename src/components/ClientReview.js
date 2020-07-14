@@ -58,7 +58,7 @@ export default class MultipleItems extends Component {
                         <figure className="image is-48x48">
                           <img
                             className="is-rounded"
-                            src={item.node.image.asset.url}
+                            src={item.node.image.asset.fluid.src}
                             alt="avatar"
                           />
                         </figure>

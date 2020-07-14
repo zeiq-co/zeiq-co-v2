@@ -11,7 +11,7 @@ const NewsAndUpdates = ({ data }) => {
           {data.map(item => (
             <NewsCard
               key={item.node._id}
-              asset={item.node.image.asset.url}
+              asset={item.node.image.asset.fluid.src}
               title={item.node.releaseDate}
               subtitle={item.node.title}
               pera={item.node.description}

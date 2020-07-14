@@ -47,7 +47,7 @@ export const query = graphql`
           arrowIcon
           svgIcon {
             asset {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 200) {
                 src
               }
             }
@@ -63,7 +63,9 @@ export const query = graphql`
           image {
             alt
             asset {
-              url
+              fluid(maxWidth: 250) {
+                src
+              }
             }
           }
           releaseDate(formatString: "DD MM YYYY")
@@ -81,7 +83,9 @@ export const query = graphql`
           description
           image {
             asset {
-              url
+              fluid(maxWidth: 200) {
+                src
+              }
             }
           }
         }
