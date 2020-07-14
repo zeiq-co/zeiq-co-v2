@@ -24,12 +24,16 @@ export const query = graphql`
       homeHeroImage {
         alt
         asset {
-          url
+          fluid(maxWidth: 300) {
+            src
+          }
         }
       }
       workGallery {
         asset {
-          url
+          fluid(maxWidth: 1500) {
+            src
+          }
         }
       }
       purchaseUs {
@@ -43,7 +47,9 @@ export const query = graphql`
           arrowIcon
           svgIcon {
             asset {
-              url
+              fluid(maxWidth: 300) {
+                src
+              }
             }
           }
           title
@@ -95,7 +101,7 @@ const IndexPage = ({ data }) => {
       <HomeHero
         title={home.homeHeroTitle}
         subtitle={home.homeHeroDescription}
-        image={home.homeHeroImage.asset.url}
+        image={home.homeHeroImage.asset.fluid.src}
         alt={home.alt}
         firstButtonText="Live Demo"
         to={`/${home.buttonLink.current}`}
