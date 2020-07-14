@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import config from '../utils/config';
 
 const Section = styled.section`
   li,
@@ -79,9 +80,9 @@ const Footer = () => (
         </div>
         <div className="column is-hidden-mobile" />
         <div className="column">
-          <ul className="">
+          <ul>
             <li>
-              <a href="/">
+              <a href={config.fbUserId} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
                   <i className="fab fa-facebook-square" />
                   <strong>Facebook</strong>
@@ -89,15 +90,15 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href={config.Github} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
-                  <i className="fab fa-google-plus-g" />
-                  <strong>Google Plus</strong>
+                  <i className="fab fa-github" />
+                  <strong>Github</strong>
                 </span>
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href={config.instagram} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
                   <i className="fab fa-instagram" />
                   <strong>Instagram</strong>
@@ -105,7 +106,7 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href={config.twitter} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
                   <i className="fab fa-twitter" />
                   <strong>Twitter</strong>
