@@ -31,8 +31,6 @@ const HomeHero = ({
   firstButtonText,
   secondButtonText,
   alt,
-  playStoreUrl,
-  appStoreUrl,
 
   to,
 }) => (
@@ -59,10 +57,10 @@ const HomeHero = ({
 
           {storeIcons && (
             <StoreContainer>
-              <a href={playStoreUrl}>
+              <a>
                 <img src="/images/store/playstore.png" alt="Zeiq play store" />
               </a>
-              <a href={appStoreUrl}>
+              <a>
                 <img src="/images/store/appstore.png" alt="Zeiq play store" />
               </a>
             </StoreContainer>
