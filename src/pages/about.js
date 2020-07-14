@@ -24,9 +24,9 @@ const Data = [
     title: 'What We Do',
     description: `We design JAMstack websites and cross platform apps for IOS and Android
       with Expo and React Native, We design our apps with serverless architecture that scales
-      automatically as your usage or user base extends, so you can scale 
-      your app or site without hassle and all our websites are 
-      statically rendered websites with no plugins 
+      automatically as your usage or user base extends, so you can scale
+      your app or site without hassle and all our websites are
+      statically rendered websites with no plugins
        that are a fortress and let you save money on security.`,
     flex: true,
   },

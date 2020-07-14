@@ -19,7 +19,9 @@ export const query = graphql`
           }
           image {
             asset {
-              url
+              fluid(maxWidth: 400) {
+                src
+              }
             }
           }
         }

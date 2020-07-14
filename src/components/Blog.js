@@ -16,12 +16,12 @@ const Blogs = ({ data }) => {
       <div className="container">
         <div className="columns is-multiline is-variable is-6">
           {data.map(item => (
-            <div className="column is-4 ">
+            <div className="column is-4 is-flex">
               <Card className="card">
                 <Link to={`blog/${item.node.slug.current}`}>
                   <div className="card-image">
                     <figure className="image is-4by3">
-                      <img src={item.node.image.asset.url} alt="" />
+                      <img src={item.node.image.asset.fluid.src} alt="" />
                     </figure>
                   </div>
                   <div className="card-content">
