@@ -57,12 +57,12 @@ const HomeHero = ({
 
           {storeIcons && (
             <StoreContainer>
-              <a>
+              <>
                 <img src="/images/store/playstore.png" alt="Zeiq play store" />
-              </a>
-              <a>
+              </>
+              <>
                 <img src="/images/store/appstore.png" alt="Zeiq play store" />
-              </a>
+              </>
             </StoreContainer>
           )}
         </div>

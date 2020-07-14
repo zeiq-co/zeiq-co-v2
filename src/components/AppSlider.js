@@ -51,7 +51,7 @@ const AppSlider = ({ data }) => {
       <Slider {...settings}>
         {data.screenshots.map(item => (
           <div>
-            <img src={item.asset.url} alt="" />
+            <img src={item.asset.fluid.src} alt="" />
           </div>
         ))}
       </Slider>

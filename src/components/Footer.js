@@ -32,9 +32,6 @@ const Footer = () => (
             <li>
               <LinkStyled to="/">Support</LinkStyled>
             </li>
-            <li>
-              <LinkStyled to="/">Fourth Link</LinkStyled>
-            </li>
           </ul>
         </div>
         <div className="column">
@@ -51,12 +48,6 @@ const Footer = () => (
             <li>
               <LinkStyled to="/">Privacy Policy</LinkStyled>
             </li>
-            <li>
-              <LinkStyled to="/">Fourth Link</LinkStyled>
-            </li>
-            <li>
-              <LinkStyled to="/">Fifth Link</LinkStyled>
-            </li>
           </ul>
         </div>
         <div className="column">
@@ -69,12 +60,6 @@ const Footer = () => (
             </li>
             <li>
               <LinkStyled to="/contact">Contact Us</LinkStyled>
-            </li>
-            <li>
-              <LinkStyled to="/app-project/">Third Link</LinkStyled>
-            </li>
-            <li>
-              <LinkStyled to="/paid-project/">Fourth Link</LinkStyled>
             </li>
           </ul>
         </div>

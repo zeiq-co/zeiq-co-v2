@@ -30,17 +30,19 @@ export const productQuery = graphql`
       description
       homeHeroImage {
         asset {
-          url
+          fluid(maxWidth: 300) {
+            src
+          }
         }
       }
-      playStoreUrl
-      appStoreUrl
       about {
         title
         description
         screenshots {
           asset {
-            url
+            fluid(maxWidth: 400) {
+              src
+            }
           }
         }
         features
@@ -57,11 +59,9 @@ const Project = ({ data }) => {
       <Seo title={projects.seoTitle} description={projects.seoDescription} />
       <HomeHero
         storeIcons
-        image={projects.homeHeroImage.asset.url}
+        image={projects.homeHeroImage.asset.fluid.src}
         title={projects.name}
         subtitle={projects.description}
-        playStoreUrl={projects.playStoreUrl}
-        appStoreUrl={projects.appStoreUrl}
       />
       <section className="section">
         <div className="container">
