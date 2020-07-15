@@ -3,7 +3,6 @@ import { BsImageFill } from 'react-icons/bs';
 export default {
   name: 'article',
   title: 'Article',
-
   type: 'document',
   icon: GrArticle,
   fields: [

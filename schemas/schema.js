@@ -15,12 +15,10 @@ import work from './work';
 import aboutProject from './aboutProject';
 import service from './service';
 import article from './article';
-
-import technology from './technology';
+import aboutPage from './aboutPage';
+// import technology from './technology';
 import tab from './tab';
 import alternative from './alternative';
-// import seoTool from './seoTool';
-
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -37,7 +35,7 @@ export default createSchema({
     work,
     service,
     article,
-    technology,
+
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
@@ -45,5 +43,6 @@ export default createSchema({
     aboutProject,
     tab,
     alternative,
+    aboutPage,
   ]),
 });
