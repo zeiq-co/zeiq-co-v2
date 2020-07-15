@@ -24,7 +24,7 @@ export const query = graphql`
       homeHeroImage {
         alt
         asset {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             src
           }
         }

@@ -66,7 +66,7 @@ const HomeHero = ({
             </StoreContainer>
           )}
         </div>
-        <div className="column is-1" />
+        <div className="column is-2" />
         <div className="column">
           <figure className="image">
             <img src={image} alt={alt} />
