@@ -30,7 +30,7 @@ export const productQuery = graphql`
       description
       homeHeroImage {
         asset {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             src
           }
         }

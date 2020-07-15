@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -6,7 +7,27 @@ import Heading from '../components/elements/Heading';
 import ServicesType from '../components/ServicesType';
 import Tabs from '../components/Tabs';
 
-const SingleService = () => {
+export const ServiceQuery = graphql`
+  query allServices {
+    allSanityTechnology {
+      edges {
+        node {
+          mobile {
+            title
+            image {
+              asset {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const SingleService = ({ data }) => {
+  const service = data.allSanityTechnology.edges;
   return (
     <Layout>
       <Seo title="Services" description="Our Services" />
@@ -26,7 +47,7 @@ const SingleService = () => {
       <div className="section">
         <Heading title="Technologies we work with" />
         <div className="container">
-          <Tabs />
+          <Tabs data={service} />
         </div>
       </div>
     </Layout>
