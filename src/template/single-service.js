@@ -7,8 +7,32 @@ import Heading from '../components/elements/Heading';
 import ServicesType from '../components/ServicesType';
 import Tabs from '../components/Tabs';
 
+export const singleServiceQuery = graphql`
+  query($slug: String) {
+    sanityService(slug: { current: { eq: $slug } }) {
+      slug {
+        current
+      }
+      singleServices {
+        _key
+        reverse
+        title
+        description
+        image {
+          asset {
+            fluid {
+              src
+            }
+          }
+        }
+        features
+      }
+    }
+  }
+`;
+
 const SingleService = ({ data }) => {
-  // const service = data.allSanityTechnology.edges;
+  const service = data.sanityService;
   return (
     <Layout>
       <Seo title="Services" description="Our Services" />
@@ -19,15 +43,23 @@ const SingleService = ({ data }) => {
             title="Web Development Company"
             subtitle="A successful offshore software application development company since 1997, providing a full range of website and mobile app development , and other IT services and solutions globally."
           />
-          <ServicesType image="/images/services/serviceOne.png" />
-          <ServicesType image="/images/services/serviceTwo.png" flex />
-          <ServicesType image="/images/services/service3rd.png" />
-          <ServicesType image="/images/services/serviceTwo.png" flex />
+          {service.singleServices.map(item => (
+            <ServicesType
+              to="/contact"
+              image={item.image.asset.fluid.src}
+              flex={item.reverse}
+              title={item.title}
+              description={item.description}
+              features={item.features}
+            />
+          ))}
         </div>
       </div>
       <div className="section">
         <Heading title="Technologies we work with" />
-        <div className="container">{/* <Tabs data={service} /> */}</div>
+        <div className="container">
+          <Tabs data={service} />
+        </div>
       </div>
     </Layout>
   );
