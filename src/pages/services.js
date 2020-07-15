@@ -48,6 +48,7 @@ const Services = ({ data }) => {
           />
           {service.map(item => (
             <ServicesType
+              buttonText="Learn More"
               to={item.node.slug.current}
               image={item.node.image.asset.fluid.src}
               flex={item.node.reverse}

@@ -13,6 +13,8 @@ export const singleServiceQuery = graphql`
       slug {
         current
       }
+      seoTitle
+      seoDescription
       singleServices {
         _key
         reverse
@@ -35,7 +37,7 @@ const SingleService = ({ data }) => {
   const service = data.sanityService;
   return (
     <Layout>
-      <Seo title="Services" description="Our Services" />
+      <Seo title={service.seoTitle} description={service.seoDescription} />
       <div className="section">
         <div className="container">
           <Heading
@@ -45,6 +47,7 @@ const SingleService = ({ data }) => {
           />
           {service.singleServices.map(item => (
             <ServicesType
+              buttonText="Contact us"
               to="/contact"
               image={item.image.asset.fluid.src}
               flex={item.reverse}

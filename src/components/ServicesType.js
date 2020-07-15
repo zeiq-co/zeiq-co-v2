@@ -29,7 +29,15 @@ const Points = styled.div`
   }
 `;
 
-const ServicesType = ({ flex, title, image, description, features, to }) => {
+const ServicesType = ({
+  flex,
+  title,
+  image,
+  description,
+  features,
+  to,
+  buttonText,
+}) => {
   return (
     <Container flex={flex}>
       <div className="columns is-multiline  is-variable is-8">
@@ -53,7 +61,7 @@ const ServicesType = ({ flex, title, image, description, features, to }) => {
             to={to}
             className="button is-primary is-medium has-text-weight-medium has-text-white"
           >
-            <strong>Learn More</strong>
+            <strong>{buttonText}</strong>
           </Link>
         </div>
       </div>
