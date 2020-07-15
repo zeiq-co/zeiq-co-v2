@@ -22,7 +22,7 @@ export const workQuery = graphql`
           tags
           image {
             asset {
-              fixed(width: 600, height: 500) {
+              fixed(height: 300) {
                 src
               }
             }

@@ -69,7 +69,7 @@ const BlogArticle = ({ data }) => {
           <div className="hero-body" />
         </div>
       </Section>
-      <Content className="section ">
+      <Content className="section">
         <div className="container">
           <BlockContent blocks={blog._rawBody} />
         </div>
