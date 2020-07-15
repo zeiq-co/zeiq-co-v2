@@ -64,10 +64,7 @@ const BlogArticle = ({ data }) => {
         description={blog.seoDescription}
         url={config.siteUrl}
       />
-      <Section
-        className="hero section is-block is-relative is-medium"
-        img={blog.image.asset.url}
-      >
+      <Section className="hero section is-large" img={blog.image.asset.url}>
         <div className="container">
           <div className="hero-body" />
         </div>
