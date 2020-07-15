@@ -7,27 +7,8 @@ import Heading from '../components/elements/Heading';
 import ServicesType from '../components/ServicesType';
 import Tabs from '../components/Tabs';
 
-export const ServiceQuery = graphql`
-  query allServices {
-    allSanityTechnology {
-      edges {
-        node {
-          mobile {
-            title
-            image {
-              asset {
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-
 const SingleService = ({ data }) => {
-  const service = data.allSanityTechnology.edges;
+  // const service = data.allSanityTechnology.edges;
   return (
     <Layout>
       <Seo title="Services" description="Our Services" />
@@ -46,9 +27,7 @@ const SingleService = ({ data }) => {
       </div>
       <div className="section">
         <Heading title="Technologies we work with" />
-        <div className="container">
-          <Tabs data={service} />
-        </div>
+        <div className="container">{/* <Tabs data={service} /> */}</div>
       </div>
     </Layout>
   );
