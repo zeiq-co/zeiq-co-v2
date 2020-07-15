@@ -128,22 +128,22 @@ const ContactUs = () => (
                     <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                       socials
                     </H2>
-                    <a href={config.fbUserId}>
+                    <a href={config.fbUserId} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-facebook-square" />
                       </span>
                     </a>
-                    <a href={config.Github}>
+                    <a href={config.Github} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-github" />
                       </span>
                     </a>
-                    <a href={config.twitter}>
+                    <a href={config.twitter} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-twitter" />
                       </span>
                     </a>
-                    <a href={config.instagram}>
+                    <a href={config.instagram} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-instagram" />
                       </span>
