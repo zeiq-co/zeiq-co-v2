@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import ContactForm from './form/ContactForm';
 
+import config from '../utils/config';
+
 const Container = styled.section`
   margin-top: -1px;
 `;
@@ -126,22 +128,22 @@ const ContactUs = () => (
                     <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                       socials
                     </H2>
-                    <a href="">
+                    <a href={config.fbUserId}>
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-facebook-square" />
                       </span>
                     </a>
-                    <a href="">
+                    <a href={config.Github}>
                       <span className="icon has-text-grey-light is-size-4">
-                        <i className="fab fa-google-plus-g" />
+                        <i className="fab fa-github" />
                       </span>
                     </a>
-                    <a href="">
+                    <a href={config.twitter}>
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-twitter" />
                       </span>
                     </a>
-                    <a href="">
+                    <a href={config.instagram}>
                       <span className="icon has-text-grey-light is-size-4">
                         <i className="fab fa-instagram" />
                       </span>
