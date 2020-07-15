@@ -58,6 +58,7 @@ const Project = ({ data }) => {
     <Layout>
       <Seo title={projects.seoTitle} description={projects.seoDescription} />
       <HomeHero
+        size
         storeIcons
         image={projects.homeHeroImage.asset.fluid.src}
         title={projects.name}

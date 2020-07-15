@@ -31,6 +31,7 @@ const HomeHero = ({
   firstButtonText,
   secondButtonText,
   alt,
+  size,
 
   to,
 }) => (
@@ -66,7 +67,8 @@ const HomeHero = ({
             </StoreContainer>
           )}
         </div>
-        <div className="column is-2" />
+
+        <div className={size ? 'column is-1' : 'column is-2'} />
         <div className="column">
           <figure className="image">
             <img src={image} alt={alt} />
