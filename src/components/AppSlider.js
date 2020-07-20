@@ -17,10 +17,9 @@ const AppSlider = ({ data }) => {
     autoplaySpeed: 3000,
   };
   return (
-    <Section className="">
+    <Section>
       <div className="mockups" style={style}>
         <div id="mockup-slider-titles" className="owl-carousel" />
-
         <div className="css-mb with-glare">
           <div className="mb-display-position">
             <div className="mb-display">
