@@ -40,7 +40,7 @@ export const productQuery = graphql`
         description
         screenshots {
           asset {
-            fluid(maxWidth: 400) {
+            fluid {
               src
             }
           }
