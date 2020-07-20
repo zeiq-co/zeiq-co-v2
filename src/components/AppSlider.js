@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 
+import style from '../utils/devices.min.css';
+
 const Section = styled.div`
   padding: 3rem 1.5rem;
 
@@ -9,7 +11,7 @@ const Section = styled.div`
     padding-right: 10px !important;
     padding-left: 4px !important;
   }
-  .slick-slider {
+  /* .slick-slider {
     width: 328px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 18px;
@@ -33,7 +35,7 @@ const Section = styled.div`
   .slick-slider .slick-track {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-  }
+  } */
 `;
 
 const AppSlider = ({ data }) => {
@@ -47,14 +49,21 @@ const AppSlider = ({ data }) => {
     autoplaySpeed: 3000,
   };
   return (
-    <Section className="section">
-      <Slider {...settings}>
-        {data.screenshots.map(item => (
-          <div>
-            <img src={item.asset.fluid.src} alt="" />
-          </div>
-        ))}
-      </Slider>
+    <Section className="section" style={style}>
+      <div class="marvel-device macbook">
+        <div class="top-bar"></div>
+        <div class="camera"></div>
+        <div class="screen">
+          <Slider {...settings}>
+            {data.screenshots.map(item => (
+              <div>
+                <img src={item.asset.fluid.src} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <div class="bottom-bar"></div>
+      </div>
     </Section>
   );
 };
