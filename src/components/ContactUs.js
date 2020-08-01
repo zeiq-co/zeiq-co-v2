@@ -103,7 +103,7 @@ const ContactUs = () => (
                         <span className="icon">
                           <img src="/images/india.png" alt="" />
                         </span>
-                        +91-8847411956
+                        01582-888653
                       </a>
                     </div>
                     <div className="main">
@@ -111,7 +111,7 @@ const ContactUs = () => (
                         <span className="icon">
                           <img src="/images/uk.png" alt="" />
                         </span>
-                        01582-888653
+                        +91-8847411956
                       </a>
                     </div>
                   </Country>
@@ -119,10 +119,10 @@ const ContactUs = () => (
                     <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">
                       Address
                     </H2>
+                    <p>38 Golf Road, Swineshead Bridge, England </p>
                     <p className="text">
                       Guru Amadas Nagar, Salempur Road, Jalandhar
                     </p>
-                    <p>38 Golf Road, Swineshead Bridge, England </p>
                   </MailWrapper>
                   <Socials>
                     <H2 className="is-size-7 has-text-weight-bold has-text-black is-uppercase">

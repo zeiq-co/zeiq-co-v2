@@ -15,6 +15,7 @@ const CardWrapper = styled.div`
   img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
   }
 `;
 

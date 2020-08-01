@@ -35,9 +35,9 @@ const Blogs = ({ data }) => {
     <Layout>
       <Seo title="Blog" description="Blog" keywords="Blog" />
       <NewsAndUpdates
-        data={blog}
         title="Our Blogs"
         subtitle="A home for inspiring stories on business and technology."
+        data={blog}
       />
     </Layout>
   );
