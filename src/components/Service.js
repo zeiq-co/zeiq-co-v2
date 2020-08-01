@@ -22,6 +22,7 @@ const Service = () => {
         <div className="columns is-multiline">
           {data.map(item => (
             <NewsCard
+              imageSize
               asset={item.image}
               title="04 Jun 2018"
               subtitle="Why Do You Need To Join An Affiliate Marketing Network"

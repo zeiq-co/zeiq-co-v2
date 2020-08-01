@@ -16,7 +16,7 @@ export const query = graphql`
       aboutSubtitle
       aboutImage {
         asset {
-          fluid(maxWidth: 700) {
+          fluid(maxWidth: 1200) {
             src
           }
         }

@@ -24,7 +24,7 @@ export const query = graphql`
       homeHeroImage {
         alt
         asset {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 900) {
             src
           }
         }
@@ -56,21 +56,24 @@ export const query = graphql`
         }
       }
     }
-    allSanityNews {
+
+    allSanityArticle {
       edges {
         node {
-          _id
+          slug {
+            current
+          }
+          date(formatString: "DD MM YYYY")
+          title
+          except
           image {
-            alt
             asset {
-              fluid(maxWidth: 350) {
+              fluid {
                 src
               }
             }
           }
-          releaseDate(formatString: "DD MM YYYY")
-          title
-          description
+          _rawBody
         }
       }
     }
@@ -97,7 +100,7 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
   const processes = data.allSanityProcess.edges;
-  const news = data.allSanityNews.edges;
+  const news = data.allSanityArticle.edges;
   const review = data.allSanityClientReview.edges;
   return (
     <Layout>
@@ -114,7 +117,7 @@ const IndexPage = ({ data }) => {
       <Hire data={home.purchaseUs} />
       <Steps data={processes} />
       <SocialStuff />
-      <NewsAndUpdates data={news} />
+      <NewsAndUpdates data={news} title="News and Updates" />
       <ClientReview data={review} />
     </Layout>
   );

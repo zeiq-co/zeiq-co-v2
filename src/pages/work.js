@@ -22,7 +22,7 @@ export const workQuery = graphql`
           tags
           image {
             asset {
-              fixed(height: 300) {
+              fluid {
                 src
               }
             }
@@ -45,7 +45,7 @@ const Work = ({ data }) => {
           <div className="columns is-multiline">
             {work.map(item => (
               <NewsCard
-                asset={item.node.image.asset.fixed.src}
+                asset={item.node.image.asset.fluid.src}
                 title={item.node.type}
                 subtitle={item.node.name}
                 pera={item.node.description}

@@ -26,13 +26,13 @@ const Content = styled.div`
   }
 `;
 
-const NewsCard = ({ asset, title, subtitle, pera, tags, to }) => {
+const NewsCard = ({ asset, title, subtitle, pera, tags, to, imageSize }) => {
   return (
     <CardWrapper className="column is-4">
       <Link to={to}>
         <div className="card">
           <div className="card-image">
-            <figure className="">
+            <figure className={` ${imageSize || 'image is-4by3'}`}>
               <img src={asset} alt="Place" />
             </figure>
           </div>
