@@ -50,7 +50,7 @@ const SocialStuff = () => {
           ))}
         </div>
         <div className="has-text-centered">
-          <Button to="/" text="Learn More" />
+          <Button to="/contact" text="Learn More" />
         </div>
       </div>
     </div>
