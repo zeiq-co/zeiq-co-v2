@@ -74,7 +74,7 @@ const Footer = () => (
           </p>
           <ul>
             <li>
-              <LinkStyled to="/">Career</LinkStyled>
+              <LinkStyled to="/pages/career">Career</LinkStyled>
             </li>
             <li>
               <LinkStyled to="/contact">Contact Us</LinkStyled>
