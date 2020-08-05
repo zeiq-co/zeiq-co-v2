@@ -6,6 +6,11 @@ export default {
   title: 'Our Work',
   fields: [
     {
+      title: 'Order',
+      name: 'order',
+      type: 'number',
+    },
+    {
       name: 'seoTitle',
       type: 'string',
       title: 'Seo Title',
