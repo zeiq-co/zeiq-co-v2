@@ -57,7 +57,7 @@ export const query = graphql`
       }
     }
 
-    allSanityArticle {
+    allSanityArticle(limit: 3) {
       edges {
         node {
           slug {
