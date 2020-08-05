@@ -40,13 +40,13 @@ const Footer = () => (
           </p>
           <ul>
             <li>
-              <LinkStyled to="/">About Us</LinkStyled>
+              <LinkStyled to="/about">About Us</LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">News & Updates</LinkStyled>
+              <LinkStyled to="/blog">News & Updates</LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">Support</LinkStyled>
+              <LinkStyled to="/pages/support">Support</LinkStyled>
             </li>
           </ul>
         </div>
@@ -56,13 +56,15 @@ const Footer = () => (
           </p>
           <ul>
             <li>
-              <LinkStyled to="/">Faq</LinkStyled>
+              <LinkStyled to="/pages/faq">Faq</LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">Terms and Conditions</LinkStyled>
+              <LinkStyled to="/pages/terms-and-conditions">
+                Terms and Conditions
+              </LinkStyled>
             </li>
             <li>
-              <LinkStyled to="/">Privacy Policy</LinkStyled>
+              <LinkStyled to="/pages/privacy-policy">Privacy Policy</LinkStyled>
             </li>
           </ul>
         </div>

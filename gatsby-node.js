@@ -32,11 +32,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+      allSanityPages {
+        edges {
+          node {
+            slug {
+              current
+            }
+          }
+        }
+      }
     }
   `);
+
   if (result.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
   }
+
+  const pages = result.data.allSanityPages.edges || [];
+
   result.data.allSanityWork.edges.forEach(({ node }) => {
     createPage({
       path: `/${node.slug.current}`,
@@ -59,6 +72,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: `/${node.slug.current}`,
       component: path.resolve(`./src/template/single-service.js`),
+      context: {
+        slug: node.slug.current,
+      },
+    });
+  });
+  pages.forEach(({ node }) => {
+    createPage({
+      path: `pages/${node.slug.current}`,
+      component: path.resolve(`src/components/PageView.js`),
+      // additional data can be passed via context
       context: {
         slug: node.slug.current,
       },
