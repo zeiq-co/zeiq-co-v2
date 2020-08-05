@@ -11,6 +11,26 @@ export default {
       type: 'boolean',
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+    },
+    {
+      name: 'seoTitle',
+      type: 'string',
+      title: 'Seo Title',
+    },
+    {
+      name: 'seoDescription',
+      type: 'string',
+      title: 'Seo Description',
+    },
+
+    {
       title: 'Title',
       name: 'title',
       type: 'string',
@@ -27,13 +47,6 @@ export default {
       title: 'Image',
       name: 'image',
       type: 'image',
-      // fields: [
-      //   {
-      //     name: 'alt',
-      //     type: 'string',
-      //     title: 'Alternative',
-      //   },
-      // ],
     },
     {
       title: 'Features',
@@ -41,12 +54,12 @@ export default {
       type: 'array',
       of: [{ type: 'string' }],
     },
-    // {
-    //   title: 'Directors',
-    //   name: 'directors',
-    //   type: 'reference',
-    //   to: [{ type: 'technology' }],
-    // },
+    {
+      title: 'Single Services',
+      name: 'singleServices',
+      type: 'array',
+      of: [{ type: 'singleService' }],
+    },
   ],
   preview: {
     select: {

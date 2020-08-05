@@ -16,6 +16,9 @@ import aboutProject from './aboutProject';
 import service from './service';
 import article from './article';
 import aboutPage from './aboutPage';
+import singleService from './singleService';
+import paidProject from './paidProject';
+import pages from './pages';
 // import technology from './technology';
 import tab from './tab';
 import alternative from './alternative';
@@ -35,6 +38,8 @@ export default createSchema({
     work,
     service,
     article,
+    paidProject,
+    pages,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
@@ -44,5 +49,6 @@ export default createSchema({
     tab,
     alternative,
     aboutPage,
+    singleService,
   ]),
 });
