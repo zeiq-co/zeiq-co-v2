@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 25px !important;
     color: ${props => props.theme.secondaryTextColor} !important;
   }
-  p, .title, .box {
+  .title, .box {
     color: ${theme.textColor} !important;
   }
 
