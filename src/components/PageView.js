@@ -10,7 +10,8 @@ import Layout from './Layout';
 
 const ReactMarkdownContainer = styled(ReactMarkdown)`
   p {
-    color: ${props => props.theme.lightShades} !important;
+    color: ${props => props.theme.darkAccent} !important;
+    margin-bottom: 1rem;
   }
   h1,
   h2,
@@ -18,7 +19,7 @@ const ReactMarkdownContainer = styled(ReactMarkdown)`
   h4,
   h5,
   h6 {
-    color: ${props => props.theme.darkShades}!important;
+    color: ${props => props.theme.darkAccent}!important;
     font-size: 24px !important;
   }
   p {
