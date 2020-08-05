@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import { theme } from '../../utils/theme';
 
 const Point = styled.div`
+  display: flex;
   margin-bottom: 8px;
-  span,
+  .bd-footer-link-icon,
   strong {
     color: ${props => props.theme.secondaryTextColor} !important;
   }
@@ -16,9 +17,9 @@ const Point = styled.div`
 const Features = ({ text }) => {
   return (
     <Point>
-      <span className="bd-footer-link-icon">
+      <div className="bd-footer-link-icon">
         <i className="fas fa-check-circle" />
-      </span>
+      </div>
       <strong className="">{text}</strong>
     </Point>
   );

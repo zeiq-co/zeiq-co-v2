@@ -68,7 +68,7 @@ export const query = graphql`
           except
           image {
             asset {
-              fluid {
+              fluid(maxWidth: 1200) {
                 src
               }
             }

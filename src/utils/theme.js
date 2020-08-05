@@ -74,6 +74,8 @@ const GlobalStyle = createGlobalStyle`
   .button.is-primary {
     background-color: ${theme.mainBrandColor};
     transition: background-color 0.2s ease;
+    padding: 1.25rem 2rem !important;
+    font-size: 1rem !important;
     :hover {
     background-color: ${darken(0.06, theme.mainBrandColor)};
     }

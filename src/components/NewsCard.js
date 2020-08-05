@@ -16,6 +16,7 @@ const CardWrapper = styled.div`
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    width: 100%;
   }
 `;
 

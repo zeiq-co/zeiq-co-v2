@@ -13,7 +13,9 @@ const Container = styled.div`
       color: ${theme.darkAccent}!important;
     }
   }
-
+  .button.is-primary {
+    padding: 1.25rem 0rem !important;
+  }
   .field:not(:last-child) {
     margin-bottom: 20px;
   }
