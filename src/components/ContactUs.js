@@ -74,7 +74,7 @@ const Icon = styled.i`
 const ContactUs = () => (
   <Container className="section">
     <div className="container">
-      <div className="columns is-mobile is-centered">
+      <div className="columns is-centered">
         <div className="column is-four-fifths">
           <div className="columns is-vcentered">
             <div className="column is-6">

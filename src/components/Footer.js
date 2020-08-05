@@ -33,7 +33,7 @@ const Footer = () => (
       <Link to="/">
         <img src="/images/zeiq-logo.png" alt="site logo" />
       </Link>
-      <div className="columns has-text-centered-mobile">
+      <div className="columns">
         <div className="column">
           <p className="is-uppercase is-size-6 has-text-weight-semibold">
             ZEIQ
