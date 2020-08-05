@@ -10,12 +10,13 @@ import RegisterForm from '../components/form/RegisterForm';
 
 export const workQuery = graphql`
   query Works {
-    allSanityWork {
+    allSanityWork(sort: { fields: order, order: ASC }) {
       edges {
         node {
           slug {
             current
           }
+          order
           name
           type
           description
