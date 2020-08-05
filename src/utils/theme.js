@@ -5,7 +5,7 @@ import { darken, lighten } from 'polished';
 const mainBrandColor = '#634ce9';
 const lightShades = '#acb6bd';
 const darkAccent = '#262a2c';
-const darkShades = '#141414';
+const darkShades = '#3D3D3D';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -61,13 +61,14 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     line-height: 25px !important;
+    color: ${props => props.theme.secondaryTextColor} !important;
   }
   p, .title, .box {
     color: ${theme.textColor} !important;
   }
 
   .subtitle {
-    color: ${theme.darkAccent} !important;
+    color: ${props => props.theme.secondaryTextColor} !important;
     line-height: 25px !important;
   }
   .button.is-primary {

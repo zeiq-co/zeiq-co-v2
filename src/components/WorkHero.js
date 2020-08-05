@@ -5,6 +5,9 @@ const Header = styled.div`
   h1 {
     margin-bottom: 35.6px;
   }
+  p {
+    color: ${props => props.theme.secondaryTextColor} !important;
+  }
 `;
 
 const WorkHero = () => {

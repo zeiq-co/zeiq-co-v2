@@ -11,12 +11,28 @@ const Section = styled.section`
   strong {
     margin-left: 0.5em !important;
   }
+  img {
+    max-height: 3rem;
+    margin-bottom: 2.5rem;
+    @media screen and (max-width: 600px) {
+      max-height: 1.75rem;
+    }
+  }
+  a {
+    color: ${props => props.theme.secondaryTextColor} !important;
+  }
 `;
 const LinkStyled = styled(Link)``;
+const Icon = styled.i`
+  color: ${props => props.iconColor}!important;
+`;
 
 const Footer = () => (
   <Section className="section">
     <div className="container">
+      <Link to="/">
+        <img src="/images/zeiq-logo.png" alt="site logo" />
+      </Link>
       <div className="columns has-text-centered-mobile">
         <div className="column">
           <p className="is-uppercase is-size-6 has-text-weight-semibold">
@@ -69,7 +85,10 @@ const Footer = () => (
             <li>
               <a href={config.fbUserId} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
-                  <i className="fab fa-facebook-square" />
+                  <Icon
+                    iconColor="#3b5998"
+                    className="fab fa-facebook-square is-size-4"
+                  />
                   <strong>Facebook</strong>
                 </span>
               </a>
@@ -77,7 +96,10 @@ const Footer = () => (
             <li>
               <a href={config.Github} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
-                  <i className="fab fa-github" />
+                  <Icon
+                    iconColor="#000000"
+                    className="fab fa-github is-size-4 has-text-grey-light"
+                  />
                   <strong>Github</strong>
                 </span>
               </a>
@@ -85,7 +107,10 @@ const Footer = () => (
             <li>
               <a href={config.instagram} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
-                  <i className="fab fa-instagram" />
+                  <Icon
+                    iconColor="#C536A4"
+                    className="fab fa-instagram is-size-4 has-text-grey-light"
+                  />
                   <strong>Instagram</strong>
                 </span>
               </a>
@@ -93,7 +118,10 @@ const Footer = () => (
             <li>
               <a href={config.twitter} target="_blank">
                 <span className="bd-footer-link-icon has-text-star">
-                  <i className="fab fa-twitter" />
+                  <Icon
+                    iconColor="#1da1f2"
+                    className="fab fa-twitter is-size-4 has-text-grey-light"
+                  />
                   <strong>Twitter</strong>
                 </span>
               </a>

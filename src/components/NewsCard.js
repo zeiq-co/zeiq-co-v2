@@ -23,7 +23,7 @@ const Content = styled.div`
   padding-left: 0;
   padding-right: 0;
   h2 {
-    color: ${props => props.theme.textColorLite}!important;
+    color: ${props => props.theme.secondaryTextColor} !important;
   }
 `;
 

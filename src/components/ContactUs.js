@@ -6,10 +6,13 @@ import config from '../utils/config';
 
 const Container = styled.section`
   margin-top: -1px;
+  a,
+  p {
+    color: ${props => props.theme.secondaryTextColor} !important;
+  }
 `;
 
 const Mail = styled.a`
-  color: ${props => props.theme.mainBrandColor} !important;
   margin-bottom: 37px !important;
 `;
 
@@ -30,7 +33,6 @@ const MailWrapper = styled.div`
 
 const Country = styled.div`
   a {
-    color: ${props => props.theme.darkShades} !important;
     :hover {
       color: ${props => props.theme.darkShades} !important;
     }
@@ -63,6 +65,10 @@ const Header = styled.div`
   p {
     margin-bottom: 17px !important;
   }
+`;
+
+const Icon = styled.i`
+  color: ${props => props.iconColor}!important;
 `;
 
 const ContactUs = () => (
@@ -130,22 +136,28 @@ const ContactUs = () => (
                     </H2>
                     <a href={config.fbUserId} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
-                        <i className="fab fa-facebook-square" />
+                        <Icon
+                          iconColor="#3b5998"
+                          className="fab fa-facebook-square"
+                        />
                       </span>
                     </a>
                     <a href={config.Github} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
-                        <i className="fab fa-github" />
-                      </span>
-                    </a>
-                    <a href={config.twitter} target="_blank">
-                      <span className="icon has-text-grey-light is-size-4">
-                        <i className="fab fa-twitter" />
+                        <Icon iconColor="#000000" className="fab fa-github" />
                       </span>
                     </a>
                     <a href={config.instagram} target="_blank">
                       <span className="icon has-text-grey-light is-size-4">
-                        <i className="fab fa-instagram" />
+                        <Icon
+                          iconColor="#C536A4"
+                          className="fab fa-instagram"
+                        />
+                      </span>
+                    </a>
+                    <a href={config.twitter} target="_blank">
+                      <span className="icon has-text-grey-light is-size-4">
+                        <Icon iconColor="#3b5998" className="fab fa-twitter" />
                       </span>
                     </a>
                   </Socials>

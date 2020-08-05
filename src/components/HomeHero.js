@@ -12,6 +12,7 @@ const Section = styled.section`
 const Button = styled.button`
   margin-top: 15px;
   margin-right: 18px;
+  padding: 1.25rem 2rem !important;
 `;
 
 const StoreContainer = styled.div`
@@ -43,14 +44,20 @@ const HomeHero = ({
           <p className="subtitle is-6 has-text-weight-normal">{subtitle}</p>
           {firstButtonText && (
             <Link to={to}>
-              <Button className="button is-primary is-medium" type="button">
+              <Button
+                className="button is-primary is-medium is-size-6"
+                type="button"
+              >
                 {firstButtonText}
               </Button>
             </Link>
           )}
           {secondButtonText && (
             <Link to="/">
-              <Button className="button is-primary is-medium" type="button">
+              <Button
+                className="button is-primary is-medium is-size-6"
+                type="button"
+              >
                 {secondButtonText}
               </Button>
             </Link>

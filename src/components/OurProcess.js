@@ -23,7 +23,7 @@ const SideImage = styled.div`
 `;
 
 const Arrow = styled.i`
-  color: ${theme.darkAccent};
+  color: #b5b5b5;
   font-size: 30px;
   margin: 10px;
 `;

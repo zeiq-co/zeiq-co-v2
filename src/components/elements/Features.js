@@ -7,7 +7,7 @@ const Point = styled.div`
   margin-bottom: 8px;
   span,
   strong {
-    color: ${theme.darkAccent} !important;
+    color: ${props => props.theme.secondaryTextColor} !important;
   }
   strong {
     padding-left: 10px;
