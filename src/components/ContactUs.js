@@ -127,7 +127,7 @@ const ContactUs = () => (
                     </H2>
                     <p>38 Golf Road, Swineshead Bridge, England </p>
                     <p className="text">
-                      Guru Amadas Nagar, Salempur Road, Jalandhar
+                      101, Model Town, Near Goindi Traders, Jalandhar
                     </p>
                   </MailWrapper>
                   <Socials>
