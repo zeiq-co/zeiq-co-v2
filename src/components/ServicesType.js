@@ -41,7 +41,7 @@ const ServicesType = ({
   return (
     <Container flex={flex}>
       <div className="columns is-multiline  is-variable is-8">
-        <div className="column is-5">
+        <div className="column is-6">
           <img src={image} alt="mobile" />
         </div>
         <div className="column">
