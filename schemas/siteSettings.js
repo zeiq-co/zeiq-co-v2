@@ -94,6 +94,12 @@ export default {
       type: 'array',
       of: [{ type: 'aboutPage' }],
     },
+    {
+      title: 'Technology Items',
+      name: 'technologyItems',
+      type: 'reference',
+      to: [{ type: 'technology' }],
+    },
   ],
   preview: {
     select: {

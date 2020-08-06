@@ -60,6 +60,12 @@ export default {
       type: 'array',
       of: [{ type: 'singleService' }],
     },
+    {
+      title: 'Technology Items',
+      name: 'technologyItems',
+      type: 'reference',
+      to: [{ type: 'technology' }],
+    },
   ],
   preview: {
     select: {

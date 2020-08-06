@@ -19,7 +19,7 @@ import aboutPage from './aboutPage';
 import singleService from './singleService';
 import paidProject from './paidProject';
 import pages from './pages';
-// import technology from './technology';
+import technology from './technology';
 import tab from './tab';
 import alternative from './alternative';
 // Then we give our schema to the builder and provide the result to Sanity
@@ -39,6 +39,7 @@ export default createSchema({
     service,
     article,
     paidProject,
+    technology,
     pages,
 
     // When added to this list, object types can be used as

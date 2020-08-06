@@ -5,6 +5,7 @@ export default {
   title: `Technology`,
   name: `technology`,
   inputComponent: Tabs,
+
   fieldsets: [
     { name: 'mobile', title: 'Mobile' },
     { name: 'frontEnd', title: 'Front End' },
@@ -15,34 +16,41 @@ export default {
 
   fields: [
     {
-      type: 'tab',
-      name: 'mobile',
       title: 'Mobile',
+      name: 'mobile',
       fieldset: 'mobile',
+      type: 'array',
+      of: [{ type: 'tab' }],
     },
     {
-      type: 'tab',
       name: 'frontEnd',
       title: 'FrontEnd',
       fieldset: 'frontEnd',
+      type: 'array',
+      of: [{ type: 'tab' }],
     },
+
     {
-      type: 'tab',
       name: 'dataBase',
       title: 'DataBase',
       fieldset: 'dataBase',
+      type: 'array',
+      of: [{ type: 'tab' }],
     },
+
     {
-      type: 'tab',
       name: 'backEnd',
       title: 'Back End',
       fieldset: 'backEnd',
+      type: 'array',
+      of: [{ type: 'tab' }],
     },
     {
-      type: 'tab',
       name: 'cms',
       title: 'Cms',
-      fieldset: 'backEnd',
+      fieldset: 'cms',
+      type: 'array',
+      of: [{ type: 'tab' }],
     },
   ],
 };
